@@ -1,0 +1,1425 @@
+        -:    0:Source:/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/test/AvailableIngredients_Test.cpp
+        -:    0:Graph:/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin/CMakeFiles/CocktailProTest.dir/src/test/AvailableIngredients_Test.cpp.gcno
+        -:    0:Data:/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin/CMakeFiles/CocktailProTest.dir/src/test/AvailableIngredients_Test.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#include <limits.h>
+        -:    2:#include <string>
+        -:    3:#include "gtest/gtest.h"
+        -:    4:
+        -:    5:// Using this ugly tweak you make all private elements public!
+        -:    6:// But be careful! Some methods are private for good reasons!
+        -:    7:// So please use this trick only if you really need it!
+        -:    8:#define protected public
+        -:    9:#define private public
+        -:   10:#include "AvailableIngredients.h"
+        -:   11:#undef protected
+        -:   12:#undef private
+        -:   13:
+        -:   14:#include <sstream>
+        -:   15:
+        -:   16:class AvailableIngredientsTest: public ::testing::Test
+        -:   17:{
+        -:   18:protected:
+        -:   19:    const std::string ZutatenFile = "zutaten.txt";
+        -:   20:    AvailableIngredients* zv;
+        -:   21:    std::basic_streambuf<char>* orig_cout;
+        -:   22:    std::stringstream test_cout;
+        -:   23:
+function _ZN24AvailableIngredientsTest5SetUpEv called 11 returned 100% blocks executed 91%
+       11:   24:    void SetUp() override
+        -:   25:    {
+        -:   26:        // Check whether cout works normal - otherwise you will get very strange errors
+        -:   27:        // if someone else made a mistake when redirecting cout
+       11:   28:        std::cout << "Start of " << "AvailableIngredientsTest" << std::endl << std::flush;
+       11:   28-block  0
+call    0 returned 11
+call    1 returned 11
+call    2 returned 11
+call    3 returned 11
+        -:   29:
+        -:   30:      // redirect cout to my test_cout stream for testing
+        -:   31:      // and store orig cout for restoring after test (!!!do not forget to restore!!!)
+       11:   32:      orig_cout = std::cout.rdbuf(test_cout.rdbuf());
+call    0 returned 11
+call    1 returned 11
+        -:   33:
+       11:   34:      zv = new AvailableIngredients();
+call    0 returned 11
+call    1 returned 11
+branch  2 taken 11 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   34-block  0
+call    4 never executed
+       11:   35:    }
+       11:   35-block  0
+        -:   36:
+function _ZN24AvailableIngredientsTest8TearDownEv called 11 returned 100% blocks executed 100%
+       11:   37:    virtual void TearDown()
+        -:   38:    {
+        -:   39:        // Code here will be called immediately after each test
+        -:   40:        // (right before the destructor).
+       11:   41:        std::cout.rdbuf(orig_cout); // redirect cout back to standard cout
+       11:   41-block  0
+call    0 returned 11
+       11:   42:        delete zv;
+branch  0 taken 11 (fallthrough)
+branch  1 taken 0
+       11:   42-block  0
+call    2 returned 11
+       11:   43:        zv = nullptr;
+        -:   44:        // Check whether cout works normal again - otherwise the next one using cout
+        -:   45:        // will get very strange behavior
+       11:   46:         std::cout << "End of " << "AvailableIngredientsTest" << std::endl << std::flush;
+       11:   46-block  0
+call    0 returned 11
+call    1 returned 11
+call    2 returned 11
+call    3 returned 11
+       11:   47:    }
+        -:   48:};
+        -:   49:
+        4:   50:TEST_F(AvailableIngredientsTest, browse){
+        1:   51:    std::string browseOutput = this->test_cout.str();
+        1:   52:    std::string zutat;
+        1:   53:    int ingredientNumber = 0 ;
+        -:   54:
+        1:   55:    int beginOfLinePos = 0 ;
+        1:   56:    int outputLineCount = 0;
+        1:   57:    std::string delim =  "\n" ;
+       16:   58:    while( (beginOfLinePos = browseOutput.find(delim)) != std::string::npos )
+        -:   59:    {
+       16:   60:        zutat = browseOutput.substr(0, beginOfLinePos);
+       16:   61:        browseOutput.erase(0, beginOfLinePos + delim.length()); // erase \n
+        -:   62:
+       16:   63:        if(outputLineCount++ < 2) continue; // skip the intro
+       14:   64:        if(zutat.rfind("**", 0) == 0) break;
+        -:   65:        /*
+        -:   66:         * This method returns the position of the first character
+        -:   67:         * of the last match of that given character or string before
+        -:   68:         * that position else it returns string::npos
+        -:   69:         */
+        -:   70:
+      26*:   71:        EXPECT_EQ(zutat, zv->getZutat(ingredientNumber++));
+        -:   72:    }
+        1:   73:}
+------------------
+_ZN36AvailableIngredientsTest_browse_TestC1Ev:
+function _ZN36AvailableIngredientsTest_browse_TestC1Ev called 1 returned 100% blocks executed 100%
+        1:   50:TEST_F(AvailableIngredientsTest, browse){
+        1:   50-block  0
+call    0 returned 1
+------------------
+_ZN36AvailableIngredientsTest_browse_TestD0Ev:
+function _ZN36AvailableIngredientsTest_browse_TestD0Ev called 1 returned 100% blocks executed 100%
+        1:   50:TEST_F(AvailableIngredientsTest, browse){
+        1:   50-block  0
+call    0 returned 1
+call    1 returned 1
+------------------
+_ZN36AvailableIngredientsTest_browse_TestD1Ev:
+function _ZN36AvailableIngredientsTest_browse_TestD1Ev called 1 returned 100% blocks executed 100%
+        1:   50:TEST_F(AvailableIngredientsTest, browse){
+        1:   50-block  0
+call    0 returned 1
+------------------
+_ZN36AvailableIngredientsTest_browse_Test8TestBodyEv:
+function _ZN36AvailableIngredientsTest_browse_Test8TestBodyEv called 1 returned 100% blocks executed 52%
+        1:   50:TEST_F(AvailableIngredientsTest, browse){
+        1:   51:    std::string browseOutput = this->test_cout.str();
+        1:   51-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   52:    std::string zutat;
+        1:   52-block  0
+call    0 returned 1
+        1:   53:    int ingredientNumber = 0 ;
+        -:   54:
+        1:   55:    int beginOfLinePos = 0 ;
+        1:   56:    int outputLineCount = 0;
+        1:   57:    std::string delim =  "\n" ;
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   57-block  0
+       16:   58:    while( (beginOfLinePos = browseOutput.find(delim)) != std::string::npos )
+       16:   58-block  0
+call    0 returned 16
+branch  1 taken 16
+branch  2 taken 0 (fallthrough)
+        -:   59:    {
+       16:   60:        zutat = browseOutput.substr(0, beginOfLinePos);
+       16:   60-block  0
+call    0 returned 16
+branch  1 taken 16 (fallthrough)
+branch  2 taken 0 (throw)
+       16:   60-block  1
+call    3 returned 16
+call    4 returned 16
+       16:   61:        browseOutput.erase(0, beginOfLinePos + delim.length()); // erase \n
+call    0 returned 16
+call    1 returned 16
+branch  2 taken 16 (fallthrough)
+branch  3 taken 0 (throw)
+        -:   62:
+       16:   63:        if(outputLineCount++ < 2) continue; // skip the intro
+       16:   63-block  0
+branch  0 taken 2 (fallthrough)
+branch  1 taken 14
+        2:   63-block  1
+       14:   64:        if(zutat.rfind("**", 0) == 0) break;
+       14:   64-block  0
+call    0 returned 14
+branch  1 taken 1 (fallthrough)
+branch  2 taken 13
+        1:   64-block  1
+        -:   65:        /*
+        -:   66:         * This method returns the position of the first character
+        -:   67:         * of the last match of that given character or string before
+        -:   68:         * that position else it returns string::npos
+        -:   69:         */
+        -:   70:
+      26*:   71:        EXPECT_EQ(zutat, zv->getZutat(ingredientNumber++));
+       13:   71-block  0
+call    0 returned 13
+branch  1 taken 13 (fallthrough)
+branch  2 taken 0 (throw)
+       13:   71-block  1
+call    3 returned 13
+branch  4 taken 13 (fallthrough)
+branch  5 taken 0 (throw)
+call    6 returned 13
+branch  7 taken 0 (fallthrough)
+branch  8 taken 13
+    %%%%%:   71-block  2
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:   71-block  3
+call   12 never executed
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+    %%%%%:   71-block  4
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+    %%%%%:   71-block  5
+call   19 never executed
+call   20 never executed
+       13:   71-block  6
+call   21 returned 13
+    $$$$$:   71-block  7
+    $$$$$:   71-block  8
+call   22 never executed
+    $$$$$:   71-block  9
+    $$$$$:   71-block 10
+call   23 never executed
+    $$$$$:   71-block 11
+    $$$$$:   71-block 12
+call   24 never executed
+        -:   72:    }
+        1:   73:}
+        1:   73-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+    $$$$$:   73-block  1
+call    3 never executed
+    $$$$$:   73-block  2
+call    4 never executed
+    $$$$$:   73-block  3
+call    5 never executed
+------------------
+        -:   74:
+        4:   75:TEST_F(AvailableIngredientsTest, getAnzahlVorhandeneZutaten)
+        -:   76:{
+       1*:   77:    EXPECT_EQ(16,zv->getAnzahlVorhandeneZutaten());
+        1:   78:}
+------------------
+_ZN56AvailableIngredientsTest_getAnzahlVorhandeneZutaten_TestC1Ev:
+function _ZN56AvailableIngredientsTest_getAnzahlVorhandeneZutaten_TestC1Ev called 1 returned 100% blocks executed 100%
+        1:   75:TEST_F(AvailableIngredientsTest, getAnzahlVorhandeneZutaten)
+        1:   75-block  0
+call    0 returned 1
+------------------
+_ZN56AvailableIngredientsTest_getAnzahlVorhandeneZutaten_TestD0Ev:
+function _ZN56AvailableIngredientsTest_getAnzahlVorhandeneZutaten_TestD0Ev called 1 returned 100% blocks executed 100%
+        1:   75:TEST_F(AvailableIngredientsTest, getAnzahlVorhandeneZutaten)
+        1:   75-block  0
+call    0 returned 1
+call    1 returned 1
+------------------
+_ZN56AvailableIngredientsTest_getAnzahlVorhandeneZutaten_TestD1Ev:
+function _ZN56AvailableIngredientsTest_getAnzahlVorhandeneZutaten_TestD1Ev called 1 returned 100% blocks executed 100%
+        1:   75:TEST_F(AvailableIngredientsTest, getAnzahlVorhandeneZutaten)
+        1:   75-block  0
+call    0 returned 1
+------------------
+_ZN56AvailableIngredientsTest_getAnzahlVorhandeneZutaten_Test8TestBodyEv:
+function _ZN56AvailableIngredientsTest_getAnzahlVorhandeneZutaten_Test8TestBodyEv called 1 returned 100% blocks executed 27%
+        1:   75:TEST_F(AvailableIngredientsTest, getAnzahlVorhandeneZutaten)
+        -:   76:{
+       1*:   77:    EXPECT_EQ(16,zv->getAnzahlVorhandeneZutaten());
+        1:   77-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   77-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   77-block  2
+call    6 returned 1
+branch  7 taken 0 (fallthrough)
+branch  8 taken 1
+    %%%%%:   77-block  3
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:   77-block  4
+call   12 never executed
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+    %%%%%:   77-block  5
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+    %%%%%:   77-block  6
+call   19 never executed
+call   20 never executed
+        1:   77-block  7
+call   21 returned 1
+    $$$$$:   77-block  8
+    $$$$$:   77-block  9
+    $$$$$:   77-block 10
+call   22 never executed
+    $$$$$:   77-block 11
+    $$$$$:   77-block 12
+call   23 never executed
+    $$$$$:   77-block 13
+    $$$$$:   77-block 14
+call   24 never executed
+        1:   78:}
+------------------
+        -:   79:
+        4:   80:TEST_F(AvailableIngredientsTest, FileZutatenDotTxtIsAvailable)
+        -:   81:{
+        -:   82:    // SetUp() redirects the standard cout to another stream (test_cout)
+        -:   83:    // this stream can be read and compared
+        -:   84:    // in TearDown() the normal cout is restored again
+        -:   85:
+        1:   86:    test_cout.clear();
+        1:   87:    zv->ZutatenDateiEinlesen("zutaten.txt");
+       2*:   88:    EXPECT_EQ("Oeffne Zutatendatei", test_cout.str().substr(0, 19));
+        -:   89:    //std::string s = test_cout.str();
+        -:   90:    //std::cout << "!!!" << s.substr(0,31) << "!!!" << std::endl;
+        1:   91:}
+------------------
+_ZN58AvailableIngredientsTest_FileZutatenDotTxtIsAvailable_TestC1Ev:
+function _ZN58AvailableIngredientsTest_FileZutatenDotTxtIsAvailable_TestC1Ev called 1 returned 100% blocks executed 100%
+        1:   80:TEST_F(AvailableIngredientsTest, FileZutatenDotTxtIsAvailable)
+        1:   80-block  0
+call    0 returned 1
+------------------
+_ZN58AvailableIngredientsTest_FileZutatenDotTxtIsAvailable_TestD0Ev:
+function _ZN58AvailableIngredientsTest_FileZutatenDotTxtIsAvailable_TestD0Ev called 1 returned 100% blocks executed 100%
+        1:   80:TEST_F(AvailableIngredientsTest, FileZutatenDotTxtIsAvailable)
+        1:   80-block  0
+call    0 returned 1
+call    1 returned 1
+------------------
+_ZN58AvailableIngredientsTest_FileZutatenDotTxtIsAvailable_TestD1Ev:
+function _ZN58AvailableIngredientsTest_FileZutatenDotTxtIsAvailable_TestD1Ev called 1 returned 100% blocks executed 100%
+        1:   80:TEST_F(AvailableIngredientsTest, FileZutatenDotTxtIsAvailable)
+        1:   80-block  0
+call    0 returned 1
+------------------
+_ZN58AvailableIngredientsTest_FileZutatenDotTxtIsAvailable_Test8TestBodyEv:
+function _ZN58AvailableIngredientsTest_FileZutatenDotTxtIsAvailable_Test8TestBodyEv called 1 returned 100% blocks executed 37%
+        1:   80:TEST_F(AvailableIngredientsTest, FileZutatenDotTxtIsAvailable)
+        -:   81:{
+        -:   82:    // SetUp() redirects the standard cout to another stream (test_cout)
+        -:   83:    // this stream can be read and compared
+        -:   84:    // in TearDown() the normal cout is restored again
+        -:   85:
+        1:   86:    test_cout.clear();
+        1:   86-block  0
+call    0 returned 1
+        1:   87:    zv->ZutatenDateiEinlesen("zutaten.txt");
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   87-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   87-block  1
+call    7 returned 1
+call    8 returned 1
+    $$$$$:   87-block  2
+call    9 never executed
+    $$$$$:   87-block  3
+    $$$$$:   87-block  4
+call   10 never executed
+    $$$$$:   87-block  5
+call   11 never executed
+       2*:   88:    EXPECT_EQ("Oeffne Zutatendatei", test_cout.str().substr(0, 19));
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   88-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   88-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+call    9 returned 1
+call   10 returned 1
+branch 11 taken 0 (fallthrough)
+branch 12 taken 1
+    %%%%%:   88-block  2
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+    %%%%%:   88-block  3
+call   16 never executed
+call   17 never executed
+branch 18 never executed
+branch 19 never executed
+    %%%%%:   88-block  4
+call   20 never executed
+branch 21 never executed
+branch 22 never executed
+    %%%%%:   88-block  5
+call   23 never executed
+call   24 never executed
+        1:   88-block  6
+call   25 returned 1
+    $$$$$:   88-block  7
+    $$$$$:   88-block  8
+    $$$$$:   88-block  9
+call   26 never executed
+    $$$$$:   88-block 10
+    $$$$$:   88-block 11
+call   27 never executed
+    $$$$$:   88-block 12
+    $$$$$:   88-block 13
+call   28 never executed
+        -:   89:    //std::string s = test_cout.str();
+        -:   90:    //std::cout << "!!!" << s.substr(0,31) << "!!!" << std::endl;
+        1:   91:}
+------------------
+        -:   92:
+        4:   93:TEST_F(AvailableIngredientsTest, FileZutatenDotTxtIsNotAvailable)
+        -:   94:{
+        -:   95:    // Test asserts that an exception is thrown and that the type of the exception is the one expected
+        -:   96:    //https://stackoverflow.com/questions/23270078/test-a-specific-exception-type-is-thrown-and-the-exception-has-the-right-propert
+       6*:   97:    EXPECT_THROW(
+        -:   98:    {
+        -:   99:        try
+        -:  100:        {
+        -:  101:            zv->ZutatenDateiEinlesen("xxxx.txt");
+        -:  102:        }
+        -:  103:        catch( std::string e)
+        -:  104:        {
+        -:  105:            std::cout << e << std::endl;
+        -:  106:            EXPECT_EQ("File not found", e.substr(0,14));
+        -:  107:            throw;
+        -:  108:        }
+        1:  109:    }, std::string );
+        1:  110:}
+------------------
+_ZN61AvailableIngredientsTest_FileZutatenDotTxtIsNotAvailable_TestC1Ev:
+function _ZN61AvailableIngredientsTest_FileZutatenDotTxtIsNotAvailable_TestC1Ev called 1 returned 100% blocks executed 100%
+        1:   93:TEST_F(AvailableIngredientsTest, FileZutatenDotTxtIsNotAvailable)
+        1:   93-block  0
+call    0 returned 1
+------------------
+_ZN61AvailableIngredientsTest_FileZutatenDotTxtIsNotAvailable_TestD0Ev:
+function _ZN61AvailableIngredientsTest_FileZutatenDotTxtIsNotAvailable_TestD0Ev called 1 returned 100% blocks executed 100%
+        1:   93:TEST_F(AvailableIngredientsTest, FileZutatenDotTxtIsNotAvailable)
+        1:   93-block  0
+call    0 returned 1
+call    1 returned 1
+------------------
+_ZN61AvailableIngredientsTest_FileZutatenDotTxtIsNotAvailable_TestD1Ev:
+function _ZN61AvailableIngredientsTest_FileZutatenDotTxtIsNotAvailable_TestD1Ev called 1 returned 100% blocks executed 100%
+        1:   93:TEST_F(AvailableIngredientsTest, FileZutatenDotTxtIsNotAvailable)
+        1:   93-block  0
+call    0 returned 1
+------------------
+_ZN61AvailableIngredientsTest_FileZutatenDotTxtIsNotAvailable_Test8TestBodyEv:
+function _ZN61AvailableIngredientsTest_FileZutatenDotTxtIsNotAvailable_Test8TestBodyEv called 1 returned 100% blocks executed 39%
+        1:   93:TEST_F(AvailableIngredientsTest, FileZutatenDotTxtIsNotAvailable)
+        -:   94:{
+        -:   95:    // Test asserts that an exception is thrown and that the type of the exception is the one expected
+        -:   96:    //https://stackoverflow.com/questions/23270078/test-a-specific-exception-type-is-thrown-and-the-exception-has-the-right-propert
+       6*:   97:    EXPECT_THROW(
+        1:   97-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0
+        1:   97-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   97-block  2
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0
+        1:   97-block  3
+call    9 returned 1
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:   97-block  4
+call   13 returned 1
+branch 14 taken 0 (fallthrough)
+branch 15 taken 1 (throw)
+    %%%%%:   97-block  5
+call   16 never executed
+call   17 never executed
+        1:   97-block  6
+branch 18 taken 0 (fallthrough)
+branch 19 taken 1
+    %%%%%:   97-block  7
+call   20 never executed
+branch 21 never executed
+branch 22 never executed
+    %%%%%:   97-block  8
+    %%%%%:   97-block  9
+call   23 never executed
+branch 24 never executed
+branch 25 never executed
+    %%%%%:   97-block 10
+call   26 never executed
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+    %%%%%:   97-block 11
+call   30 never executed
+branch 31 never executed
+branch 32 never executed
+    %%%%%:   97-block 12
+call   33 never executed
+call   34 never executed
+        1:   97-block 13
+call   35 returned 1
+        1:   97-block 14
+        1:   97-block 15
+call   36 returned 1
+        1:   97-block 16
+        1:   97-block 17
+branch 37 taken 0 (fallthrough)
+branch 38 taken 1
+        1:   97-block 18
+call   39 returned 1
+call   40 returned 1
+call   41 returned 1
+branch 42 taken 1 (fallthrough)
+branch 43 taken 0 (throw)
+        1:   97-block 19
+call   44 returned 1
+branch 45 taken 1 (fallthrough)
+branch 46 taken 0 (throw)
+        1:   97-block 20
+call   47 returned 1
+branch 48 taken 1 (fallthrough)
+branch 49 taken 0 (throw)
+        1:   97-block 21
+call   50 returned 1
+branch 51 taken 1 (fallthrough)
+branch 52 taken 0 (throw)
+call   53 returned 1
+branch 54 taken 0 (fallthrough)
+branch 55 taken 1
+    $$$$$:   97-block 22
+call   56 never executed
+branch 57 never executed
+branch 58 never executed
+    $$$$$:   97-block 23
+call   59 never executed
+call   60 never executed
+branch 61 never executed
+branch 62 never executed
+    $$$$$:   97-block 24
+call   63 never executed
+branch 64 never executed
+branch 65 never executed
+    $$$$$:   97-block 25
+call   66 never executed
+call   67 never executed
+        1:   97-block 26
+call   68 returned 1
+call   69 returned 1
+    $$$$$:   97-block 27
+    $$$$$:   97-block 28
+call   70 never executed
+    $$$$$:   97-block 29
+    $$$$$:   97-block 30
+call   71 never executed
+    $$$$$:   97-block 31
+    $$$$$:   97-block 32
+call   72 never executed
+        1:   97-block 33
+call   73 returned 1
+        1:   97-block 34
+call   74 returned 1
+        1:   97-block 35
+branch 75 taken 1
+branch 76 taken 0
+branch 77 taken 0
+        1:   97-block 36
+call   78 returned 1
+call   79 returned 1
+    $$$$$:   97-block 37
+call   80 never executed
+call   81 never executed
+branch 82 never executed
+branch 83 never executed
+    $$$$$:   97-block 38
+call   84 never executed
+branch 85 never executed
+branch 86 never executed
+    $$$$$:   97-block 39
+call   87 never executed
+branch 88 never executed
+branch 89 never executed
+    $$$$$:   97-block 40
+call   90 never executed
+call   91 never executed
+branch 92 never executed
+branch 93 never executed
+    $$$$$:   97-block 41
+call   94 never executed
+call   95 never executed
+branch 96 never executed
+branch 97 never executed
+    $$$$$:   97-block 42
+call   98 never executed
+branch 99 never executed
+branch 100 never executed
+    $$$$$:   97-block 43
+call   101 never executed
+    $$$$$:   97-block 44
+call   102 never executed
+call   103 never executed
+branch 104 never executed
+branch 105 never executed
+    $$$$$:   97-block 45
+call   106 never executed
+branch 107 never executed
+branch 108 never executed
+    $$$$$:   97-block 46
+call   109 never executed
+    $$$$$:   97-block 47
+    $$$$$:   97-block 48
+call   110 never executed
+    $$$$$:   97-block 49
+call   111 never executed
+    $$$$$:   97-block 50
+call   112 never executed
+    $$$$$:   97-block 51
+    $$$$$:   97-block 52
+call   113 never executed
+    $$$$$:   97-block 53
+        -:   98:    {
+        -:   99:        try
+        -:  100:        {
+        -:  101:            zv->ZutatenDateiEinlesen("xxxx.txt");
+        -:  102:        }
+        -:  103:        catch( std::string e)
+        -:  104:        {
+        -:  105:            std::cout << e << std::endl;
+        -:  106:            EXPECT_EQ("File not found", e.substr(0,14));
+        -:  107:            throw;
+        -:  108:        }
+        1:  109:    }, std::string );
+        1:  109-block  0
+call    0 returned 1
+    $$$$$:  109-block  1
+call    1 never executed
+        1:  110:}
+------------------
+        -:  111:
+        4:  112:TEST_F(AvailableIngredientsTest, constructor){
+        1:  113:    zv->zutaten->clear();
+        1:  114:    delete zv;
+        1:  115:    zv = nullptr;
+        -:  116:
+        1:  117:    zv = new AvailableIngredients();
+       1*:  118:    EXPECT_EQ(zv->anzahlDosierer, 16);
+        1:  119:}
+------------------
+_ZN41AvailableIngredientsTest_constructor_TestC1Ev:
+function _ZN41AvailableIngredientsTest_constructor_TestC1Ev called 1 returned 100% blocks executed 100%
+        1:  112:TEST_F(AvailableIngredientsTest, constructor){
+        1:  112-block  0
+call    0 returned 1
+------------------
+_ZN41AvailableIngredientsTest_constructor_TestD0Ev:
+function _ZN41AvailableIngredientsTest_constructor_TestD0Ev called 1 returned 100% blocks executed 100%
+        1:  112:TEST_F(AvailableIngredientsTest, constructor){
+        1:  112-block  0
+call    0 returned 1
+call    1 returned 1
+------------------
+_ZN41AvailableIngredientsTest_constructor_TestD1Ev:
+function _ZN41AvailableIngredientsTest_constructor_TestD1Ev called 1 returned 100% blocks executed 100%
+        1:  112:TEST_F(AvailableIngredientsTest, constructor){
+        1:  112-block  0
+call    0 returned 1
+------------------
+_ZN41AvailableIngredientsTest_constructor_Test8TestBodyEv:
+function _ZN41AvailableIngredientsTest_constructor_Test8TestBodyEv called 1 returned 100% blocks executed 37%
+        1:  112:TEST_F(AvailableIngredientsTest, constructor){
+        1:  113:    zv->zutaten->clear();
+        1:  113-block  0
+call    0 returned 1
+        1:  114:    delete zv;
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        1:  114-block  0
+call    2 returned 1
+        1:  115:    zv = nullptr;
+        -:  116:
+        1:  117:    zv = new AvailableIngredients();
+        1:  117-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:  117-block  1
+call    4 never executed
+       1*:  118:    EXPECT_EQ(zv->anzahlDosierer, 16);
+        1:  118-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  118-block  1
+call    3 returned 1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:  118-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    %%%%%:  118-block  3
+call    9 never executed
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+    %%%%%:  118-block  4
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+    %%%%%:  118-block  5
+call   16 never executed
+call   17 never executed
+        1:  118-block  6
+call   18 returned 1
+    $$$$$:  118-block  7
+    $$$$$:  118-block  8
+call   19 never executed
+    $$$$$:  118-block  9
+    $$$$$:  118-block 10
+call   20 never executed
+    $$$$$:  118-block 11
+    $$$$$:  118-block 12
+call   21 never executed
+        1:  119:}
+------------------
+        -:  120:
+        4:  121:TEST_F(AvailableIngredientsTest, constructor_with_DEBUG_true){
+        1:  122:    zv->zutaten->clear();
+        1:  123:    delete zv;
+        1:  124:    zv = nullptr;
+        -:  125:
+        1:  126:    bool DEBUG = true;
+        1:  127:    zv = new AvailableIngredients(DEBUG);
+       1*:  128:    EXPECT_EQ(zv->anzahlDosierer, 11);
+        1:  129:}
+------------------
+_ZN57AvailableIngredientsTest_constructor_with_DEBUG_true_TestC1Ev:
+function _ZN57AvailableIngredientsTest_constructor_with_DEBUG_true_TestC1Ev called 1 returned 100% blocks executed 100%
+        1:  121:TEST_F(AvailableIngredientsTest, constructor_with_DEBUG_true){
+        1:  121-block  0
+call    0 returned 1
+------------------
+_ZN57AvailableIngredientsTest_constructor_with_DEBUG_true_TestD0Ev:
+function _ZN57AvailableIngredientsTest_constructor_with_DEBUG_true_TestD0Ev called 1 returned 100% blocks executed 100%
+        1:  121:TEST_F(AvailableIngredientsTest, constructor_with_DEBUG_true){
+        1:  121-block  0
+call    0 returned 1
+call    1 returned 1
+------------------
+_ZN57AvailableIngredientsTest_constructor_with_DEBUG_true_TestD1Ev:
+function _ZN57AvailableIngredientsTest_constructor_with_DEBUG_true_TestD1Ev called 1 returned 100% blocks executed 100%
+        1:  121:TEST_F(AvailableIngredientsTest, constructor_with_DEBUG_true){
+        1:  121-block  0
+call    0 returned 1
+------------------
+_ZN57AvailableIngredientsTest_constructor_with_DEBUG_true_Test8TestBodyEv:
+function _ZN57AvailableIngredientsTest_constructor_with_DEBUG_true_Test8TestBodyEv called 1 returned 100% blocks executed 37%
+        1:  121:TEST_F(AvailableIngredientsTest, constructor_with_DEBUG_true){
+        1:  122:    zv->zutaten->clear();
+        1:  122-block  0
+call    0 returned 1
+        1:  123:    delete zv;
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        1:  123-block  0
+call    2 returned 1
+        1:  124:    zv = nullptr;
+        -:  125:
+        1:  126:    bool DEBUG = true;
+        1:  127:    zv = new AvailableIngredients(DEBUG);
+        1:  127-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:  127-block  1
+call    4 never executed
+       1*:  128:    EXPECT_EQ(zv->anzahlDosierer, 11);
+        1:  128-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  128-block  1
+call    3 returned 1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:  128-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    %%%%%:  128-block  3
+call    9 never executed
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+    %%%%%:  128-block  4
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+    %%%%%:  128-block  5
+call   16 never executed
+call   17 never executed
+        1:  128-block  6
+call   18 returned 1
+    $$$$$:  128-block  7
+    $$$$$:  128-block  8
+call   19 never executed
+    $$$$$:  128-block  9
+    $$$$$:  128-block 10
+call   20 never executed
+    $$$$$:  128-block 11
+    $$$$$:  128-block 12
+call   21 never executed
+        1:  129:}
+------------------
+        -:  130:
+        4:  131:TEST_F(AvailableIngredientsTest, constructor_with_DEBUG_false){
+        1:  132:    zv->zutaten->clear();
+        1:  133:    delete zv;
+        1:  134:    zv = nullptr;
+        -:  135:
+        1:  136:    bool DEBUG = false;
+        1:  137:    zv = new AvailableIngredients(DEBUG);
+       1*:  138:    EXPECT_EQ(zv->anzahlDosierer, 16);
+        1:  139:}
+------------------
+_ZN58AvailableIngredientsTest_constructor_with_DEBUG_false_TestC1Ev:
+function _ZN58AvailableIngredientsTest_constructor_with_DEBUG_false_TestC1Ev called 1 returned 100% blocks executed 100%
+        1:  131:TEST_F(AvailableIngredientsTest, constructor_with_DEBUG_false){
+        1:  131-block  0
+call    0 returned 1
+------------------
+_ZN58AvailableIngredientsTest_constructor_with_DEBUG_false_TestD0Ev:
+function _ZN58AvailableIngredientsTest_constructor_with_DEBUG_false_TestD0Ev called 1 returned 100% blocks executed 100%
+        1:  131:TEST_F(AvailableIngredientsTest, constructor_with_DEBUG_false){
+        1:  131-block  0
+call    0 returned 1
+call    1 returned 1
+------------------
+_ZN58AvailableIngredientsTest_constructor_with_DEBUG_false_TestD1Ev:
+function _ZN58AvailableIngredientsTest_constructor_with_DEBUG_false_TestD1Ev called 1 returned 100% blocks executed 100%
+        1:  131:TEST_F(AvailableIngredientsTest, constructor_with_DEBUG_false){
+        1:  131-block  0
+call    0 returned 1
+------------------
+_ZN58AvailableIngredientsTest_constructor_with_DEBUG_false_Test8TestBodyEv:
+function _ZN58AvailableIngredientsTest_constructor_with_DEBUG_false_Test8TestBodyEv called 1 returned 100% blocks executed 37%
+        1:  131:TEST_F(AvailableIngredientsTest, constructor_with_DEBUG_false){
+        1:  132:    zv->zutaten->clear();
+        1:  132-block  0
+call    0 returned 1
+        1:  133:    delete zv;
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        1:  133-block  0
+call    2 returned 1
+        1:  134:    zv = nullptr;
+        -:  135:
+        1:  136:    bool DEBUG = false;
+        1:  137:    zv = new AvailableIngredients(DEBUG);
+        1:  137-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:  137-block  1
+call    4 never executed
+       1*:  138:    EXPECT_EQ(zv->anzahlDosierer, 16);
+        1:  138-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  138-block  1
+call    3 returned 1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:  138-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    %%%%%:  138-block  3
+call    9 never executed
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+    %%%%%:  138-block  4
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+    %%%%%:  138-block  5
+call   16 never executed
+call   17 never executed
+        1:  138-block  6
+call   18 returned 1
+    $$$$$:  138-block  7
+    $$$$$:  138-block  8
+call   19 never executed
+    $$$$$:  138-block  9
+    $$$$$:  138-block 10
+call   20 never executed
+    $$$$$:  138-block 11
+    $$$$$:  138-block 12
+call   21 never executed
+        1:  139:}
+------------------
+        -:  140:
+        -:  141:
+        -:  142:
+        4:  143:TEST_F(AvailableIngredientsTest, DummyZutatenEinfuegen){
+        1:  144:    zv->zutaten->clear();
+       1*:  145:    EXPECT_EQ(0, zv->getAnzahlVorhandeneZutaten());
+        -:  146:
+        1:  147:    zv->DummyZutatenEinfuegen();
+       1*:  148:    EXPECT_EQ(8, zv->getAnzahlVorhandeneZutaten());
+        1:  149:}
+------------------
+_ZN51AvailableIngredientsTest_DummyZutatenEinfuegen_TestC1Ev:
+function _ZN51AvailableIngredientsTest_DummyZutatenEinfuegen_TestC1Ev called 1 returned 100% blocks executed 100%
+        1:  143:TEST_F(AvailableIngredientsTest, DummyZutatenEinfuegen){
+        1:  143-block  0
+call    0 returned 1
+------------------
+_ZN51AvailableIngredientsTest_DummyZutatenEinfuegen_TestD0Ev:
+function _ZN51AvailableIngredientsTest_DummyZutatenEinfuegen_TestD0Ev called 1 returned 100% blocks executed 100%
+        1:  143:TEST_F(AvailableIngredientsTest, DummyZutatenEinfuegen){
+        1:  143-block  0
+call    0 returned 1
+call    1 returned 1
+------------------
+_ZN51AvailableIngredientsTest_DummyZutatenEinfuegen_TestD1Ev:
+function _ZN51AvailableIngredientsTest_DummyZutatenEinfuegen_TestD1Ev called 1 returned 100% blocks executed 100%
+        1:  143:TEST_F(AvailableIngredientsTest, DummyZutatenEinfuegen){
+        1:  143-block  0
+call    0 returned 1
+------------------
+_ZN51AvailableIngredientsTest_DummyZutatenEinfuegen_Test8TestBodyEv:
+function _ZN51AvailableIngredientsTest_DummyZutatenEinfuegen_Test8TestBodyEv called 1 returned 100% blocks executed 26%
+        1:  143:TEST_F(AvailableIngredientsTest, DummyZutatenEinfuegen){
+        1:  144:    zv->zutaten->clear();
+        1:  144-block  0
+call    0 returned 1
+       1*:  145:    EXPECT_EQ(0, zv->getAnzahlVorhandeneZutaten());
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  145-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  145-block  1
+call    6 returned 1
+branch  7 taken 0 (fallthrough)
+branch  8 taken 1
+    %%%%%:  145-block  2
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:  145-block  3
+call   12 never executed
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+    %%%%%:  145-block  4
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+    %%%%%:  145-block  5
+call   19 never executed
+call   20 never executed
+        1:  145-block  6
+call   21 returned 1
+    $$$$$:  145-block  7
+    $$$$$:  145-block  8
+    $$$$$:  145-block  9
+call   22 never executed
+    $$$$$:  145-block 10
+    $$$$$:  145-block 11
+call   23 never executed
+    $$$$$:  145-block 12
+    $$$$$:  145-block 13
+call   24 never executed
+        -:  146:
+        1:  147:    zv->DummyZutatenEinfuegen();
+call    0 returned 1
+       1*:  148:    EXPECT_EQ(8, zv->getAnzahlVorhandeneZutaten());
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  148-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  148-block  1
+call    6 returned 1
+branch  7 taken 0 (fallthrough)
+branch  8 taken 1
+    %%%%%:  148-block  2
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:  148-block  3
+call   12 never executed
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+    %%%%%:  148-block  4
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+    %%%%%:  148-block  5
+call   19 never executed
+call   20 never executed
+        1:  148-block  6
+call   21 returned 1
+    $$$$$:  148-block  7
+    $$$$$:  148-block  8
+    $$$$$:  148-block  9
+call   22 never executed
+    $$$$$:  148-block 10
+    $$$$$:  148-block 11
+call   23 never executed
+    $$$$$:  148-block 12
+    $$$$$:  148-block 13
+call   24 never executed
+        1:  149:}
+------------------
+        -:  150:
+        4:  151:TEST_F(AvailableIngredientsTest, getZutat){
+       17:  152:    for( int i = 0; i < zv->getAnzahlVorhandeneZutaten(); ++i) {
+      16*:  153:        EXPECT_FALSE(zv->getZutat(i).empty());
+        -:  154:    }
+        1:  155:}
+------------------
+_ZN38AvailableIngredientsTest_getZutat_TestC1Ev:
+function _ZN38AvailableIngredientsTest_getZutat_TestC1Ev called 1 returned 100% blocks executed 100%
+        1:  151:TEST_F(AvailableIngredientsTest, getZutat){
+        1:  151-block  0
+call    0 returned 1
+------------------
+_ZN38AvailableIngredientsTest_getZutat_TestD0Ev:
+function _ZN38AvailableIngredientsTest_getZutat_TestD0Ev called 1 returned 100% blocks executed 100%
+        1:  151:TEST_F(AvailableIngredientsTest, getZutat){
+        1:  151-block  0
+call    0 returned 1
+call    1 returned 1
+------------------
+_ZN38AvailableIngredientsTest_getZutat_TestD1Ev:
+function _ZN38AvailableIngredientsTest_getZutat_TestD1Ev called 1 returned 100% blocks executed 100%
+        1:  151:TEST_F(AvailableIngredientsTest, getZutat){
+        1:  151-block  0
+call    0 returned 1
+------------------
+_ZN38AvailableIngredientsTest_getZutat_Test8TestBodyEv:
+function _ZN38AvailableIngredientsTest_getZutat_Test8TestBodyEv called 1 returned 100% blocks executed 39%
+        1:  151:TEST_F(AvailableIngredientsTest, getZutat){
+       17:  152:    for( int i = 0; i < zv->getAnzahlVorhandeneZutaten(); ++i) {
+        1:  152-block  0
+       17:  152-block  1
+call    0 returned 17
+branch  1 taken 16
+branch  2 taken 1 (fallthrough)
+      16*:  153:        EXPECT_FALSE(zv->getZutat(i).empty());
+       16:  153-block  0
+call    0 returned 16
+branch  1 taken 16 (fallthrough)
+branch  2 taken 0 (throw)
+       16:  153-block  1
+call    3 returned 16
+call    4 returned 16
+call    5 returned 16
+call    6 returned 16
+branch  7 taken 0 (fallthrough)
+branch  8 taken 16
+    %%%%%:  153-block  2
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:  153-block  3
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+    %%%%%:  153-block  4
+call   15 never executed
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+    %%%%%:  153-block  5
+call   19 never executed
+branch 20 never executed
+branch 21 never executed
+    %%%%%:  153-block  6
+call   22 never executed
+call   23 never executed
+call   24 never executed
+       16:  153-block  7
+call   25 returned 16
+    $$$$$:  153-block  8
+call   26 never executed
+    $$$$$:  153-block  9
+    $$$$$:  153-block 10
+call   27 never executed
+    $$$$$:  153-block 11
+    $$$$$:  153-block 12
+call   28 never executed
+    $$$$$:  153-block 13
+    $$$$$:  153-block 14
+call   29 never executed
+        -:  154:    }
+        1:  155:}
+        1:  155-block  0
+------------------
+        -:  156:
+        4:  157:TEST_F(AvailableIngredientsTest, copyConstructor){
+        1:  158:    auto* test = new AvailableIngredients(*zv);
+       1*:  159:    EXPECT_EQ(test->anzahlDosierer, 16);
+        1:  160:    bool result = (*(test->zutaten) == *(zv->zutaten));
+       1*:  161:    EXPECT_TRUE(result);
+        1:  162:}
+------------------
+_ZN45AvailableIngredientsTest_copyConstructor_TestC1Ev:
+function _ZN45AvailableIngredientsTest_copyConstructor_TestC1Ev called 1 returned 100% blocks executed 100%
+        1:  157:TEST_F(AvailableIngredientsTest, copyConstructor){
+        1:  157-block  0
+call    0 returned 1
+------------------
+_ZN45AvailableIngredientsTest_copyConstructor_TestD0Ev:
+function _ZN45AvailableIngredientsTest_copyConstructor_TestD0Ev called 1 returned 100% blocks executed 100%
+        1:  157:TEST_F(AvailableIngredientsTest, copyConstructor){
+        1:  157-block  0
+call    0 returned 1
+call    1 returned 1
+------------------
+_ZN45AvailableIngredientsTest_copyConstructor_TestD1Ev:
+function _ZN45AvailableIngredientsTest_copyConstructor_TestD1Ev called 1 returned 100% blocks executed 100%
+        1:  157:TEST_F(AvailableIngredientsTest, copyConstructor){
+        1:  157-block  0
+call    0 returned 1
+------------------
+_ZN45AvailableIngredientsTest_copyConstructor_Test8TestBodyEv:
+function _ZN45AvailableIngredientsTest_copyConstructor_Test8TestBodyEv called 1 returned 100% blocks executed 24%
+        1:  157:TEST_F(AvailableIngredientsTest, copyConstructor){
+        1:  158:    auto* test = new AvailableIngredients(*zv);
+        1:  158-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  158-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+    $$$$$:  158-block  2
+call    6 never executed
+       1*:  159:    EXPECT_EQ(test->anzahlDosierer, 16);
+        1:  159-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  159-block  1
+call    3 returned 1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:  159-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    %%%%%:  159-block  3
+call    9 never executed
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+    %%%%%:  159-block  4
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+    %%%%%:  159-block  5
+call   16 never executed
+call   17 never executed
+        1:  159-block  6
+call   18 returned 1
+    $$$$$:  159-block  7
+    $$$$$:  159-block  8
+call   19 never executed
+    $$$$$:  159-block  9
+    $$$$$:  159-block 10
+call   20 never executed
+    $$$$$:  159-block 11
+    $$$$$:  159-block 12
+call   21 never executed
+        1:  160:    bool result = (*(test->zutaten) == *(zv->zutaten));
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+       1*:  161:    EXPECT_TRUE(result);
+        1:  161-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 0 (fallthrough)
+branch  3 taken 1
+    %%%%%:  161-block  1
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    %%%%%:  161-block  2
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+    %%%%%:  161-block  3
+call   10 never executed
+call   11 never executed
+branch 12 never executed
+branch 13 never executed
+    %%%%%:  161-block  4
+call   14 never executed
+branch 15 never executed
+branch 16 never executed
+    %%%%%:  161-block  5
+call   17 never executed
+call   18 never executed
+call   19 never executed
+        1:  161-block  6
+call   20 returned 1
+    $$$$$:  161-block  7
+call   21 never executed
+    $$$$$:  161-block  8
+    $$$$$:  161-block  9
+call   22 never executed
+    $$$$$:  161-block 10
+    $$$$$:  161-block 11
+call   23 never executed
+    $$$$$:  161-block 12
+    $$$$$:  161-block 13
+call   24 never executed
+        1:  162:}
+------------------
+        -:  163:
+        4:  164:TEST_F(AvailableIngredientsTest, testAsignmentOperator){
+        1:  165:    AvailableIngredients AI;
+        1:  166:    auto& testIfEqual = AI;
+       1*:  167:    EXPECT_EQ(&testIfEqual,&AI);
+        -:  168:
+        2:  169:    AvailableIngredients testIfNotEqual;
+        1:  170:    testIfNotEqual = AI;
+       1*:  171:    EXPECT_EQ(testIfNotEqual.anzahlDosierer, 16);
+        1:  172:    bool result = (*(testIfNotEqual.zutaten) == *(AI.zutaten));
+       1*:  173:    EXPECT_TRUE(result);
+        -:  174:
+        1:  175:}
+------------------
+_ZN51AvailableIngredientsTest_testAsignmentOperator_TestC1Ev:
+function _ZN51AvailableIngredientsTest_testAsignmentOperator_TestC1Ev called 1 returned 100% blocks executed 100%
+        1:  164:TEST_F(AvailableIngredientsTest, testAsignmentOperator){
+        1:  164-block  0
+call    0 returned 1
+------------------
+_ZN51AvailableIngredientsTest_testAsignmentOperator_TestD0Ev:
+function _ZN51AvailableIngredientsTest_testAsignmentOperator_TestD0Ev called 1 returned 100% blocks executed 100%
+        1:  164:TEST_F(AvailableIngredientsTest, testAsignmentOperator){
+        1:  164-block  0
+call    0 returned 1
+call    1 returned 1
+------------------
+_ZN51AvailableIngredientsTest_testAsignmentOperator_TestD1Ev:
+function _ZN51AvailableIngredientsTest_testAsignmentOperator_TestD1Ev called 1 returned 100% blocks executed 100%
+        1:  164:TEST_F(AvailableIngredientsTest, testAsignmentOperator){
+        1:  164-block  0
+call    0 returned 1
+------------------
+_ZN51AvailableIngredientsTest_testAsignmentOperator_Test8TestBodyEv:
+function _ZN51AvailableIngredientsTest_testAsignmentOperator_Test8TestBodyEv called 1 returned 100% blocks executed 24%
+        1:  164:TEST_F(AvailableIngredientsTest, testAsignmentOperator){
+        1:  165:    AvailableIngredients AI;
+        1:  165-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  166:    auto& testIfEqual = AI;
+       1*:  167:    EXPECT_EQ(&testIfEqual,&AI);
+        1:  167-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  167-block  1
+call    3 returned 1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:  167-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    %%%%%:  167-block  3
+call    9 never executed
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+    %%%%%:  167-block  4
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+    %%%%%:  167-block  5
+call   16 never executed
+call   17 never executed
+        1:  167-block  6
+call   18 returned 1
+    $$$$$:  167-block  7
+    $$$$$:  167-block  8
+    $$$$$:  167-block  9
+call   19 never executed
+    $$$$$:  167-block 10
+    $$$$$:  167-block 11
+call   20 never executed
+    $$$$$:  167-block 12
+    $$$$$:  167-block 13
+call   21 never executed
+        -:  168:
+        2:  169:    AvailableIngredients testIfNotEqual;
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+call    3 returned 1
+    $$$$$:  169-block  0
+call    4 never executed
+        1:  170:    testIfNotEqual = AI;
+        1:  170-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+       1*:  171:    EXPECT_EQ(testIfNotEqual.anzahlDosierer, 16);
+        1:  171-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  171-block  1
+call    3 returned 1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:  171-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    %%%%%:  171-block  3
+call    9 never executed
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+    %%%%%:  171-block  4
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+    %%%%%:  171-block  5
+call   16 never executed
+call   17 never executed
+        1:  171-block  6
+call   18 returned 1
+    $$$$$:  171-block  7
+    $$$$$:  171-block  8
+call   19 never executed
+    $$$$$:  171-block  9
+    $$$$$:  171-block 10
+call   20 never executed
+    $$$$$:  171-block 11
+    $$$$$:  171-block 12
+call   21 never executed
+        1:  172:    bool result = (*(testIfNotEqual.zutaten) == *(AI.zutaten));
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+       1*:  173:    EXPECT_TRUE(result);
+        1:  173-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 0 (fallthrough)
+branch  3 taken 1
+    %%%%%:  173-block  1
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    %%%%%:  173-block  2
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+    %%%%%:  173-block  3
+call   10 never executed
+call   11 never executed
+branch 12 never executed
+branch 13 never executed
+    %%%%%:  173-block  4
+call   14 never executed
+branch 15 never executed
+branch 16 never executed
+    %%%%%:  173-block  5
+call   17 never executed
+call   18 never executed
+call   19 never executed
+        1:  173-block  6
+call   20 returned 1
+    $$$$$:  173-block  7
+call   21 never executed
+    $$$$$:  173-block  8
+    $$$$$:  173-block  9
+call   22 never executed
+    $$$$$:  173-block 10
+    $$$$$:  173-block 11
+call   23 never executed
+    $$$$$:  173-block 12
+    $$$$$:  173-block 13
+call   24 never executed
+        -:  174:
+        1:  175:}
+call    0 returned 1
+    $$$$$:  175-block  0
+call    1 never executed
+------------------
+        -:  176:

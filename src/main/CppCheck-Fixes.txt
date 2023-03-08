@@ -1,0 +1,48 @@
+*AvailableIngredients.h
+    - created a copy constructor
+    - in AvailableIngredients.cpp:
+        + in constructor AvailableIngredients::AvailableIngredients(void):
+            boolean value DEBUG is always false so private function void DummyZutatenEinfuegen() will never be called
+            --> solution: _ removed 'const' declaration from private attribute DEBUG and its value
+                          _ initialized the DEBUG boolean with initial value 'false' in .cpp file
+                          _ created another constructor with a boolean DEBUG_Mode as parameter so boolean variable DEBUG can be changed
+        + in copy constructor:
+            add self assignment check
+
+*BarTender.cpp
+    - in Line 27:
+        + changed postfix operator in 'i1++' to prefix operator '++i1'
+
+*BarTender.h
+    - in Line 24:
+        + added 'implicit' to constructor
+
+*CocktailPro.cpp
+    - in Line 48:
+        + the pointers are allocated new memory
+    - in Line 79:
+        + removed condition 'CocktailNo>=0'
+    - in Line 121:
+        + add self assignment check in copy constructor
+
+*CocktailPro.h
+    - added a copy constructor
+    - added a destructor
+
+*DeviceVerwalter.cpp
+    - in Line 52:
+        + changed C-Style cast (Dispenser*) myDevices->at(zutat) to reinterpret_cast<Dispenser*>(myDevices->at(zutat))
+    - in Line 48:
+        + temporarily commented out the line because it remains unused
+    - in Line 46:
+        + temporarily commented out the line because it remains unused
+
+*DeviceVerwalter.h
+    - in Line 30:
+        + added 'implicit' to constructor
+
+*Dispenser.cpp
+    - in Line 6:
+        + function parameter 'inhalt' is now passed by reference
+    - in Line 9:
+        + variable 'inhalt' is now initialized in the initialization list

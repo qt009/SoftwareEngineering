@@ -1,0 +1,413 @@
+        -:    0:Source:/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/test/RecipeStep_Test.cpp
+        -:    0:Graph:/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin/CMakeFiles/CocktailProTest.dir/src/test/RecipeStep_Test.cpp.gcno
+        -:    0:Data:/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin/CMakeFiles/CocktailProTest.dir/src/test/RecipeStep_Test.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#include <limits.h>
+        -:    2:#include "gtest/gtest.h"
+        -:    3:
+        -:    4:// Using this ugly tweak you make all private elements public!
+        -:    5:// But be careful! Some methods are private for good reasons!
+        -:    6:// So please use this trick only if you really need it!
+        -:    7:#define protected public
+        -:    8:#define private public
+        -:    9:#include "RecipeStep.h"
+        -:   10:#undef protected
+        -:   11:#undef private
+        -:   12:
+        -:   13:class RecipeStepTest : public ::testing::Test {
+        -:   14:protected:
+        -:   15:    RecipeStep* r;
+        -:   16:
+function _ZN14RecipeStepTest5SetUpEv called 4 returned 100% blocks executed 59%
+        4:   17:    virtual void SetUp() {
+        4:   18:        r = new RecipeStep();
+        4:   18-block  0
+call    0 returned 4
+branch  1 taken 4 (fallthrough)
+branch  2 taken 0 (throw)
+        4:   18-block  1
+call    3 returned 4
+branch  4 taken 4 (fallthrough)
+branch  5 taken 0 (throw)
+    $$$$$:   18-block  2
+call    6 never executed
+        -:   19:
+        4:   20:        std::string x="";
+        4:   20-block  0
+call    0 returned 4
+call    1 returned 4
+branch  2 taken 4 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   20-block  1
+        4:   21:        r->setZutat(x);
+call    0 returned 4
+branch  1 taken 4 (fallthrough)
+branch  2 taken 0 (throw)
+        4:   22:        r->setMenge(0);
+        4:   22-block  0
+call    0 returned 4
+branch  1 taken 4 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   23:
+        4:   24:    }
+        4:   24-block  0
+call    0 returned 4
+    $$$$$:   24-block  1
+call    1 never executed
+        -:   25:
+function _ZN14RecipeStepTest8TearDownEv called 4 returned 100% blocks executed 100%
+        4:   26:    virtual void TearDown() {
+        -:   27:        // Code here will be called immediately after each test
+        -:   28:        // (right before the destructor).
+        4:   29:        delete r;
+        4:   29-block  0
+branch  0 taken 4 (fallthrough)
+branch  1 taken 0
+        4:   29-block  1
+call    2 returned 4
+call    3 returned 4
+        4:   30:    }
+        -:   31:};
+        -:   32:
+        4:   33:TEST_F(RecipeStepTest,getMengeTest){
+        1:   34:    float neumeng=10.8;
+        1:   35:    r->setMenge(10.8);
+        1:   36:    float meng= r->getMenge();
+       1*:   37:    EXPECT_EQ(meng,neumeng);
+        1:   38:}
+------------------
+_ZN32RecipeStepTest_getMengeTest_TestC1Ev:
+function _ZN32RecipeStepTest_getMengeTest_TestC1Ev called 1 returned 100% blocks executed 100%
+        1:   33:TEST_F(RecipeStepTest,getMengeTest){
+        1:   33-block  0
+call    0 returned 1
+------------------
+_ZN32RecipeStepTest_getMengeTest_TestD0Ev:
+function _ZN32RecipeStepTest_getMengeTest_TestD0Ev called 1 returned 100% blocks executed 100%
+        1:   33:TEST_F(RecipeStepTest,getMengeTest){
+        1:   33-block  0
+call    0 returned 1
+call    1 returned 1
+------------------
+_ZN32RecipeStepTest_getMengeTest_TestD1Ev:
+function _ZN32RecipeStepTest_getMengeTest_TestD1Ev called 1 returned 100% blocks executed 100%
+        1:   33:TEST_F(RecipeStepTest,getMengeTest){
+        1:   33-block  0
+call    0 returned 1
+------------------
+_ZN32RecipeStepTest_getMengeTest_Test8TestBodyEv:
+function _ZN32RecipeStepTest_getMengeTest_Test8TestBodyEv called 1 returned 100% blocks executed 33%
+        1:   33:TEST_F(RecipeStepTest,getMengeTest){
+        1:   34:    float neumeng=10.8;
+        1:   35:    r->setMenge(10.8);
+        1:   35-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   36:    float meng= r->getMenge();
+        1:   36-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+       1*:   37:    EXPECT_EQ(meng,neumeng);
+        1:   37-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   37-block  1
+call    3 returned 1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:   37-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    %%%%%:   37-block  3
+call    9 never executed
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+    %%%%%:   37-block  4
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+    %%%%%:   37-block  5
+call   16 never executed
+call   17 never executed
+        1:   37-block  6
+call   18 returned 1
+    $$$$$:   37-block  7
+call   19 never executed
+    $$$$$:   37-block  8
+    $$$$$:   37-block  9
+call   20 never executed
+    $$$$$:   37-block 10
+    $$$$$:   37-block 11
+call   21 never executed
+        1:   38:}
+------------------
+        -:   39:
+        4:   40:TEST_F(RecipeStepTest,getZutatTest){
+        1:   41:    std::string neuZutat="Cola";
+        1:   42:    r->setZutat(neuZutat);
+        -:   43:
+        1:   44:    std::string testvar=r->getZutat();
+       1*:   45:    EXPECT_EQ(testvar,neuZutat);
+        -:   46:
+        1:   47:}
+------------------
+_ZN32RecipeStepTest_getZutatTest_TestC1Ev:
+function _ZN32RecipeStepTest_getZutatTest_TestC1Ev called 1 returned 100% blocks executed 100%
+        1:   40:TEST_F(RecipeStepTest,getZutatTest){
+        1:   40-block  0
+call    0 returned 1
+------------------
+_ZN32RecipeStepTest_getZutatTest_TestD0Ev:
+function _ZN32RecipeStepTest_getZutatTest_TestD0Ev called 1 returned 100% blocks executed 100%
+        1:   40:TEST_F(RecipeStepTest,getZutatTest){
+        1:   40-block  0
+call    0 returned 1
+call    1 returned 1
+------------------
+_ZN32RecipeStepTest_getZutatTest_TestD1Ev:
+function _ZN32RecipeStepTest_getZutatTest_TestD1Ev called 1 returned 100% blocks executed 100%
+        1:   40:TEST_F(RecipeStepTest,getZutatTest){
+        1:   40-block  0
+call    0 returned 1
+------------------
+_ZN32RecipeStepTest_getZutatTest_Test8TestBodyEv:
+function _ZN32RecipeStepTest_getZutatTest_Test8TestBodyEv called 1 returned 100% blocks executed 36%
+        1:   40:TEST_F(RecipeStepTest,getZutatTest){
+        1:   41:    std::string neuZutat="Cola";
+        1:   41-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   41-block  1
+        1:   42:    r->setZutat(neuZutat);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   43:
+        1:   44:    std::string testvar=r->getZutat();
+        1:   44-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+       1*:   45:    EXPECT_EQ(testvar,neuZutat);
+        1:   45-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   45-block  1
+call    3 returned 1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:   45-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    %%%%%:   45-block  3
+call    9 never executed
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+    %%%%%:   45-block  4
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+    %%%%%:   45-block  5
+call   16 never executed
+call   17 never executed
+        1:   45-block  6
+call   18 returned 1
+    $$$$$:   45-block  7
+call   19 never executed
+    $$$$$:   45-block  8
+    $$$$$:   45-block  9
+call   20 never executed
+    $$$$$:   45-block 10
+    $$$$$:   45-block 11
+call   21 never executed
+        -:   46:
+        1:   47:}
+call    0 returned 1
+call    1 returned 1
+    $$$$$:   47-block  0
+call    2 never executed
+    $$$$$:   47-block  1
+call    3 never executed
+------------------
+        -:   48:
+        4:   49:TEST_F(RecipeStepTest,setZutatTest){
+        -:   50:
+        1:   51:    std::string neuZutat="Cola";
+        1:   52:    r->setZutat(neuZutat);
+        -:   53:
+       2*:   54:    EXPECT_EQ(r->getZutat(),"Cola");
+        -:   55:
+        1:   56:}
+------------------
+_ZN32RecipeStepTest_setZutatTest_TestC1Ev:
+function _ZN32RecipeStepTest_setZutatTest_TestC1Ev called 1 returned 100% blocks executed 100%
+        1:   49:TEST_F(RecipeStepTest,setZutatTest){
+        1:   49-block  0
+call    0 returned 1
+------------------
+_ZN32RecipeStepTest_setZutatTest_TestD0Ev:
+function _ZN32RecipeStepTest_setZutatTest_TestD0Ev called 1 returned 100% blocks executed 100%
+        1:   49:TEST_F(RecipeStepTest,setZutatTest){
+        1:   49-block  0
+call    0 returned 1
+call    1 returned 1
+------------------
+_ZN32RecipeStepTest_setZutatTest_TestD1Ev:
+function _ZN32RecipeStepTest_setZutatTest_TestD1Ev called 1 returned 100% blocks executed 100%
+        1:   49:TEST_F(RecipeStepTest,setZutatTest){
+        1:   49-block  0
+call    0 returned 1
+------------------
+_ZN32RecipeStepTest_setZutatTest_Test8TestBodyEv:
+function _ZN32RecipeStepTest_setZutatTest_Test8TestBodyEv called 1 returned 100% blocks executed 35%
+        1:   49:TEST_F(RecipeStepTest,setZutatTest){
+        -:   50:
+        1:   51:    std::string neuZutat="Cola";
+        1:   51-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   51-block  1
+        1:   52:    r->setZutat(neuZutat);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   53:
+       2*:   54:    EXPECT_EQ(r->getZutat(),"Cola");
+        1:   54-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   54-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+call    6 returned 1
+branch  7 taken 0 (fallthrough)
+branch  8 taken 1
+    %%%%%:   54-block  2
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:   54-block  3
+call   12 never executed
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+    %%%%%:   54-block  4
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+    %%%%%:   54-block  5
+call   19 never executed
+call   20 never executed
+        1:   54-block  6
+call   21 returned 1
+    $$$$$:   54-block  7
+    $$$$$:   54-block  8
+call   22 never executed
+    $$$$$:   54-block  9
+    $$$$$:   54-block 10
+call   23 never executed
+    $$$$$:   54-block 11
+    $$$$$:   54-block 12
+call   24 never executed
+        -:   55:
+        1:   56:}
+call    0 returned 1
+    $$$$$:   56-block  0
+call    1 never executed
+------------------
+        4:   57:TEST_F(RecipeStepTest,setMengeTest){
+        -:   58:
+        1:   59:    float neuMenge=32.7;
+        1:   60:    r->setMenge(neuMenge);
+        -:   61:
+       1*:   62:    EXPECT_EQ(r->getMenge(),neuMenge);
+        -:   63:
+        1:   64:}
+------------------
+_ZN32RecipeStepTest_setMengeTest_TestC1Ev:
+function _ZN32RecipeStepTest_setMengeTest_TestC1Ev called 1 returned 100% blocks executed 100%
+        1:   57:TEST_F(RecipeStepTest,setMengeTest){
+        1:   57-block  0
+call    0 returned 1
+------------------
+_ZN32RecipeStepTest_setMengeTest_TestD0Ev:
+function _ZN32RecipeStepTest_setMengeTest_TestD0Ev called 1 returned 100% blocks executed 100%
+        1:   57:TEST_F(RecipeStepTest,setMengeTest){
+        1:   57-block  0
+call    0 returned 1
+call    1 returned 1
+------------------
+_ZN32RecipeStepTest_setMengeTest_TestD1Ev:
+function _ZN32RecipeStepTest_setMengeTest_TestD1Ev called 1 returned 100% blocks executed 100%
+        1:   57:TEST_F(RecipeStepTest,setMengeTest){
+        1:   57-block  0
+call    0 returned 1
+------------------
+_ZN32RecipeStepTest_setMengeTest_Test8TestBodyEv:
+function _ZN32RecipeStepTest_setMengeTest_Test8TestBodyEv called 1 returned 100% blocks executed 31%
+        1:   57:TEST_F(RecipeStepTest,setMengeTest){
+        -:   58:
+        1:   59:    float neuMenge=32.7;
+        1:   60:    r->setMenge(neuMenge);
+        1:   60-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   61:
+       1*:   62:    EXPECT_EQ(r->getMenge(),neuMenge);
+        1:   62-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   62-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   62-block  2
+call    6 returned 1
+branch  7 taken 0 (fallthrough)
+branch  8 taken 1
+    %%%%%:   62-block  3
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:   62-block  4
+call   12 never executed
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+    %%%%%:   62-block  5
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+    %%%%%:   62-block  6
+call   19 never executed
+call   20 never executed
+        1:   62-block  7
+call   21 returned 1
+    $$$$$:   62-block  8
+    $$$$$:   62-block  9
+call   22 never executed
+    $$$$$:   62-block 10
+    $$$$$:   62-block 11
+call   23 never executed
+    $$$$$:   62-block 12
+    $$$$$:   62-block 13
+call   24 never executed
+        -:   63:
+        1:   64:}
+------------------

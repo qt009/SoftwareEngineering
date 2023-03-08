@@ -1,0 +1,25 @@
+        -:    0:Source:/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/main/Mixer.cpp
+        -:    0:Graph:/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin/CMakeFiles/CocktailProSource.dir/src/main/Mixer.cpp.gcno
+        -:    0:Data:/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin/CMakeFiles/CocktailProSource.dir/src/main/Mixer.cpp.gcda
+        -:    0:Runs:1
+        -:    1://@(#) Mixer.cpp
+        -:    2:
+        -:    3:
+        -:    4:#include "Mixer.h"
+        -:    5:
+function _ZN5MixerC2Ev called 26 returned 100% blocks executed 100%
+       26:    6:Mixer::Mixer() : InternalDevice() {
+       26:    6-block  0
+call    0 returned 26
+        -:    7:
+       26:    8:}
+        -:    9:
+function _ZN5Mixer4doItEf called 27 returned 100% blocks executed 100%
+       27:   10:void Mixer::doIt(float time) {
+       27:   11:    myTimer->sleepInIntervals(time * 1000);
+       27:   11-block  0
+call    0 returned 27
+       27:   12:    std::cout << std::endl;
+call    0 returned 27
+       27:   13:    needsCleaning = true;
+       27:   14:}

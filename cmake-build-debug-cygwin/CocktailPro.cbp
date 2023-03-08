@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="CocktailPro"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\cmake\;CMake Files\cmake-build-debug-cygwin\;CMake Files\cmake-build-debug-cygwin\tinyxml2\;CMake Files\cmake-build-debug-cygwin\tinyxml2\tmp\;CMake Files\cmake-build-debug-cygwin\googletest\;CMake Files\cmake-build-debug-cygwin\googletest\tmp\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="make.exe -j8 -f &quot;/cygdrive/c/Users/PC/OneDrive\ -\ stud.h-da.de/PRAKTIKUM/Software\ Engineering/CocktailPro/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="make.exe -j8 -f &quot;/cygdrive/c/Users/PC/OneDrive\ -\ stud.h-da.de/PRAKTIKUM/Software\ Engineering/CocktailPro/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="make.exe -j8 -f &quot;/cygdrive/c/Users/PC/OneDrive\ -\ stud.h-da.de/PRAKTIKUM/Software\ Engineering/CocktailPro/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="make.exe -j8 -f &quot;/cygdrive/c/Users/PC/OneDrive\ -\ stud.h-da.de/PRAKTIKUM/Software\ Engineering/CocktailPro/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tinyxml2">
+				<Option working_dir="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="make.exe -j8 -f &quot;/cygdrive/c/Users/PC/OneDrive\ -\ stud.h-da.de/PRAKTIKUM/Software\ Engineering/CocktailPro/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 tinyxml2"/>
+					<CompileFile command="make.exe -j8 -f &quot;/cygdrive/c/Users/PC/OneDrive\ -\ stud.h-da.de/PRAKTIKUM/Software\ Engineering/CocktailPro/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="make.exe -j8 -f &quot;/cygdrive/c/Users/PC/OneDrive\ -\ stud.h-da.de/PRAKTIKUM/Software\ Engineering/CocktailPro/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="make.exe -j8 -f &quot;/cygdrive/c/Users/PC/OneDrive\ -\ stud.h-da.de/PRAKTIKUM/Software\ Engineering/CocktailPro/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="CocktailProResource">
+				<Option working_dir="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="make.exe -j8 -f &quot;/cygdrive/c/Users/PC/OneDrive\ -\ stud.h-da.de/PRAKTIKUM/Software\ Engineering/CocktailPro/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 CocktailProResource"/>
+					<CompileFile command="make.exe -j8 -f &quot;/cygdrive/c/Users/PC/OneDrive\ -\ stud.h-da.de/PRAKTIKUM/Software\ Engineering/CocktailPro/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="make.exe -j8 -f &quot;/cygdrive/c/Users/PC/OneDrive\ -\ stud.h-da.de/PRAKTIKUM/Software\ Engineering/CocktailPro/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="make.exe -j8 -f &quot;/cygdrive/c/Users/PC/OneDrive\ -\ stud.h-da.de/PRAKTIKUM/Software\ Engineering/CocktailPro/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="CocktailProSource">
+				<Option output="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin/libCocktailProSource.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/11/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/11/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/11/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/11/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/11/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="make.exe -j8 -f &quot;/cygdrive/c/Users/PC/OneDrive\ -\ stud.h-da.de/PRAKTIKUM/Software\ Engineering/CocktailPro/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 CocktailProSource"/>
+					<CompileFile command="make.exe -j8 -f &quot;/cygdrive/c/Users/PC/OneDrive\ -\ stud.h-da.de/PRAKTIKUM/Software\ Engineering/CocktailPro/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="make.exe -j8 -f &quot;/cygdrive/c/Users/PC/OneDrive\ -\ stud.h-da.de/PRAKTIKUM/Software\ Engineering/CocktailPro/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="make.exe -j8 -f &quot;/cygdrive/c/Users/PC/OneDrive\ -\ stud.h-da.de/PRAKTIKUM/Software\ Engineering/CocktailPro/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="CocktailProSource/fast">
+				<Option output="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin/libCocktailProSource.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/11/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/11/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/11/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/11/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/11/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="make.exe -j8 -f &quot;/cygdrive/c/Users/PC/OneDrive\ -\ stud.h-da.de/PRAKTIKUM/Software\ Engineering/CocktailPro/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 CocktailProSource/fast"/>
+					<CompileFile command="make.exe -j8 -f &quot;/cygdrive/c/Users/PC/OneDrive\ -\ stud.h-da.de/PRAKTIKUM/Software\ Engineering/CocktailPro/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="make.exe -j8 -f &quot;/cygdrive/c/Users/PC/OneDrive\ -\ stud.h-da.de/PRAKTIKUM/Software\ Engineering/CocktailPro/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="make.exe -j8 -f &quot;/cygdrive/c/Users/PC/OneDrive\ -\ stud.h-da.de/PRAKTIKUM/Software\ Engineering/CocktailPro/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="CocktailProDoxygen">
+				<Option working_dir="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="make.exe -j8 -f &quot;/cygdrive/c/Users/PC/OneDrive\ -\ stud.h-da.de/PRAKTIKUM/Software\ Engineering/CocktailPro/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 CocktailProDoxygen"/>
+					<CompileFile command="make.exe -j8 -f &quot;/cygdrive/c/Users/PC/OneDrive\ -\ stud.h-da.de/PRAKTIKUM/Software\ Engineering/CocktailPro/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="make.exe -j8 -f &quot;/cygdrive/c/Users/PC/OneDrive\ -\ stud.h-da.de/PRAKTIKUM/Software\ Engineering/CocktailPro/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="make.exe -j8 -f &quot;/cygdrive/c/Users/PC/OneDrive\ -\ stud.h-da.de/PRAKTIKUM/Software\ Engineering/CocktailPro/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="CocktailProTest">
+				<Option output="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin/CocktailProTest.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/main"/>
+					<Add directory="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin/googletest/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/11/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/11/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/11/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/11/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/11/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="make.exe -j8 -f &quot;/cygdrive/c/Users/PC/OneDrive\ -\ stud.h-da.de/PRAKTIKUM/Software\ Engineering/CocktailPro/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 CocktailProTest"/>
+					<CompileFile command="make.exe -j8 -f &quot;/cygdrive/c/Users/PC/OneDrive\ -\ stud.h-da.de/PRAKTIKUM/Software\ Engineering/CocktailPro/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="make.exe -j8 -f &quot;/cygdrive/c/Users/PC/OneDrive\ -\ stud.h-da.de/PRAKTIKUM/Software\ Engineering/CocktailPro/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="make.exe -j8 -f &quot;/cygdrive/c/Users/PC/OneDrive\ -\ stud.h-da.de/PRAKTIKUM/Software\ Engineering/CocktailPro/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="CocktailProTest/fast">
+				<Option output="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin/CocktailProTest.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/main"/>
+					<Add directory="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin/googletest/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/11/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/11/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/11/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/11/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/11/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="make.exe -j8 -f &quot;/cygdrive/c/Users/PC/OneDrive\ -\ stud.h-da.de/PRAKTIKUM/Software\ Engineering/CocktailPro/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 CocktailProTest/fast"/>
+					<CompileFile command="make.exe -j8 -f &quot;/cygdrive/c/Users/PC/OneDrive\ -\ stud.h-da.de/PRAKTIKUM/Software\ Engineering/CocktailPro/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="make.exe -j8 -f &quot;/cygdrive/c/Users/PC/OneDrive\ -\ stud.h-da.de/PRAKTIKUM/Software\ Engineering/CocktailPro/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="make.exe -j8 -f &quot;/cygdrive/c/Users/PC/OneDrive\ -\ stud.h-da.de/PRAKTIKUM/Software\ Engineering/CocktailPro/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="googletest">
+				<Option working_dir="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="make.exe -j8 -f &quot;/cygdrive/c/Users/PC/OneDrive\ -\ stud.h-da.de/PRAKTIKUM/Software\ Engineering/CocktailPro/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 googletest"/>
+					<CompileFile command="make.exe -j8 -f &quot;/cygdrive/c/Users/PC/OneDrive\ -\ stud.h-da.de/PRAKTIKUM/Software\ Engineering/CocktailPro/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="make.exe -j8 -f &quot;/cygdrive/c/Users/PC/OneDrive\ -\ stud.h-da.de/PRAKTIKUM/Software\ Engineering/CocktailPro/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="make.exe -j8 -f &quot;/cygdrive/c/Users/PC/OneDrive\ -\ stud.h-da.de/PRAKTIKUM/Software\ Engineering/CocktailPro/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="CocktailPro">
+				<Option output="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin/CocktailPro.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/main"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/11/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/11/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/11/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/11/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/11/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="make.exe -j8 -f &quot;/cygdrive/c/Users/PC/OneDrive\ -\ stud.h-da.de/PRAKTIKUM/Software\ Engineering/CocktailPro/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 CocktailPro"/>
+					<CompileFile command="make.exe -j8 -f &quot;/cygdrive/c/Users/PC/OneDrive\ -\ stud.h-da.de/PRAKTIKUM/Software\ Engineering/CocktailPro/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="make.exe -j8 -f &quot;/cygdrive/c/Users/PC/OneDrive\ -\ stud.h-da.de/PRAKTIKUM/Software\ Engineering/CocktailPro/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="make.exe -j8 -f &quot;/cygdrive/c/Users/PC/OneDrive\ -\ stud.h-da.de/PRAKTIKUM/Software\ Engineering/CocktailPro/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="CocktailPro/fast">
+				<Option output="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin/CocktailPro.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/main"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/11/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/11/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/11/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/11/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/11/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="make.exe -j8 -f &quot;/cygdrive/c/Users/PC/OneDrive\ -\ stud.h-da.de/PRAKTIKUM/Software\ Engineering/CocktailPro/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 CocktailPro/fast"/>
+					<CompileFile command="make.exe -j8 -f &quot;/cygdrive/c/Users/PC/OneDrive\ -\ stud.h-da.de/PRAKTIKUM/Software\ Engineering/CocktailPro/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="make.exe -j8 -f &quot;/cygdrive/c/Users/PC/OneDrive\ -\ stud.h-da.de/PRAKTIKUM/Software\ Engineering/CocktailPro/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="make.exe -j8 -f &quot;/cygdrive/c/Users/PC/OneDrive\ -\ stud.h-da.de/PRAKTIKUM/Software\ Engineering/CocktailPro/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test">
+				<Option working_dir="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="make.exe -j8 -f &quot;/cygdrive/c/Users/PC/OneDrive\ -\ stud.h-da.de/PRAKTIKUM/Software\ Engineering/CocktailPro/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 test"/>
+					<CompileFile command="make.exe -j8 -f &quot;/cygdrive/c/Users/PC/OneDrive\ -\ stud.h-da.de/PRAKTIKUM/Software\ Engineering/CocktailPro/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="make.exe -j8 -f &quot;/cygdrive/c/Users/PC/OneDrive\ -\ stud.h-da.de/PRAKTIKUM/Software\ Engineering/CocktailPro/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="make.exe -j8 -f &quot;/cygdrive/c/Users/PC/OneDrive\ -\ stud.h-da.de/PRAKTIKUM/Software\ Engineering/CocktailPro/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="make.exe -j8 -f &quot;/cygdrive/c/Users/PC/OneDrive\ -\ stud.h-da.de/PRAKTIKUM/Software\ Engineering/CocktailPro/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="make.exe -j8 -f &quot;/cygdrive/c/Users/PC/OneDrive\ -\ stud.h-da.de/PRAKTIKUM/Software\ Engineering/CocktailPro/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="make.exe -j8 -f &quot;/cygdrive/c/Users/PC/OneDrive\ -\ stud.h-da.de/PRAKTIKUM/Software\ Engineering/CocktailPro/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="make.exe -j8 -f &quot;/cygdrive/c/Users/PC/OneDrive\ -\ stud.h-da.de/PRAKTIKUM/Software\ Engineering/CocktailPro/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="make.exe -j8 -f &quot;/cygdrive/c/Users/PC/OneDrive\ -\ stud.h-da.de/PRAKTIKUM/Software\ Engineering/CocktailPro/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="make.exe -j8 -f &quot;/cygdrive/c/Users/PC/OneDrive\ -\ stud.h-da.de/PRAKTIKUM/Software\ Engineering/CocktailPro/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="make.exe -j8 -f &quot;/cygdrive/c/Users/PC/OneDrive\ -\ stud.h-da.de/PRAKTIKUM/Software\ Engineering/CocktailPro/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="make.exe -j8 -f &quot;/cygdrive/c/Users/PC/OneDrive\ -\ stud.h-da.de/PRAKTIKUM/Software\ Engineering/CocktailPro/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="make.exe -j8 -f &quot;/cygdrive/c/Users/PC/OneDrive\ -\ stud.h-da.de/PRAKTIKUM/Software\ Engineering/CocktailPro/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="make.exe -j8 -f &quot;/cygdrive/c/Users/PC/OneDrive\ -\ stud.h-da.de/PRAKTIKUM/Software\ Engineering/CocktailPro/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="make.exe -j8 -f &quot;/cygdrive/c/Users/PC/OneDrive\ -\ stud.h-da.de/PRAKTIKUM/Software\ Engineering/CocktailPro/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="make.exe -j8 -f &quot;/cygdrive/c/Users/PC/OneDrive\ -\ stud.h-da.de/PRAKTIKUM/Software\ Engineering/CocktailPro/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="make.exe -j8 -f &quot;/cygdrive/c/Users/PC/OneDrive\ -\ stud.h-da.de/PRAKTIKUM/Software\ Engineering/CocktailPro/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="make.exe -j8 -f &quot;/cygdrive/c/Users/PC/OneDrive\ -\ stud.h-da.de/PRAKTIKUM/Software\ Engineering/CocktailPro/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="make.exe -j8 -f &quot;/cygdrive/c/Users/PC/OneDrive\ -\ stud.h-da.de/PRAKTIKUM/Software\ Engineering/CocktailPro/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="make.exe -j8 -f &quot;/cygdrive/c/Users/PC/OneDrive\ -\ stud.h-da.de/PRAKTIKUM/Software\ Engineering/CocktailPro/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="make.exe -j8 -f &quot;/cygdrive/c/Users/PC/OneDrive\ -\ stud.h-da.de/PRAKTIKUM/Software\ Engineering/CocktailPro/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="make.exe -j8 -f &quot;/cygdrive/c/Users/PC/OneDrive\ -\ stud.h-da.de/PRAKTIKUM/Software\ Engineering/CocktailPro/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="make.exe -j8 -f &quot;/cygdrive/c/Users/PC/OneDrive\ -\ stud.h-da.de/PRAKTIKUM/Software\ Engineering/CocktailPro/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="make.exe -j8 -f &quot;/cygdrive/c/Users/PC/OneDrive\ -\ stud.h-da.de/PRAKTIKUM/Software\ Engineering/CocktailPro/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/strip">
+				<Option working_dir="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="make.exe -j8 -f &quot;/cygdrive/c/Users/PC/OneDrive\ -\ stud.h-da.de/PRAKTIKUM/Software\ Engineering/CocktailPro/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="make.exe -j8 -f &quot;/cygdrive/c/Users/PC/OneDrive\ -\ stud.h-da.de/PRAKTIKUM/Software\ Engineering/CocktailPro/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="make.exe -j8 -f &quot;/cygdrive/c/Users/PC/OneDrive\ -\ stud.h-da.de/PRAKTIKUM/Software\ Engineering/CocktailPro/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="make.exe -j8 -f &quot;/cygdrive/c/Users/PC/OneDrive\ -\ stud.h-da.de/PRAKTIKUM/Software\ Engineering/CocktailPro/cmake-build-debug-cygwin/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/main/AvailableIngredients.cpp">
+			<Option target="CocktailProSource"/>
+			<Option target="CocktailProDoxygen"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/main/AvailableIngredients.h">
+			<Option target="CocktailProSource"/>
+			<Option target="CocktailProDoxygen"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/main/BarTender.cpp">
+			<Option target="CocktailProSource"/>
+			<Option target="CocktailProDoxygen"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/main/BarTender.h">
+			<Option target="CocktailProSource"/>
+			<Option target="CocktailProDoxygen"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/main/CocktailPro.cpp">
+			<Option target="CocktailProSource"/>
+			<Option target="CocktailProDoxygen"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/main/CocktailPro.h">
+			<Option target="CocktailProSource"/>
+			<Option target="CocktailProDoxygen"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/main/DeviceVerwalter.cpp">
+			<Option target="CocktailProSource"/>
+			<Option target="CocktailProDoxygen"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/main/DeviceVerwalter.h">
+			<Option target="CocktailProSource"/>
+			<Option target="CocktailProDoxygen"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/main/Dispenser.cpp">
+			<Option target="CocktailProSource"/>
+			<Option target="CocktailProDoxygen"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/main/Dispenser.h">
+			<Option target="CocktailProSource"/>
+			<Option target="CocktailProDoxygen"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/main/Drainer.cpp">
+			<Option target="CocktailProSource"/>
+			<Option target="CocktailProDoxygen"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/main/Drainer.h">
+			<Option target="CocktailProSource"/>
+			<Option target="CocktailProDoxygen"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/main/InternalDevice.cpp">
+			<Option target="CocktailProSource"/>
+			<Option target="CocktailProDoxygen"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/main/InternalDevice.h">
+			<Option target="CocktailProSource"/>
+			<Option target="CocktailProDoxygen"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/main/Main.cpp">
+			<Option target="CocktailPro"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/main/Masher.cpp">
+			<Option target="CocktailProSource"/>
+			<Option target="CocktailProDoxygen"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/main/Masher.h">
+			<Option target="CocktailProSource"/>
+			<Option target="CocktailProDoxygen"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/main/MixableRecipeBook.cpp">
+			<Option target="CocktailProSource"/>
+			<Option target="CocktailProDoxygen"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/main/MixableRecipeBook.h">
+			<Option target="CocktailProSource"/>
+			<Option target="CocktailProDoxygen"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/main/Mixer.cpp">
+			<Option target="CocktailProSource"/>
+			<Option target="CocktailProDoxygen"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/main/Mixer.h">
+			<Option target="CocktailProSource"/>
+			<Option target="CocktailProDoxygen"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/main/Observer.h">
+			<Option target="CocktailProSource"/>
+			<Option target="CocktailProDoxygen"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/main/Recipe.cpp">
+			<Option target="CocktailProSource"/>
+			<Option target="CocktailProDoxygen"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/main/Recipe.h">
+			<Option target="CocktailProSource"/>
+			<Option target="CocktailProDoxygen"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/main/RecipeBook.cpp">
+			<Option target="CocktailProSource"/>
+			<Option target="CocktailProDoxygen"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/main/RecipeBook.h">
+			<Option target="CocktailProSource"/>
+			<Option target="CocktailProDoxygen"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/main/RecipeStep.cpp">
+			<Option target="CocktailProSource"/>
+			<Option target="CocktailProDoxygen"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/main/RecipeStep.h">
+			<Option target="CocktailProSource"/>
+			<Option target="CocktailProDoxygen"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/main/Shaker.cpp">
+			<Option target="CocktailProSource"/>
+			<Option target="CocktailProDoxygen"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/main/Shaker.h">
+			<Option target="CocktailProSource"/>
+			<Option target="CocktailProDoxygen"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/main/Subject.cpp">
+			<Option target="CocktailProSource"/>
+			<Option target="CocktailProDoxygen"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/main/Subject.h">
+			<Option target="CocktailProSource"/>
+			<Option target="CocktailProDoxygen"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/main/Timer.cpp">
+			<Option target="CocktailProSource"/>
+			<Option target="CocktailProDoxygen"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/main/Timer.h">
+			<Option target="CocktailProSource"/>
+			<Option target="CocktailProDoxygen"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/main/Waage.cpp">
+			<Option target="CocktailProSource"/>
+			<Option target="CocktailProDoxygen"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/main/Waage.h">
+			<Option target="CocktailProSource"/>
+			<Option target="CocktailProDoxygen"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/resources/zutaten.txt">
+			<Option target="CocktailProResource"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/test/AvailableIngredients_Test.cpp">
+			<Option target="CocktailProTest"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/test/BarTender_Test.cpp">
+			<Option target="CocktailProTest"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/test/CocktailPro_Test.cpp">
+			<Option target="CocktailProTest"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/test/DeviceVerwalter_Test.cpp">
+			<Option target="CocktailProTest"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/test/Dispenser_Test.cpp">
+			<Option target="CocktailProTest"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/test/Drainer_Test.cpp">
+			<Option target="CocktailProTest"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/test/InternalDevice_Test.cpp">
+			<Option target="CocktailProTest"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/test/Masher_Test.cpp">
+			<Option target="CocktailProTest"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/test/MixableRecipeBook_Test.cpp">
+			<Option target="CocktailProTest"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/test/Mixer_Test.cpp">
+			<Option target="CocktailProTest"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/test/RecipeBook_Test.cpp">
+			<Option target="CocktailProTest"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/test/RecipeStep_Test.cpp">
+			<Option target="CocktailProTest"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/test/Recipe_Test.cpp">
+			<Option target="CocktailProTest"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/test/Shaker_Test.cpp">
+			<Option target="CocktailProTest"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/test/Subject_Test.cpp">
+			<Option target="CocktailProTest"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/test/Timer_Test.cpp">
+			<Option target="CocktailProTest"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/test/UserStory1.cpp">
+			<Option target="CocktailProTest"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/test/UserStory2.cpp">
+			<Option target="CocktailProTest"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/test/UserStory3.cpp">
+			<Option target="CocktailProTest"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/test/Waage_Test.cpp">
+			<Option target="CocktailProTest"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake/CocktailPro.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake/CocktailProCppCheck.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake/CocktailProDoxygen.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake/CocktailProResource.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake/CocktailProSource.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake/CocktailProTest.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake/Flags.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin/CMakeDoxyfile.in">
+			<Option virtualFolder="CMake Files\cmake-build-debug-cygwin\"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin/CMakeDoxygenDefaults.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug-cygwin\"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin/tinyxml2/tmp/tinyxml2-mkdirs.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug-cygwin\tinyxml2\tmp\"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin/googletest/tmp/googletest-mkdirs.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug-cygwin\googletest\tmp\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

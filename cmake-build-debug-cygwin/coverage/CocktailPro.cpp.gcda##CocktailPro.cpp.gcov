@@ -1,0 +1,512 @@
+        -:    0:Source:/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/main/CocktailPro.cpp
+        -:    0:Graph:/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin/CMakeFiles/CocktailProSource.dir/src/main/CocktailPro.cpp.gcno
+        -:    0:Data:/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin/CMakeFiles/CocktailProSource.dir/src/main/CocktailPro.cpp.gcda
+        -:    0:Runs:1
+        -:    1://@(#) CocktailPro.cpp
+        -:    2:
+        -:    3:
+        -:    4:#include "CocktailPro.h"
+        -:    5:#include <string>
+        -:    6:
+        -:    7://start CocktailPro, let customer choose cocktail and prepare it
+function _ZN11CocktailPro5startEv called 1 returned 100% blocks executed 79%
+        1:    8:void CocktailPro::start() {
+        3:    9:    while (OperatingMode == OpMode::NORMAL) {
+        1:    9-block  0
+        3:    9-block  1
+branch  0 taken 2
+branch  1 taken 1 (fallthrough)
+        2:   10:        int CocktailNo = waehle();
+        2:   10-block  0
+call    0 returned 2
+        2:   11:        if (CocktailNo == INPUT_CANCEL)
+branch  0 taken 1 (fallthrough)
+branch  1 taken 1
+        1:   12:            OperatingMode = OpMode::STOP;
+        1:   12-block  0
+        -:   13:        else {
+        1:   14:            if (isValidNumber(CocktailNo)) {
+        1:   14-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0
+        1:   15:                Recipe *rezeptptr = theMischbaresRezeptbuch->findRecipeWithRecipeNo(CocktailNo);
+        1:   15-block  0
+call    0 returned 1
+        1:   16:                std::cout << rezeptptr->getName() << std::endl;
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   16-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   16-block  1
+call    7 returned 1
+    $$$$$:   16-block  2
+call    8 never executed
+        1:   17:                theCocktailZubereiter->cocktailZubereiten(rezeptptr);
+call    0 returned 1
+        -:   18:            } else {
+    #####:   19:                std::cout << "Falsche Cocktailnummer!" << std::endl;
+    %%%%%:   19-block  0
+call    0 never executed
+call    1 never executed
+        -:   20:            }
+        -:   21:        }
+        -:   22:    }
+        1:   23:}
+        1:   23-block  0
+        -:   24:
+function _ZN11CocktailProC2EiPPc called 1 returned 100% blocks executed 63%
+        1:   25:CocktailPro::CocktailPro(int argc, char **param) {
+        1:   26:    theZutatenVerwalter = new AvailableIngredients;
+        1:   26-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   26-block  1
+call    4 never executed
+        -:   27:
+        1:   28:    theMischbaresRezeptbuch = new MixableRecipeBook(theZutatenVerwalter);
+        1:   28-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   28-block  1
+call    4 never executed
+        1:   29:    theDeviceVerwalter = new DeviceVerwalter(theZutatenVerwalter);
+        1:   29-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   29-block  1
+call    4 never executed
+        1:   30:    theCocktailZubereiter = new BarTender(theDeviceVerwalter);
+        1:   30-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   30-block  1
+call    4 never executed
+        1:   31:    theZutatenVerwalter = new AvailableIngredients;
+        1:   31-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   31-block  1
+call    4 never executed
+        -:   32:
+        1:   33:    Timer *theTimer = Timer::getInstance();
+        1:   33-block  0
+call    0 returned 1
+        1:   34:    if (argc == 2) {// this has to be changed later
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        1:   35:        if (std::string(param[1]) == "-D") {
+        1:   35-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   35-block  1
+call    4 returned 1
+call    5 returned 1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0
+    $$$$$:   35-block  2
+call    9 never executed
+        1:   36:            this->OperatingMode = OpMode::DEMO;
+        1:   37:            theTimer->setTurbo(1000);
+        1:   37-block  0
+call    0 returned 1
+        1:   38:            this->demo(1);
+call    0 returned 1
+        -:   39:        } else { // Parameter => Turbo an
+    #####:   40:            theTimer->setTurbo(10);
+    %%%%%:   40-block  0
+call    0 never executed
+        -:   41:        }
+        -:   42:    }
+        -:   43:    // Mischen
+        1:   44:}
+        1:   44-block  0
+        -:   45:
+function _ZN11CocktailProC2ERKS_ called 3 returned 100% blocks executed 72%
+        3:   46:CocktailPro::CocktailPro(const CocktailPro &copy) {
+        3:   47:    theZutatenVerwalter = new AvailableIngredients;
+        3:   47-block  0
+call    0 returned 3
+call    1 returned 3
+branch  2 taken 3 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   47-block  1
+call    4 never executed
+        3:   48:    *this->theZutatenVerwalter = *copy.theZutatenVerwalter;
+        3:   48-block  0
+call    0 returned 3
+        -:   49:
+        3:   50:    theMischbaresRezeptbuch = new MixableRecipeBook(theZutatenVerwalter);
+call    0 returned 3
+call    1 returned 3
+branch  2 taken 3 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   50-block  0
+call    4 never executed
+        3:   51:    *this->theMischbaresRezeptbuch = *copy.theMischbaresRezeptbuch;
+        3:   51-block  0
+call    0 returned 3
+        -:   52:
+        3:   53:    theDeviceVerwalter = new DeviceVerwalter(theZutatenVerwalter);
+call    0 returned 3
+call    1 returned 3
+branch  2 taken 3 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   53-block  0
+call    4 never executed
+        3:   54:    *this->theDeviceVerwalter = *copy.theDeviceVerwalter;
+        -:   55:
+        3:   56:    theCocktailZubereiter = new BarTender(theDeviceVerwalter);
+        3:   56-block  0
+call    0 returned 3
+call    1 returned 3
+branch  2 taken 3 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   56-block  1
+call    4 never executed
+        3:   57:    *this->theCocktailZubereiter = *copy.theCocktailZubereiter;
+        -:   58:
+        3:   59:    *this->theZutatenVerwalter = *copy.theZutatenVerwalter;
+        3:   59-block  0
+call    0 returned 3
+        -:   60:
+        3:   61:    Timer *theTimer = Timer::getInstance();
+call    0 returned 3
+        3:   62:    OperatingMode = copy.OperatingMode;
+        -:   63:
+        3:   64:    if(OperatingMode == OpMode::DEMO){
+branch  0 taken 2 (fallthrough)
+branch  1 taken 1
+        2:   65:        theTimer->setTurbo(1000);
+        2:   65-block  0
+call    0 returned 2
+        2:   66:        this->demo(1);
+call    0 returned 2
+        -:   67:    } else{
+        1:   68:        theTimer->setTurbo(10);
+        1:   68-block  0
+call    0 returned 1
+        -:   69:    }
+        -:   70:
+        3:   71:}
+        3:   71-block  0
+        -:   72:
+        -:   73://for testing purpose
+function _ZN11CocktailPro4demoEi called 25 returned 100% blocks executed 89%
+       25:   74:bool CocktailPro::demo(int i) {
+       25:   75:    if (i == 0) i = 1;
+       25:   75-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 24
+        1:   75-block  1
+       25:   76:    int CocktailNo = i;
+       25:   77:    int max = theMischbaresRezeptbuch->getNumberOfRecipes();
+       25:   77-block  0
+call    0 returned 25
+       25:   78:    if (CocktailNo <= max) {
+branch  0 taken 21 (fallthrough)
+branch  1 taken 4
+       21:   79:        Recipe *rezeptptr = theMischbaresRezeptbuch->getRecipe(CocktailNo - 1);
+       21:   79-block  0
+call    0 returned 21
+       21:   80:        std::cout << rezeptptr->getName() << std::endl;
+call    0 returned 21
+call    1 returned 21
+branch  2 taken 21 (fallthrough)
+branch  3 taken 0 (throw)
+       21:   80-block  0
+call    4 returned 21
+branch  5 taken 21 (fallthrough)
+branch  6 taken 0 (throw)
+       21:   80-block  1
+call    7 returned 21
+    $$$$$:   80-block  2
+call    8 never executed
+       21:   81:        theCocktailZubereiter->cocktailZubereiten(rezeptptr);
+call    0 returned 21
+       21:   82:        return true;
+        -:   83:    } else {
+        4:   84:        std::cout << "Falsche Cocktailnummer!" << std::endl;
+        4:   84-block  0
+call    0 returned 4
+call    1 returned 4
+        4:   85:        return false;
+        -:   86:    }
+        -:   87:}
+        -:   88:
+        -:   89:
+function _ZN11CocktailPro6waehleEv called 3 returned 100% blocks executed 86%
+        7:   90:int CocktailPro::waehle() {
+        -:   91:    while (true) {
+        7:   92:        std::cout << "********** Mischbare Rezepte **********" << std::endl;
+        7:   92-block  0
+call    0 returned 7
+branch  1 taken 7 (fallthrough)
+branch  2 taken 0 (throw)
+        7:   92-block  1
+call    3 returned 7
+branch  4 taken 7 (fallthrough)
+branch  5 taken 0 (throw)
+        7:   93:        theMischbaresRezeptbuch->browse();
+        7:   93-block  0
+call    0 returned 7
+branch  1 taken 7 (fallthrough)
+branch  2 taken 0 (throw)
+        7:   94:        std::cout << "Was haetten Sie denn gern? (-1 zum Verlassen)" << std::endl;
+        7:   94-block  0
+call    0 returned 7
+branch  1 taken 7 (fallthrough)
+branch  2 taken 0 (throw)
+        7:   94-block  1
+call    3 returned 7
+branch  4 taken 7 (fallthrough)
+branch  5 taken 0 (throw)
+        -:   95:
+        7:   96:        std::string eingabe = "";
+        7:   96-block  0
+call    0 returned 7
+call    1 returned 7
+branch  2 taken 7 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   96-block  1
+        -:   97:
+        -:   98:        //cin.ignore();
+        7:   99:        std::cin >> eingabe;
+call    0 returned 7
+branch  1 taken 7 (fallthrough)
+branch  2 taken 0 (throw)
+        -:  100:
+        7:  101:        int zahl = atoi(eingabe.c_str());
+        7:  101-block  0
+call    0 returned 7
+call    1 returned 7
+        7:  102:        int max = theMischbaresRezeptbuch->getNumberOfRecipes();
+call    0 returned 7
+branch  1 taken 7 (fallthrough)
+branch  2 taken 0 (throw)
+        -:  103:
+        7:  104:        if (isValidNumber(zahl)) {
+        7:  104-block  0
+call    0 returned 7
+branch  1 taken 7 (fallthrough)
+branch  2 taken 0 (throw)
+        7:  104-block  1
+branch  3 taken 3 (fallthrough)
+branch  4 taken 4
+        6:  105:            return zahl;
+        3:  105-block  0
+        3:  105-block  1
+        -:  106:        } else {
+        -:  107:            //std::system("clear");
+        4:  108:            std::cout << "MEEEP! Too many fingers on keyboard error!" << std::endl;
+        4:  108-block  0
+call    0 returned 4
+branch  1 taken 4 (fallthrough)
+branch  2 taken 0 (throw)
+        4:  108-block  1
+call    3 returned 4
+branch  4 taken 4 (fallthrough)
+branch  5 taken 0 (throw)
+        4:  109:            std::cout << "Ihre Eingabe: " << eingabe << " war nicht zwischen 1 und " << max << "!"
+        4:  109-block  0
+call    0 returned 4
+branch  1 taken 4 (fallthrough)
+branch  2 taken 0 (throw)
+        4:  109-block  1
+call    3 returned 4
+branch  4 taken 4 (fallthrough)
+branch  5 taken 0 (throw)
+        4:  109-block  2
+call    6 returned 4
+branch  7 taken 4 (fallthrough)
+branch  8 taken 0 (throw)
+        4:  109-block  3
+call    9 returned 4
+branch 10 taken 4 (fallthrough)
+branch 11 taken 0 (throw)
+        4:  109-block  4
+call   12 returned 4
+branch 13 taken 4 (fallthrough)
+branch 14 taken 0 (throw)
+        4:  110:                      << std::endl;
+        4:  110-block  0
+call    0 returned 4
+branch  1 taken 4 (fallthrough)
+branch  2 taken 0 (throw)
+        -:  111:        }
+       11:  112:    }
+        4:  112-block  0
+        7:  112-block  1
+call    0 returned 7
+branch  1 taken 4 (fallthrough)
+branch  2 taken 3
+        4:  112-block  2
+    $$$$$:  112-block  3
+call    3 never executed
+        -:  113:}
+        -:  114:
+function _ZNK11CocktailPro13isValidNumberEi called 11 returned 100% blocks executed 100%
+       11:  115:bool CocktailPro::isValidNumber(int zahl) const {
+       61:  116:    for(auto rcp : theMischbaresRezeptbuch->getMRecipe()){
+       11:  116-block  0
+call    0 returned 11
+branch  1 taken 11 (fallthrough)
+branch  2 taken 0 (throw)
+       11:  116-block  1
+call    3 returned 11
+call    4 returned 11
+       53:  116-block  2
+call    5 returned 53
+       50:  116-block  3
+call    6 returned 50
+       61:  116-block  4
+call    7 returned 61
+branch  8 taken 53
+branch  9 taken 8 (fallthrough)
+       53:  117:        if (rcp->getRecipeNo() == zahl) return true;
+call    0 returned 53
+branch  1 taken 53 (fallthrough)
+branch  2 taken 0 (throw)
+       53:  117-block  0
+branch  3 taken 3 (fallthrough)
+branch  4 taken 50
+        3:  117-block  1
+        -:  118:    }
+        8:  119:    if(zahl == INPUT_CANCEL) return true;
+        8:  119-block  0
+branch  0 taken 2 (fallthrough)
+branch  1 taken 6
+        2:  119-block  1
+        6:  120:    return false;
+        6:  120-block  0
+        -:  121:}
+        -:  122:
+function _ZN11CocktailProD2Ev called 12 returned 100% blocks executed 100%
+       12:  123:CocktailPro::~CocktailPro() {
+       12:  124:    delete theCocktailZubereiter;
+       12:  124-block  0
+branch  0 taken 12 (fallthrough)
+branch  1 taken 0
+       12:  124-block  1
+call    2 returned 12
+       12:  125:    delete theDeviceVerwalter;
+       12:  125-block  0
+branch  0 taken 12 (fallthrough)
+branch  1 taken 0
+       12:  125-block  1
+call    2 returned 12
+       12:  126:    delete theZutatenVerwalter;
+       12:  126-block  0
+branch  0 taken 12 (fallthrough)
+branch  1 taken 0
+       12:  126-block  1
+call    2 returned 12
+       12:  127:}
+        -:  128:
+function _ZN11CocktailProaSERKS_ called 1 returned 100% blocks executed 91%
+        1:  129:CocktailPro &CocktailPro::operator= (const CocktailPro &cpy) {
+        1:  130:    if(this != &cpy) {
+        1:  130-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        1:  131:        auto *tmp = new CocktailPro(cpy);
+        1:  131-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:  131-block  1
+call    4 never executed
+        1:  132:        std::swap(this->theCocktailZubereiter, tmp->theCocktailZubereiter);
+        1:  132-block  0
+call    0 returned 1
+        1:  133:        std::swap(this->theZutatenVerwalter, tmp->theZutatenVerwalter);
+call    0 returned 1
+        1:  134:        std::swap(this->theDeviceVerwalter, tmp->theDeviceVerwalter);
+call    0 returned 1
+        1:  135:        std::swap(this->theMischbaresRezeptbuch, tmp->theMischbaresRezeptbuch);
+call    0 returned 1
+        -:  136:    }
+        1:  137:    return *this;
+        1:  137-block  0
+        1:  137-block  1
+        -:  138:}
+        -:  139:
+function _ZN11CocktailProC2Eb called 11 returned 100% blocks executed 64%
+       11:  140:CocktailPro::CocktailPro(bool demo) {
+       11:  141:    theZutatenVerwalter = new AvailableIngredients;
+       11:  141-block  0
+call    0 returned 11
+call    1 returned 11
+branch  2 taken 11 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:  141-block  1
+call    4 never executed
+        -:  142:
+       11:  143:    theMischbaresRezeptbuch = new MixableRecipeBook(theZutatenVerwalter);
+       11:  143-block  0
+call    0 returned 11
+call    1 returned 11
+branch  2 taken 11 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:  143-block  1
+call    4 never executed
+       11:  144:    theDeviceVerwalter = new DeviceVerwalter(theZutatenVerwalter);
+       11:  144-block  0
+call    0 returned 11
+call    1 returned 11
+branch  2 taken 11 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:  144-block  1
+call    4 never executed
+       11:  145:    theCocktailZubereiter = new BarTender(theDeviceVerwalter);
+       11:  145-block  0
+call    0 returned 11
+call    1 returned 11
+branch  2 taken 11 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:  145-block  1
+call    4 never executed
+       11:  146:    theZutatenVerwalter = new AvailableIngredients;
+       11:  146-block  0
+call    0 returned 11
+call    1 returned 11
+branch  2 taken 11 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:  146-block  1
+call    4 never executed
+        -:  147:
+       11:  148:    Timer *theTimer = Timer::getInstance();
+       11:  148-block  0
+call    0 returned 11
+       11:  149:    if (demo) {// this has to be changed later
+branch  0 taken 11 (fallthrough)
+branch  1 taken 0
+       11:  150:        this->OperatingMode = OpMode::DEMO;
+       11:  151:        theTimer->setTurbo(1000);
+       11:  151-block  0
+call    0 returned 11
+       11:  152:        this->demo(1);
+call    0 returned 11
+        -:  153:    }
+       11:  154:}
+       11:  154-block  0
+        -:  155:
+        -:  156:

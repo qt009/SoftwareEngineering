@@ -1,0 +1,278 @@
+        -:    0:Source:/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/main/DeviceVerwalter.cpp
+        -:    0:Graph:/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin/CMakeFiles/CocktailProSource.dir/src/main/DeviceVerwalter.cpp.gcno
+        -:    0:Data:/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin/CMakeFiles/CocktailProSource.dir/src/main/DeviceVerwalter.cpp.gcda
+        -:    0:Runs:1
+        -:    1://@(#) DeviceVerwalter.cpp
+        -:    2:
+        -:    3:
+        -:    4:#include "DeviceVerwalter.h"
+        -:    5:
+function _ZN15DeviceVerwalterC2EP20AvailableIngredients called 22 returned 100% blocks executed 100%
+       22:    6:DeviceVerwalter::DeviceVerwalter(AvailableIngredients * zv) {
+       22:    7:    setZutatenVerwalter(zv);
+       22:    7-block  0
+call    0 returned 22
+       22:    8:    this->createDevices();
+call    0 returned 22
+       22:    9:}
+        -:   10:
+function _ZN15DeviceVerwalter13createDevicesEv called 24 returned 100% blocks executed 61%
+       24:   11:void DeviceVerwalter::createDevices() {
+        -:   12:    /**
+        -:   13:     * create internal devices
+        -:   14:     */
+       24:   15:    theWaage = new Waage();
+       24:   15-block  0
+call    0 returned 24
+branch  1 taken 24 (fallthrough)
+branch  2 taken 0 (throw)
+       24:   15-block  1
+call    3 returned 24
+branch  4 taken 24 (fallthrough)
+branch  5 taken 0 (throw)
+    $$$$$:   15-block  2
+call    6 never executed
+       24:   16:    myDevices = new std::map<std::string, InternalDevice *>;
+       24:   16-block  0
+call    0 returned 24
+branch  1 taken 24 (fallthrough)
+branch  2 taken 0 (throw)
+       24:   16-block  1
+call    3 returned 24
+        -:   17:
+       24:   18:    myEntleerer = new Drainer(25, 1000, theWaage);
+call    0 returned 24
+branch  1 taken 24 (fallthrough)
+branch  2 taken 0 (throw)
+       24:   18-block  0
+call    3 returned 24
+branch  4 taken 24 (fallthrough)
+branch  5 taken 0 (throw)
+    $$$$$:   18-block  1
+call    6 never executed
+       24:   19:    myDevices->insert(std::make_pair("Entleeren", myEntleerer));
+       24:   19-block  0
+call    0 returned 24
+branch  1 taken 24 (fallthrough)
+branch  2 taken 0 (throw)
+       24:   19-block  1
+call    3 returned 24
+branch  4 taken 24 (fallthrough)
+branch  5 taken 0 (throw)
+    $$$$$:   19-block  2
+        -:   20:
+       24:   21:    myStampfer = new Masher();
+       24:   21-block  0
+call    0 returned 24
+branch  1 taken 24 (fallthrough)
+branch  2 taken 0 (throw)
+       24:   21-block  1
+call    3 returned 24
+branch  4 taken 24 (fallthrough)
+branch  5 taken 0 (throw)
+    $$$$$:   21-block  2
+call    6 never executed
+       24:   22:    myDevices->insert(std::make_pair("Stampfen", myStampfer));
+       24:   22-block  0
+call    0 returned 24
+branch  1 taken 24 (fallthrough)
+branch  2 taken 0 (throw)
+       24:   22-block  1
+call    3 returned 24
+branch  4 taken 24 (fallthrough)
+branch  5 taken 0 (throw)
+    $$$$$:   22-block  2
+        -:   23:
+       24:   24:    mySchuettler = new Shaker();
+       24:   24-block  0
+call    0 returned 24
+branch  1 taken 24 (fallthrough)
+branch  2 taken 0 (throw)
+       24:   24-block  1
+call    3 returned 24
+branch  4 taken 24 (fallthrough)
+branch  5 taken 0 (throw)
+    $$$$$:   24-block  2
+call    6 never executed
+       24:   25:    myDevices->insert(std::make_pair("Schuetteln", mySchuettler));
+       24:   25-block  0
+call    0 returned 24
+branch  1 taken 24 (fallthrough)
+branch  2 taken 0 (throw)
+       24:   25-block  1
+call    3 returned 24
+branch  4 taken 24 (fallthrough)
+branch  5 taken 0 (throw)
+    $$$$$:   25-block  2
+        -:   26:
+       24:   27:    myMixer = new Mixer();
+       24:   27-block  0
+call    0 returned 24
+branch  1 taken 24 (fallthrough)
+branch  2 taken 0 (throw)
+       24:   27-block  1
+call    3 returned 24
+branch  4 taken 24 (fallthrough)
+branch  5 taken 0 (throw)
+    $$$$$:   27-block  2
+call    6 never executed
+       24:   28:    myDevices->insert(std::make_pair("Mischen", myMixer));
+       24:   28-block  0
+call    0 returned 24
+branch  1 taken 24 (fallthrough)
+branch  2 taken 0 (throw)
+       24:   28-block  1
+call    3 returned 24
+branch  4 taken 24 (fallthrough)
+branch  5 taken 0 (throw)
+    $$$$$:   28-block  2
+        -:   29:
+        -:   30:    /**
+        -:   31:     * create dispenser internal devices based on the currently available ingredients
+        -:   32:     */
+       24:   33:    std::string myZutat;
+       24:   33-block  0
+call    0 returned 24
+      408:   34:    for (int i = myZutatenVerwalter->getAnzahlVorhandeneZutaten() - 1; i >= 0; i--) {
+call    0 returned 24
+branch  1 taken 24 (fallthrough)
+branch  2 taken 0 (throw)
+       24:   34-block  0
+      384:   34-block  1
+      408:   34-block  2
+branch  3 taken 384
+branch  4 taken 24 (fallthrough)
+      384:   35:        myZutat=myZutatenVerwalter->getZutat(i);
+      384:   35-block  0
+call    0 returned 384
+branch  1 taken 384 (fallthrough)
+branch  2 taken 0 (throw)
+      384:   35-block  1
+call    3 returned 384
+call    4 returned 384
+      384:   36:        if (myZutat == "Eis")
+call    0 returned 384
+branch  1 taken 24 (fallthrough)
+branch  2 taken 360
+       24:   37:            myDevices->insert(std::make_pair(myZutat, new Dispenser(20, 1000, myZutat, theWaage)));
+       24:   37-block  0
+call    0 returned 24
+branch  1 taken 24 (fallthrough)
+branch  2 taken 0 (throw)
+       24:   37-block  1
+call    3 returned 24
+branch  4 taken 24 (fallthrough)
+branch  5 taken 0 (throw)
+       24:   37-block  2
+call    6 returned 24
+branch  7 taken 24 (fallthrough)
+branch  8 taken 0 (throw)
+       24:   37-block  3
+call    9 returned 24
+branch 10 taken 24 (fallthrough)
+branch 11 taken 0 (throw)
+       24:   37-block  4
+call   12 returned 24
+    $$$$$:   37-block  5
+call   13 never executed
+    $$$$$:   37-block  6
+call   14 never executed
+    $$$$$:   37-block  7
+    $$$$$:   37-block  8
+      360:   38:        else if (myZutat == "Limettenstuecke")
+      360:   38-block  0
+call    0 returned 360
+branch  1 taken 24 (fallthrough)
+branch  2 taken 336
+       24:   39:            myDevices->insert(std::make_pair(myZutat, new Dispenser(10, 1000, myZutat, theWaage)));
+       24:   39-block  0
+call    0 returned 24
+branch  1 taken 24 (fallthrough)
+branch  2 taken 0 (throw)
+       24:   39-block  1
+call    3 returned 24
+branch  4 taken 24 (fallthrough)
+branch  5 taken 0 (throw)
+       24:   39-block  2
+call    6 returned 24
+branch  7 taken 24 (fallthrough)
+branch  8 taken 0 (throw)
+       24:   39-block  3
+call    9 returned 24
+branch 10 taken 24 (fallthrough)
+branch 11 taken 0 (throw)
+       24:   39-block  4
+call   12 returned 24
+    $$$$$:   39-block  5
+call   13 never executed
+    $$$$$:   39-block  6
+call   14 never executed
+    $$$$$:   39-block  7
+    $$$$$:   39-block  8
+        -:   40:        else
+      336:   41:            myDevices->insert(std::make_pair(myZutat, new Dispenser(1, 250, myZutat, theWaage)));
+      336:   41-block  0
+call    0 returned 336
+branch  1 taken 336 (fallthrough)
+branch  2 taken 0 (throw)
+      336:   41-block  1
+call    3 returned 336
+branch  4 taken 336 (fallthrough)
+branch  5 taken 0 (throw)
+      336:   41-block  2
+call    6 returned 336
+branch  7 taken 336 (fallthrough)
+branch  8 taken 0 (throw)
+      336:   41-block  3
+call    9 returned 336
+branch 10 taken 336 (fallthrough)
+branch 11 taken 0 (throw)
+      336:   41-block  4
+call   12 returned 336
+    $$$$$:   41-block  5
+call   13 never executed
+    $$$$$:   41-block  6
+call   14 never executed
+    $$$$$:   41-block  7
+    $$$$$:   41-block  8
+        -:   42:    }
+       24:   43:}
+       24:   43-block  0
+call    0 returned 24
+    $$$$$:   43-block  1
+call    1 never executed
+        -:   44:
+function _ZN15DeviceVerwalter19setZutatenVerwalterEP20AvailableIngredients called 23 returned 100% blocks executed 100%
+       23:   45:void DeviceVerwalter::setZutatenVerwalter(AvailableIngredients * zv) {
+       23:   46:    myZutatenVerwalter = zv;
+       23:   47:}
+        -:   48:
+        -:   49://prepare cocktail with the given recipe and amount
+function _ZN15DeviceVerwalter23rezeptSchrittZubereitenESsf called 161 returned 100% blocks executed 100%
+      161:   50:void DeviceVerwalter::rezeptSchrittZubereiten(std::string zutat, float menge) {
+        -:   51:
+        -:   52:    //std::map<std::string, InternalDevice *>::iterator tmpDevice;
+        -:   53:
+        -:   54:    //tmpDevice = myDevices->find(zutat);
+        -:   55:
+      161:   56:    if (zutat == "Limettenstuecke") {
+      161:   56-block  0
+call    0 returned 161
+branch  1 taken 21 (fallthrough)
+branch  2 taken 140
+        -:   57:        // Der Kunde will Limetten ja unbedingt nach Stueck und nicht nach Gewicht abmessen...
+       21:   58:        int stckProZeit = reinterpret_cast<Dispenser*>(myDevices->at(zutat))->getStueckProZeit();
+       21:   58-block  0
+call    0 returned 21
+call    1 returned 21
+       21:   59:        myDevices->at(zutat)->doIt(menge * stckProZeit);
+call    0 returned 21
+call    1 returned 21
+        -:   60:    } else {
+      140:   61:        myDevices->at(zutat)->doIt(menge);
+      140:   61-block  0
+call    0 returned 140
+call    1 returned 140
+        -:   62:    }
+      161:   63:}
+        -:   64:

@@ -1,0 +1,691 @@
+        -:    0:Source:/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/main/AvailableIngredients.cpp
+        -:    0:Graph:/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin/CMakeFiles/CocktailProSource.dir/src/main/AvailableIngredients.cpp.gcno
+        -:    0:Data:/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin/CMakeFiles/CocktailProSource.dir/src/main/AvailableIngredients.cpp.gcda
+        -:    0:Runs:1
+        -:    1://@(#) AvailableIngredients.cpp
+        -:    2:
+        -:    3:#include "AvailableIngredients.h"
+        -:    4://
+        -:    5:const std::string ZutatenFile = "zutaten.txt";
+        -:    6:bool AvailableIngredients::DEBUG = false;
+function _ZN20AvailableIngredientsC2Ev called 50 returned 100% blocks executed 55%
+       50:    7:AvailableIngredients::AvailableIngredients(void) {
+       50:    8:    zutaten = new std::vector<std::string>;
+       50:    8-block  0
+call    0 returned 50
+call    1 returned 50
+        -:    9:
+        -:   10:    // int einlesen(list<string>* zutaten, std::string FileName)
+        -:   11:    // Stream anlegen
+        -:   12:
+        -:   13:
+       50:   14:    ZutatenDateiEinlesen(ZutatenFile);
+call    0 returned 50
+call    1 returned 50
+branch  2 taken 50 (fallthrough)
+branch  3 taken 0 (throw)
+       50:   14-block  0
+call    4 returned 50
+    $$$$$:   14-block  1
+call    5 never executed
+    $$$$$:   14-block  2
+call    6 never executed
+        -:   15:
+        -:   16:
+       50:   17:    browse();
+call    0 returned 50
+        -:   18:
+       50:   19:    zutaten->push_back("Mischen");
+call    0 returned 50
+call    1 returned 50
+branch  2 taken 50 (fallthrough)
+branch  3 taken 0 (throw)
+       50:   19-block  0
+call    4 returned 50
+branch  5 taken 50 (fallthrough)
+branch  6 taken 0 (throw)
+       50:   19-block  1
+call    7 returned 50
+call    8 returned 50
+    $$$$$:   19-block  2
+call    9 never executed
+    $$$$$:   19-block  3
+    $$$$$:   19-block  4
+call   10 never executed
+    $$$$$:   19-block  5
+call   11 never executed
+       50:   20:    zutaten->push_back("Stampfen");
+call    0 returned 50
+call    1 returned 50
+branch  2 taken 50 (fallthrough)
+branch  3 taken 0 (throw)
+       50:   20-block  0
+call    4 returned 50
+branch  5 taken 50 (fallthrough)
+branch  6 taken 0 (throw)
+       50:   20-block  1
+call    7 returned 50
+call    8 returned 50
+    $$$$$:   20-block  2
+call    9 never executed
+    $$$$$:   20-block  3
+    $$$$$:   20-block  4
+call   10 never executed
+    $$$$$:   20-block  5
+call   11 never executed
+       50:   21:    zutaten->push_back("Schuetteln");
+call    0 returned 50
+call    1 returned 50
+branch  2 taken 50 (fallthrough)
+branch  3 taken 0 (throw)
+       50:   21-block  0
+call    4 returned 50
+branch  5 taken 50 (fallthrough)
+branch  6 taken 0 (throw)
+       50:   21-block  1
+call    7 returned 50
+call    8 returned 50
+    $$$$$:   21-block  2
+call    9 never executed
+    $$$$$:   21-block  3
+    $$$$$:   21-block  4
+call   10 never executed
+        -:   22:
+       50:   23:    anzahlDosierer = zutaten->size();
+call    0 returned 50
+        -:   24:
+       50:   25:}
+        -:   26:
+function _ZN20AvailableIngredientsC2Eb called 2 returned 100% blocks executed 55%
+        2:   27:AvailableIngredients::AvailableIngredients(bool DEBUG_Mode) {
+        -:   28:
+        2:   29:    DEBUG = DEBUG_Mode;
+        -:   30:    // int einlesen(list<string>* zutaten, std::string FileName)
+        -:   31:    // Stream anlegen
+        -:   32:
+        2:   33:    if (DEBUG) {
+        2:   33-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 1
+        1:   34:        zutaten = new std::vector<std::string>;
+        1:   34-block  0
+call    0 returned 1
+call    1 returned 1
+        1:   35:        DummyZutatenEinfuegen();
+call    0 returned 1
+        1:   36:        browse();
+call    0 returned 1
+        -:   37:
+        1:   38:        zutaten->push_back("Mischen");
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   38-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   38-block  1
+call    7 returned 1
+call    8 returned 1
+    $$$$$:   38-block  2
+call    9 never executed
+    $$$$$:   38-block  3
+    $$$$$:   38-block  4
+call   10 never executed
+    $$$$$:   38-block  5
+call   11 never executed
+        1:   39:        zutaten->push_back("Stampfen");
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   39-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   39-block  1
+call    7 returned 1
+call    8 returned 1
+    $$$$$:   39-block  2
+call    9 never executed
+    $$$$$:   39-block  3
+    $$$$$:   39-block  4
+call   10 never executed
+    $$$$$:   39-block  5
+call   11 never executed
+        1:   40:        zutaten->push_back("Schuetteln");
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   40-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   40-block  1
+call    7 returned 1
+call    8 returned 1
+    $$$$$:   40-block  2
+call    9 never executed
+    $$$$$:   40-block  3
+    $$$$$:   40-block  4
+call   10 never executed
+    $$$$$:   40-block  5
+call   11 never executed
+        -:   41:
+        1:   42:        anzahlDosierer = zutaten->size();
+call    0 returned 1
+        -:   43:    } else {
+        1:   44:        zutaten = new std::vector<std::string>;
+        1:   44-block  0
+call    0 returned 1
+call    1 returned 1
+        1:   45:        ZutatenDateiEinlesen(ZutatenFile);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   45-block  0
+call    4 returned 1
+    $$$$$:   45-block  1
+call    5 never executed
+    $$$$$:   45-block  2
+call    6 never executed
+        1:   46:        browse();
+call    0 returned 1
+        -:   47:
+        1:   48:        zutaten->push_back("Mischen");
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   48-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   48-block  1
+call    7 returned 1
+call    8 returned 1
+    $$$$$:   48-block  2
+call    9 never executed
+    $$$$$:   48-block  3
+    $$$$$:   48-block  4
+call   10 never executed
+    $$$$$:   48-block  5
+call   11 never executed
+        1:   49:        zutaten->push_back("Stampfen");
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   49-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   49-block  1
+call    7 returned 1
+call    8 returned 1
+    $$$$$:   49-block  2
+call    9 never executed
+    $$$$$:   49-block  3
+    $$$$$:   49-block  4
+call   10 never executed
+    $$$$$:   49-block  5
+call   11 never executed
+        1:   50:        zutaten->push_back("Schuetteln");
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   50-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   50-block  1
+call    7 returned 1
+call    8 returned 1
+    $$$$$:   50-block  2
+call    9 never executed
+    $$$$$:   50-block  3
+    $$$$$:   50-block  4
+call   10 never executed
+        -:   51:
+        1:   52:        anzahlDosierer = zutaten->size();
+call    0 returned 1
+        -:   53:    }
+        -:   54:
+        -:   55:
+        2:   56:}
+        2:   56-block  0
+        -:   57:
+function _ZN20AvailableIngredientsC2ERS_ called 1 returned 100% blocks executed 100%
+        1:   58:AvailableIngredients::AvailableIngredients(AvailableIngredients &copy) {
+        1:   59:    zutaten = new std::vector<std::string>;
+        1:   59-block  0
+call    0 returned 1
+call    1 returned 1
+       17:   60:    for(const auto& p: *copy.zutaten){
+call    0 returned 1
+call    1 returned 1
+       16:   60-block  0
+call    2 returned 16
+       16:   60-block  1
+call    3 returned 16
+       17:   60-block  2
+call    4 returned 17
+branch  5 taken 16
+branch  6 taken 1 (fallthrough)
+       16:   61:        zutaten->push_back(p);
+call    0 returned 16
+branch  1 taken 16 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   62:    }
+        1:   63:    browse();
+        1:   63-block  0
+call    0 returned 1
+        -:   64:
+        1:   65:    anzahlDosierer = copy.anzahlDosierer;
+        -:   66:
+        1:   67:}
+        -:   68:
+        -:   69:
+       62:   70:AvailableIngredients::~AvailableIngredients(void) {
+        -:   71:
+       62:   72:}
+------------------
+_ZN20AvailableIngredientsD0Ev:
+function _ZN20AvailableIngredientsD0Ev called 30 returned 100% blocks executed 100%
+       30:   70:AvailableIngredients::~AvailableIngredients(void) {
+        -:   71:
+       30:   72:}
+       30:   72-block  0
+call    0 returned 30
+call    1 returned 30
+------------------
+_ZN20AvailableIngredientsD2Ev:
+function _ZN20AvailableIngredientsD2Ev called 32 returned 100% blocks executed 100%
+       32:   70:AvailableIngredients::~AvailableIngredients(void) {
+        -:   71:
+       32:   72:}
+------------------
+        -:   73:
+        -:   74://readFile
+function _ZN20AvailableIngredients20ZutatenDateiEinlesenESs called 53 returned 98% blocks executed 96%
+       53:   75:void AvailableIngredients::ZutatenDateiEinlesen(std::string myfile) {
+       53:   76:    std::ifstream in;
+       53:   76-block  0
+call    0 returned 53
+branch  1 taken 53 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   77:
+       53:   78:    FileName = myfile;
+       53:   78-block  0
+call    0 returned 53
+branch  1 taken 53 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   79:
+       53:   80:    in.open(FileName.c_str(), std::ios::in); // c_str wandelt den String in char[]
+       53:   80-block  0
+call    0 returned 53
+call    1 returned 53
+branch  2 taken 53 (fallthrough)
+branch  3 taken 0 (throw)
+        -:   81:    // das braucht fstream
+        -:   82:
+       53:   83:    if (!in) {// File konnte nicht geoeffnet werden
+       53:   83-block  0
+call    0 returned 53
+branch  1 taken 53 (fallthrough)
+branch  2 taken 0 (throw)
+       53:   83-block  1
+branch  3 taken 1 (fallthrough)
+branch  4 taken 52
+        1:   84:        std::string my_exception = "File not found: " + FileName;
+        1:   84-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   85:        std::cout << my_exception << std::endl;
+        1:   85-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   85-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   86:        throw my_exception;
+        1:   86-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+        1:   87:    }
+        1:   87-block  0
+call    0 returned 1
+        -:   88:
+       52:   89:    std::cout << "Oeffne Zutatendatei " << FileName << std::endl;
+       52:   89-block  0
+call    0 returned 52
+branch  1 taken 52 (fallthrough)
+branch  2 taken 0 (throw)
+       52:   89-block  1
+call    3 returned 52
+branch  4 taken 52 (fallthrough)
+branch  5 taken 0 (throw)
+       52:   89-block  2
+call    6 returned 52
+branch  7 taken 52 (fallthrough)
+branch  8 taken 0 (throw)
+        -:   90:
+       52:   91:    std::string zeile;
+       52:   91-block  0
+call    0 returned 52
+      728:   92:    while (getline(in, zeile)) {
+      728:   92-block  0
+call    0 returned 728
+branch  1 taken 728 (fallthrough)
+branch  2 taken 0 (throw)
+      728:   92-block  1
+call    3 returned 728
+branch  4 taken 728 (fallthrough)
+branch  5 taken 0 (throw)
+      728:   92-block  2
+branch  6 taken 676
+branch  7 taken 52 (fallthrough)
+        -:   93:
+        -:   94:        // Cut trailing \r - to make Linux or Windows Files equal
+      676:   95:        if (zeile.size() && zeile[zeile.size() - 1] == '\r') {
+      676:   95-block  0
+call    0 returned 676
+branch  1 taken 676 (fallthrough)
+branch  2 taken 0
+      676:   95-block  1
+call    3 returned 676
+call    4 returned 676
+branch  5 taken 676 (fallthrough)
+branch  6 taken 0 (throw)
+      676:   95-block  2
+branch  7 taken 624 (fallthrough)
+branch  8 taken 52
+      624:   95-block  3
+       52:   95-block  4
+      676:   95-block  5
+branch  9 taken 624 (fallthrough)
+branch 10 taken 52
+      624:   96:            zeile = zeile.substr(0, zeile.size() - 1);
+      624:   96-block  0
+call    0 returned 624
+call    1 returned 624
+branch  2 taken 624 (fallthrough)
+branch  3 taken 0 (throw)
+      624:   96-block  1
+call    4 returned 624
+call    5 returned 624
+        -:   97:        }
+        -:   98:
+      676:   99:        this->zutaten->push_back(zeile);
+      676:   99-block  0
+call    0 returned 676
+branch  1 taken 676 (fallthrough)
+branch  2 taken 0 (throw)
+        -:  100:    }
+       52:  101:    in.close();
+       52:  101-block  0
+call    0 returned 52
+branch  1 taken 52 (fallthrough)
+branch  2 taken 0 (throw)
+       53:  102:}
+       52:  102-block  0
+call    0 returned 52
+call    1 returned 52
+    $$$$$:  102-block  1
+call    2 never executed
+        1:  102-block  2
+call    3 returned 1
+        -:  103:
+        -:  104:
+function _ZN20AvailableIngredients21DummyZutatenEinfuegenEv called 2 returned 100% blocks executed 47%
+        2:  105:void AvailableIngredients::DummyZutatenEinfuegen() {
+        2:  106:    zutaten->push_back("Limettenstuecke");
+        2:  106-block  0
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        2:  106-block  1
+call    4 returned 2
+branch  5 taken 2 (fallthrough)
+branch  6 taken 0 (throw)
+        2:  106-block  2
+call    7 returned 2
+call    8 returned 2
+    $$$$$:  106-block  3
+call    9 never executed
+    $$$$$:  106-block  4
+    $$$$$:  106-block  5
+call   10 never executed
+    $$$$$:  106-block  6
+call   11 never executed
+        2:  107:    zutaten->push_back("Zucker");
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        2:  107-block  0
+call    4 returned 2
+branch  5 taken 2 (fallthrough)
+branch  6 taken 0 (throw)
+        2:  107-block  1
+call    7 returned 2
+call    8 returned 2
+    $$$$$:  107-block  2
+call    9 never executed
+    $$$$$:  107-block  3
+    $$$$$:  107-block  4
+call   10 never executed
+    $$$$$:  107-block  5
+call   11 never executed
+        2:  108:    zutaten->push_back("Cointreau");
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        2:  108-block  0
+call    4 returned 2
+branch  5 taken 2 (fallthrough)
+branch  6 taken 0 (throw)
+        2:  108-block  1
+call    7 returned 2
+call    8 returned 2
+    $$$$$:  108-block  2
+call    9 never executed
+    $$$$$:  108-block  3
+    $$$$$:  108-block  4
+call   10 never executed
+    $$$$$:  108-block  5
+call   11 never executed
+        2:  109:    zutaten->push_back("Eis");
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        2:  109-block  0
+call    4 returned 2
+branch  5 taken 2 (fallthrough)
+branch  6 taken 0 (throw)
+        2:  109-block  1
+call    7 returned 2
+call    8 returned 2
+    $$$$$:  109-block  2
+call    9 never executed
+    $$$$$:  109-block  3
+    $$$$$:  109-block  4
+call   10 never executed
+    $$$$$:  109-block  5
+call   11 never executed
+        2:  110:    zutaten->push_back("Wodka");
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        2:  110-block  0
+call    4 returned 2
+branch  5 taken 2 (fallthrough)
+branch  6 taken 0 (throw)
+        2:  110-block  1
+call    7 returned 2
+call    8 returned 2
+    $$$$$:  110-block  2
+call    9 never executed
+    $$$$$:  110-block  3
+    $$$$$:  110-block  4
+call   10 never executed
+    $$$$$:  110-block  5
+call   11 never executed
+        2:  111:    zutaten->push_back("Rum weiss");
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        2:  111-block  0
+call    4 returned 2
+branch  5 taken 2 (fallthrough)
+branch  6 taken 0 (throw)
+        2:  111-block  1
+call    7 returned 2
+call    8 returned 2
+    $$$$$:  111-block  2
+call    9 never executed
+    $$$$$:  111-block  3
+    $$$$$:  111-block  4
+call   10 never executed
+    $$$$$:  111-block  5
+call   11 never executed
+        2:  112:    zutaten->push_back("Zitronensaft");
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        2:  112-block  0
+call    4 returned 2
+branch  5 taken 2 (fallthrough)
+branch  6 taken 0 (throw)
+        2:  112-block  1
+call    7 returned 2
+call    8 returned 2
+    $$$$$:  112-block  2
+call    9 never executed
+    $$$$$:  112-block  3
+    $$$$$:  112-block  4
+call   10 never executed
+    $$$$$:  112-block  5
+call   11 never executed
+        2:  113:    zutaten->push_back("Grenadine");
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        2:  113-block  0
+call    4 returned 2
+branch  5 taken 2 (fallthrough)
+branch  6 taken 0 (throw)
+        2:  113-block  1
+call    7 returned 2
+call    8 returned 2
+    $$$$$:  113-block  2
+call    9 never executed
+    $$$$$:  113-block  3
+    $$$$$:  113-block  4
+call   10 never executed
+        -:  114:    //    zutaten->push_back("Limettensaft");
+        -:  115:    //    zutaten->push_back("Tequilla");
+        -:  116:    //    zutaten->push_back("Gin");
+        -:  117:    //    zutaten->push_back("Noilly Prat");
+        2:  118:}
+        -:  119:
+function _ZN20AvailableIngredients6browseEv called 60 returned 100% blocks executed 100%
+       60:  120:void AvailableIngredients::browse(void) {
+       60:  121:    std::cout << "*********** Verfuegbare Einheiten bzw. Zutaten: ***********" << std::endl;
+       60:  121-block  0
+call    0 returned 60
+call    1 returned 60
+      859:  122:    for (unsigned int i = 0; i < zutaten->size(); i++/*std::string zutat : zutaten*/) {
+      859:  122-block  0
+call    0 returned 859
+branch  1 taken 799
+branch  2 taken 60 (fallthrough)
+      799:  123:        std::cout << zutaten->at(i) << std::endl;
+      799:  123-block  0
+call    0 returned 799
+call    1 returned 799
+call    2 returned 799
+        -:  124:    }
+       60:  125:    std::cout << "**********************************************************" << std::endl;
+       60:  125-block  0
+call    0 returned 60
+call    1 returned 60
+       60:  126:}
+        -:  127:
+function _ZN20AvailableIngredients8getZutatEi called 5501 returned 100% blocks executed 100%
+     5501:  128:std::string AvailableIngredients::getZutat(int i) {
+     5501:  129:    return zutaten->at(i);
+     5501:  129-block  0
+call    0 returned 5501
+call    1 returned 5501
+        -:  130:}
+        -:  131:
+function _ZN20AvailableIngredients26getAnzahlVorhandeneZutatenEv called 5170 returned 100% blocks executed 100%
+     5170:  132:int AvailableIngredients::getAnzahlVorhandeneZutaten() {
+     5170:  133:    return zutaten->size();
+     5170:  133-block  0
+call    0 returned 5170
+        -:  134:}
+        -:  135:
+function _ZN20AvailableIngredientsaSERKS_ called 7 returned 100% blocks executed 100%
+        7:  136:AvailableIngredients& AvailableIngredients::operator= (const AvailableIngredients &cpy) {
+        7:  137:    if (this != &cpy) {
+        7:  137-block  0
+branch  0 taken 7 (fallthrough)
+branch  1 taken 0
+        7:  138:        delete zutaten;
+        7:  138-block  0
+branch  0 taken 7 (fallthrough)
+branch  1 taken 0
+        7:  138-block  1
+call    2 returned 7
+call    3 returned 7
+        7:  139:        zutaten = new std::vector<std::string>;
+        7:  139-block  0
+call    0 returned 7
+call    1 returned 7
+      119:  140:        for (const auto &p: *cpy.zutaten) {
+call    0 returned 7
+call    1 returned 7
+      112:  140-block  0
+call    2 returned 112
+      112:  140-block  1
+call    3 returned 112
+      119:  140-block  2
+call    4 returned 119
+branch  5 taken 112
+branch  6 taken 7 (fallthrough)
+      112:  141:            zutaten->push_back(p);
+call    0 returned 112
+branch  1 taken 112 (fallthrough)
+branch  2 taken 0 (throw)
+        -:  142:        }
+        7:  143:        browse();
+        7:  143-block  0
+call    0 returned 7
+        7:  144:        anzahlDosierer = cpy.anzahlDosierer;
+        -:  145:
+        -:  146:
+        -:  147:    }
+        7:  148:    return *this;
+        7:  148-block  0
+        7:  148-block  1
+        -:  149:}
+        -:  150:
+        -:  151:
+        -:  152:

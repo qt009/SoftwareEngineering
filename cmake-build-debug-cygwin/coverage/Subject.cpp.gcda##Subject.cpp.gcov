@@ -1,0 +1,31 @@
+        -:    0:Source:/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/main/Subject.cpp
+        -:    0:Graph:/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin/CMakeFiles/CocktailProSource.dir/src/main/Subject.cpp.gcno
+        -:    0:Data:/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin/CMakeFiles/CocktailProSource.dir/src/main/Subject.cpp.gcda
+        -:    0:Runs:1
+        -:    1://@(#) Subject.cpp
+        -:    2:
+        -:    3:
+        -:    4:#include "Subject.h"
+        -:    5:
+function _ZN7Subject6attachEP8Observer called 414 returned 100% blocks executed 100%
+      414:    6:void Subject::attach(Observer * observer) {
+      414:    7:    this->observers.push_back(observer);
+      414:    7-block  0
+call    0 returned 414
+      414:    8:}
+        -:    9:
+        -:   10:
+function _ZN7Subject6notifyEv called 1320 returned 100% blocks executed 100%
+     1320:   11:void Subject::notify() {
+    23630:   12:    for (int i = observers.size() - 1; i >= 0; i--) {
+     1320:   12-block  0
+call    0 returned 1320
+    23630:   12-block  1
+branch  1 taken 22310
+branch  2 taken 1320 (fallthrough)
+    22310:   13:        observers.at(i)->update();
+    22310:   13-block  0
+call    0 returned 22310
+call    1 returned 22310
+        -:   14:    }
+     1320:   15:}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<snapshot:SnapshotInfoContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:snapshot="http://www.nomagic.com/ns/cameo/client/snapshot/1.0" xmi:id="_FMgA8JnOEeG5IL63JP9cFw">
+  <snaphotDescriptors xmi:id="_GUeVoJnOEeG5IL63JP9cFw" originalResourceURI="local:/PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel">
+    <sharePointObjects>magicdraw_uml_standard_profile_v_0001</sharePointObjects>
+  </snaphotDescriptors>
+  <snaphotDescriptors xmi:id="_GU7BkJnOEeG5IL63JP9cFw" originalResourceURI="local:/PROJECT-58814ab339137157c8adba26ca27a87?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel">
+    <sharePointObjects>_10_5_3fc019d_1151050132343_812649_257</sharePointObjects>
+  </snaphotDescriptors>
+  <snaphotDescriptors xmi:id="_GVXtgJnOEeG5IL63JP9cFw" originalResourceURI="local:/PROJECT-5e6c0138eb812d3e7fa9b70a34ce4a?resource=com.nomagic.magicdraw.uml_umodel.model"/>
+  <snaphotDescriptors xmi:id="_Uwj9cIxxEeaS9IXqyBp7mQ" originalResourceURI="local:/PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model"/>
+</snapshot:SnapshotInfoContainer>

@@ -1,0 +1,975 @@
+<?xml version="1.0" encoding="ASCII"?>
+<MDFoundation:MDExtension xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:MDFoundation="http://www.nomagic.com/magicdraw/foundation" xmlns:md.ce.cppAnsi.rt.objects="http://www.nomagic.com/magicdraw/ce/cppAnsi/rt/objects/1" xmlns:md.ce.rt.objects="http://www.nomagic.com/magicdraw/ce/rt/objects/1" xmlns:uml="http://www.nomagic.com/magicdraw/UML/2.5.1" xmi:id="_nyqGcNt9EemchZrQk6kwgg">
+  <contents xsi:type="md.ce.cppAnsi.rt.objects:CppRTProject" xmi:id="_nyr7oNt9EemchZrQk6kwgg" name="C++" language="C++" generationDir="D:\Hahn\Git_Ralf\SWE\SWE_Cocktailpro_Legacy\src\main" workingDir="D:\Hahn\Git_Ralf\SWE\SWE_Cocktailpro_Legacy\src\main" propertiesString="UEsDBBQACAgIAAAAIQAAAAAAAAAAAAAAAAAAAAkAVVQFAAEAAAAA7Zpdb6JAFIav21/hHRdN149Gqxu0oTAqCYIZh7Z7w4TFaWWDQAC77r/fEcoqCnVJEJuWK8PMmfPOPO/M4SOyd+ulVXslnm86dp9pfmswNWIbzty0X/qMiobXXeZucHnJTj3HJV7w58H0zcDxOMMgLv0dXF6wyzmwyJLYQY1Ev7yl+36fiYdMdFt/IR5DYy9YW1+SAe35RYyArYdXm2Y3GSsKA9zs4QZu4Rt93mh2O7jZ7nR7nU631eq1b/Ftq9dtN3C70b5h64eDNymzpjULPLq4eHLhrLb6dCzSvRcSCKZu0SnKdIJbgSjzNlogvuGZbkDZpQ3EApjxUJwiUZG3SZKDwnyvurUiA06eiZi/umLr0fVmEfV/q3h3TfzCMQ2SvaahKAE8A1MOckiBeKjACYey1zXynJU7GAEZQE7ahkXN7xBIlclJQSDP+soKdiC89fjI023f0gP9p0Vq66X5PWzuM8+65ROmHoUaIYnd7reE2qNpz53fvqba5jqOpk1kvRvciHqK4j4GnAAoiA0X8IQAdXgXQlHcU2Vycl8UR3yhLVxXWyzKokz32wxgUeYlla65eLzJ/Dm5hqyKYxt4K6IlYg7oNoulK8qI8uKR+ADwRBFA8Xz3Fb4a4SmkBOL9hWUF0cqpysIJNnK60FfjPeFE+eQ1OUUkJ2fDdYujTJNphmYYZdXkCfeEo7oJIFTgKfgmBHKyvSmObCbR62bcReZmmHWDa3/rF4tdAENOlRDmEILivYoARj+mJyjZ6To5TTDtAh/zaLJje/scRkwAGisChgCpUD6xGYdaOQ15dcx5cY5ssn0kS1RahEcyEDA/5mBM6YGT1KOWxIDTxxz1J1s4pz+NT1q17hVFKtOQA73zPgF9KC/KPhzVmci4gSjqPX14LNGJFMXKi+jzmaRwWVhPYsWhYOVE/DGiTB/25SoXQtCSIo9w+QUqS7ZyZetKyQckVbPyI6Q9GysQlW1IumjlSOTIed7/qre//3svL/moZOpWviR9OceN5X3xyqGkQ2e51RxRrzwKuT+GZb9UY9IkP5UbiSu2HsPf/2/SX1BLBwgCP7ZdHwMAAN0kAABQSwECFAAUAAgICAAAACEAAj+2XR8DAADdJAAAAAAJAAAAAAAAAAAAAAAAAAAAVVQFAAEAAAAAUEsFBgAAAAABAAEANwAAAFYDAAAAAA==">
+    <modelElement xsi:type="uml:Model" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#eee_1045467100313_135436_1"/>
+    <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTComponent" xmi:id="_0NGkcDs8Ee2fOtbcVX4SKw" name="AvailableIngredients.h" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/AvailableIngredients.h" parent="_nyr7oNt9EemchZrQk6kwgg" lastModified="1650440568143" pair="_32RDgDs8Ee2fOtbcVX4SKw">
+      <modelElement xsi:type="uml:Component" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936790580_24135_5062"/>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTClassObject" xmi:id="_8EjB0Ds8Ee2fOtbcVX4SKw" name="AvailableIngredients" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/AvailableIngredients.h C AvailableIngredients" parent="_0NGkcDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Class" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936841942_512529_5116"/>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8Ejo4Ds8Ee2fOtbcVX4SKw" name="AvailableIngredients" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/AvailableIngredients.h C AvailableIngredients M AvailableIngredients Arg void" parent="_8EjB0Ds8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936841992_819267_5160"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8Ejo4Ts8Ee2fOtbcVX4SKw" name="~AvailableIngredients" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/AvailableIngredients.h C AvailableIngredients M ~AvailableIngredients" parent="_8EjB0Ds8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842046_529066_5173"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8Ejo4js8Ee2fOtbcVX4SKw" name="browse" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/AvailableIngredients.h C AvailableIngredients M browse Arg void" parent="_8EjB0Ds8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842062_86778_5185"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8Ejo4zs8Ee2fOtbcVX4SKw" name="getZutat" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/AvailableIngredients.h C AvailableIngredients M getZutat Arg int" parent="_8EjB0Ds8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842085_801774_5204"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8Ejo5Ds8Ee2fOtbcVX4SKw" name="getAnzahlVorhandeneZutaten" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/AvailableIngredients.h C AvailableIngredients M getAnzahlVorhandeneZutaten" parent="_8EjB0Ds8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842104_719645_5223"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTAttributeObject" xmi:id="_8EkP8Ds8Ee2fOtbcVX4SKw" name="zutaten" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/AvailableIngredients.h C AvailableIngredients A zutaten" parent="_8EjB0Ds8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Property" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842131_797738_5247"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTAttributeObject" xmi:id="_8EkP8Ts8Ee2fOtbcVX4SKw" name="DEBUG" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/AvailableIngredients.h C AvailableIngredients A DEBUG" parent="_8EjB0Ds8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Property" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842148_6337_5261"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8EkP8js8Ee2fOtbcVX4SKw" name="DummyZutatenEinfuegen" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/AvailableIngredients.h C AvailableIngredients M DummyZutatenEinfuegen" parent="_8EjB0Ds8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842161_135240_5272"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8EkP8zs8Ee2fOtbcVX4SKw" name="ZutatenDateiEinlesen" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/AvailableIngredients.h C AvailableIngredients M ZutatenDateiEinlesen Arg std.string" parent="_8EjB0Ds8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842192_222943_5290"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTAttributeObject" xmi:id="_8EkP9Ds8Ee2fOtbcVX4SKw" name="anzahlDosierer" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/AvailableIngredients.h C AvailableIngredients A anzahlDosierer" parent="_8EjB0Ds8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Property" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842214_314929_5309"/>
+        </objects>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTAttributeObject" xmi:id="_8Ek3ADs8Ee2fOtbcVX4SKw" name="FileName" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/AvailableIngredients.h A FileName" parent="_0NGkcDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Property" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842218_303321_5314"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8Ek3ATs8Ee2fOtbcVX4SKw" name="string" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/AvailableIngredients.h INS string" parent="_0NGkcDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842222_985678_5317"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8Ek3Ajs8Ee2fOtbcVX4SKw" name="map" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/AvailableIngredients.h INS map" parent="_0NGkcDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842225_920943_5322"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8Ek3Azs8Ee2fOtbcVX4SKw" name="vector" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/AvailableIngredients.h INS vector" parent="_0NGkcDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842227_12705_5327"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8Ek3BDs8Ee2fOtbcVX4SKw" name="list" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/AvailableIngredients.h INS list" parent="_0NGkcDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842229_887923_5332"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8Ek3BTs8Ee2fOtbcVX4SKw" name="fstream" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/AvailableIngredients.h INS fstream" parent="_0NGkcDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842232_527962_5337"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8Ek3Bjs8Ee2fOtbcVX4SKw" name="iostream" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/AvailableIngredients.h INS iostream" parent="_0NGkcDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842235_350159_5342"/>
+      </objects>
+    </objects>
+    <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTComponent" xmi:id="_0NHLgDs8Ee2fOtbcVX4SKw" name="BarTender.h" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/BarTender.h" parent="_nyr7oNt9EemchZrQk6kwgg" lastModified="1650440568143" pair="_32SRoDs8Ee2fOtbcVX4SKw">
+      <modelElement xsi:type="uml:Component" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936790583_647014_5063"/>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTClassObject" xmi:id="_8EleEDs8Ee2fOtbcVX4SKw" name="BarTender" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/BarTender.h C BarTender" parent="_0NHLgDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Class" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936841950_211132_5119"/>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8EmFIDs8Ee2fOtbcVX4SKw" name="BarTender" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/BarTender.h C BarTender M BarTender Arg DeviceVerwalter&quot;$*&quot;" parent="_8EleEDs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842240_239616_5346"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8EmFITs8Ee2fOtbcVX4SKw" name="cocktailZubereiten" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/BarTender.h C BarTender M cocktailZubereiten Arg Recipe&quot;$*&quot;" parent="_8EleEDs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842257_2580_5362"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTAttributeObject" xmi:id="_8EmFIjs8Ee2fOtbcVX4SKw" name="myDeviceVerwalter" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/BarTender.h C BarTender A myDeviceVerwalter" parent="_8EleEDs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Property" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842281_169739_5386"/>
+        </objects>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8EmFIzs8Ee2fOtbcVX4SKw" name="Recipe.h" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/BarTender.h INU Recipe.h" parent="_0NHLgDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842283_174553_5390"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8EmFJDs8Ee2fOtbcVX4SKw" name="RecipeBook.h" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/BarTender.h INU RecipeBook.h" parent="_0NHLgDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842285_691084_5394"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8EmFJTs8Ee2fOtbcVX4SKw" name="DeviceVerwalter.h" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/BarTender.h INU DeviceVerwalter.h" parent="_0NHLgDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842286_335787_5398"/>
+      </objects>
+    </objects>
+    <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTComponent" xmi:id="_0NHykDs8Ee2fOtbcVX4SKw" name="CocktailPro.h" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/CocktailPro.h" parent="_nyr7oNt9EemchZrQk6kwgg" lastModified="1650440568144" pair="_32S4sDs8Ee2fOtbcVX4SKw">
+      <modelElement xsi:type="uml:Component" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936790584_9230_5064"/>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTClassObject" xmi:id="_8EmFJjs8Ee2fOtbcVX4SKw" name="CocktailPro" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/CocktailPro.h C CocktailPro" parent="_0NHykDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Class" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936841952_224945_5122"/>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTAttributeObject" xmi:id="_8EmFJzs8Ee2fOtbcVX4SKw" name="theCocktailZubereiter" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/CocktailPro.h C CocktailPro A theCocktailZubereiter" parent="_8EmFJjs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Property" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842291_927616_5404"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTAttributeObject" xmi:id="_8EmFKDs8Ee2fOtbcVX4SKw" name="theDeviceVerwalter" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/CocktailPro.h C CocktailPro A theDeviceVerwalter" parent="_8EmFJjs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Property" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842294_444723_5411"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTAttributeObject" xmi:id="_8EmFKTs8Ee2fOtbcVX4SKw" name="theMischbaresRezeptbuch" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/CocktailPro.h C CocktailPro A theMischbaresRezeptbuch" parent="_8EmFJjs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Property" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842298_854484_5418"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTAttributeObject" xmi:id="_8EmFKjs8Ee2fOtbcVX4SKw" name="theZutatenVerwalter" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/CocktailPro.h C CocktailPro A theZutatenVerwalter" parent="_8EmFJjs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Property" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842301_278742_5425"/>
+        </objects>
+        <objects xsi:type="md.ce.rt.objects:RTEnumeration" xmi:id="_8EmsMDs8Ee2fOtbcVX4SKw" name="OpMode" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/CocktailPro.h C CocktailPro E OpMode" parent="_8EmFJjs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Enumeration" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936841953_463664_5124"/>
+          <objects xsi:type="md.ce.rt.objects:RTEnumerationLiteral" xmi:id="_8EmsMTs8Ee2fOtbcVX4SKw" name="NORMAL" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/CocktailPro.h C CocktailPro E OpMode A NORMAL" parent="_8EmsMDs8Ee2fOtbcVX4SKw">
+            <modelElement xsi:type="uml:EnumerationLiteral" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842303_176706_5430"/>
+          </objects>
+          <objects xsi:type="md.ce.rt.objects:RTEnumerationLiteral" xmi:id="_8EmsMjs8Ee2fOtbcVX4SKw" name="DEMO" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/CocktailPro.h C CocktailPro E OpMode A DEMO" parent="_8EmsMDs8Ee2fOtbcVX4SKw">
+            <modelElement xsi:type="uml:EnumerationLiteral" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842304_191915_5431"/>
+          </objects>
+          <objects xsi:type="md.ce.rt.objects:RTEnumerationLiteral" xmi:id="_8EmsMzs8Ee2fOtbcVX4SKw" name="STOP" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/CocktailPro.h C CocktailPro E OpMode A STOP" parent="_8EmsMDs8Ee2fOtbcVX4SKw">
+            <modelElement xsi:type="uml:EnumerationLiteral" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842304_110916_5432"/>
+          </objects>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTAttributeObject" xmi:id="_8EnTQDs8Ee2fOtbcVX4SKw" name="OperatingMode" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/CocktailPro.h C CocktailPro A OperatingMode" parent="_8EmFJjs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Property" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842306_808573_5433"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8EnTQTs8Ee2fOtbcVX4SKw" name="waehle" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/CocktailPro.h C CocktailPro M waehle" parent="_8EmFJjs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842315_712007_5442"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8EnTQjs8Ee2fOtbcVX4SKw" name="demo" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/CocktailPro.h C CocktailPro M demo" parent="_8EmFJjs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842328_416515_5461"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8EnTQzs8Ee2fOtbcVX4SKw" name="CocktailPro" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/CocktailPro.h C CocktailPro M CocktailPro Arg int Arg char&quot;$**&quot;" parent="_8EmFJjs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842342_774956_5480"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8EnTRDs8Ee2fOtbcVX4SKw" name="start" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/CocktailPro.h C CocktailPro M start" parent="_8EmFJjs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842352_210590_5498"/>
+        </objects>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8En6UDs8Ee2fOtbcVX4SKw" name="DeviceVerwalter.h" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/CocktailPro.h INU DeviceVerwalter.h" parent="_0NHykDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842366_91939_5517"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8En6UTs8Ee2fOtbcVX4SKw" name="AvailableIngredients.h" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/CocktailPro.h INU AvailableIngredients.h" parent="_0NHykDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842368_252058_5521"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8En6Ujs8Ee2fOtbcVX4SKw" name="MixableRecipeBook.h" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/CocktailPro.h INU MixableRecipeBook.h" parent="_0NHykDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842369_391768_5525"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8En6Uzs8Ee2fOtbcVX4SKw" name="BarTender.h" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/CocktailPro.h INU BarTender.h" parent="_0NHykDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842371_515898_5529"/>
+      </objects>
+    </objects>
+    <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTComponent" xmi:id="_0NHykTs8Ee2fOtbcVX4SKw" name="DeviceVerwalter.h" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/DeviceVerwalter.h" parent="_nyr7oNt9EemchZrQk6kwgg" lastModified="1650440568144" pair="_32TfwDs8Ee2fOtbcVX4SKw">
+      <modelElement xsi:type="uml:Component" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936790585_570813_5065"/>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTClassObject" xmi:id="_8En6VDs8Ee2fOtbcVX4SKw" name="DeviceVerwalter" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/DeviceVerwalter.h C DeviceVerwalter" parent="_0NHykTs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Class" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936841955_909289_5126"/>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8En6VTs8Ee2fOtbcVX4SKw" name="DeviceVerwalter" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/DeviceVerwalter.h C DeviceVerwalter M DeviceVerwalter Arg AvailableIngredients&quot;$*&quot;" parent="_8En6VDs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842374_54247_5533"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8En6Vjs8Ee2fOtbcVX4SKw" name="rezeptSchrittZubereiten" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/DeviceVerwalter.h C DeviceVerwalter M rezeptSchrittZubereiten Arg std.string Arg float" parent="_8En6VDs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842388_912873_5549"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTAttributeObject" xmi:id="_8En6Vzs8Ee2fOtbcVX4SKw" name="myEntleerer" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/DeviceVerwalter.h C DeviceVerwalter A myEntleerer" parent="_8En6VDs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Property" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842407_598568_5571"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTAttributeObject" xmi:id="_8En6WDs8Ee2fOtbcVX4SKw" name="myDevices" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/DeviceVerwalter.h C DeviceVerwalter A myDevices" parent="_8En6VDs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Property" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842413_366850_5586"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8En6WTs8Ee2fOtbcVX4SKw" name="setZutatenVerwalter" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/DeviceVerwalter.h C DeviceVerwalter M setZutatenVerwalter Arg AvailableIngredients&quot;$*&quot;" parent="_8En6VDs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842422_863255_5600"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTAttributeObject" xmi:id="_8En6Wjs8Ee2fOtbcVX4SKw" name="myMixer" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/DeviceVerwalter.h C DeviceVerwalter A myMixer" parent="_8En6VDs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Property" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842440_656313_5624"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTAttributeObject" xmi:id="_8En6Wzs8Ee2fOtbcVX4SKw" name="myStampfer" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/DeviceVerwalter.h C DeviceVerwalter A myStampfer" parent="_8En6VDs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Property" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842442_651983_5630"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTAttributeObject" xmi:id="_8EpIcDs8Ee2fOtbcVX4SKw" name="mySchuettler" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/DeviceVerwalter.h C DeviceVerwalter A mySchuettler" parent="_8En6VDs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Property" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842445_687253_5636"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTAttributeObject" xmi:id="_8EpIcTs8Ee2fOtbcVX4SKw" name="myZutatenVerwalter" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/DeviceVerwalter.h C DeviceVerwalter A myZutatenVerwalter" parent="_8En6VDs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Property" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842448_985191_5642"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTAttributeObject" xmi:id="_8EpIcjs8Ee2fOtbcVX4SKw" name="theWaage" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/DeviceVerwalter.h C DeviceVerwalter A theWaage" parent="_8En6VDs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Property" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842451_942301_5648"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8EpIczs8Ee2fOtbcVX4SKw" name="createDevices" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/DeviceVerwalter.h C DeviceVerwalter M createDevices" parent="_8En6VDs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842453_190404_5652"/>
+        </objects>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8EpIdDs8Ee2fOtbcVX4SKw" name="string" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/DeviceVerwalter.h INS string" parent="_0NHykTs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842468_945845_5670"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8EpIdTs8Ee2fOtbcVX4SKw" name="map" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/DeviceVerwalter.h INS map" parent="_0NHykTs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842469_221046_5674"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8EpIdjs8Ee2fOtbcVX4SKw" name="InternalDevice.h" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/DeviceVerwalter.h INU InternalDevice.h" parent="_0NHykTs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842470_794156_5678"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8EpIdzs8Ee2fOtbcVX4SKw" name="AvailableIngredients.h" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/DeviceVerwalter.h INU AvailableIngredients.h" parent="_0NHykTs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842471_878420_5682"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8EpIeDs8Ee2fOtbcVX4SKw" name="Dispenser.h" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/DeviceVerwalter.h INU Dispenser.h" parent="_0NHykTs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842472_867929_5686"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8EpIeTs8Ee2fOtbcVX4SKw" name="Mixer.h" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/DeviceVerwalter.h INU Mixer.h" parent="_0NHykTs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842472_578676_5690"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8EpIejs8Ee2fOtbcVX4SKw" name="Masher.h" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/DeviceVerwalter.h INU Masher.h" parent="_0NHykTs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842473_464674_5694"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8EpIezs8Ee2fOtbcVX4SKw" name="Shaker.h" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/DeviceVerwalter.h INU Shaker.h" parent="_0NHykTs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842474_684655_5698"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8EpIfDs8Ee2fOtbcVX4SKw" name="Drainer.h" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/DeviceVerwalter.h INU Drainer.h" parent="_0NHykTs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842475_28653_5702"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8EpIfTs8Ee2fOtbcVX4SKw" name="Waage.h" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/DeviceVerwalter.h INU Waage.h" parent="_0NHykTs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842476_878822_5706"/>
+      </objects>
+    </objects>
+    <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTComponent" xmi:id="_0NIZoDs8Ee2fOtbcVX4SKw" name="Dispenser.h" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Dispenser.h" parent="_nyr7oNt9EemchZrQk6kwgg" lastModified="1650440568145" pair="_32Ut4Ds8Ee2fOtbcVX4SKw">
+      <modelElement xsi:type="uml:Component" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936790586_457158_5066"/>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTClassObject" xmi:id="_8EpvgDs8Ee2fOtbcVX4SKw" name="Dispenser" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Dispenser.h C Dispenser" parent="_0NIZoDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Class" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936841957_854806_5129"/>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8EpvgTs8Ee2fOtbcVX4SKw" name="Dispenser" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Dispenser.h C Dispenser M Dispenser Arg float Arg int Arg std.string Arg Waage&quot;$*&quot;" parent="_8EpvgDs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842481_418057_5722"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8Epvgjs8Ee2fOtbcVX4SKw" name="update" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Dispenser.h C Dispenser M update" parent="_8EpvgDs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842496_600402_5741"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8Epvgzs8Ee2fOtbcVX4SKw" name="doIt" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Dispenser.h C Dispenser M doIt Arg float" parent="_8EpvgDs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842509_467023_5759"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8EpvhDs8Ee2fOtbcVX4SKw" name="getStueckProZeit" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Dispenser.h C Dispenser M getStueckProZeit" parent="_8EpvgDs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842522_726131_5778"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTAttributeObject" xmi:id="_8EpvhTs8Ee2fOtbcVX4SKw" name="grammProZeit" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Dispenser.h C Dispenser A grammProZeit" parent="_8EpvgDs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Property" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842536_221756_5796"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTAttributeObject" xmi:id="_8Epvhjs8Ee2fOtbcVX4SKw" name="myWaage" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Dispenser.h C Dispenser A myWaage" parent="_8EpvgDs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Property" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842539_403924_5799"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTAttributeObject" xmi:id="_8Epvhzs8Ee2fOtbcVX4SKw" name="gwicht" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Dispenser.h C Dispenser A gwicht" parent="_8EpvgDs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Property" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842541_610753_5803"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTAttributeObject" xmi:id="_8EpviDs8Ee2fOtbcVX4SKw" name="inhalt" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Dispenser.h C Dispenser A inhalt" parent="_8EpvgDs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Property" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842543_962344_5806"/>
+        </objects>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8EqWkDs8Ee2fOtbcVX4SKw" name="string" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Dispenser.h INS string" parent="_0NIZoDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842544_511289_5807"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8EqWkTs8Ee2fOtbcVX4SKw" name="iostream" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Dispenser.h INS iostream" parent="_0NIZoDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842545_150492_5811"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8EqWkjs8Ee2fOtbcVX4SKw" name="Observer.h" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Dispenser.h INU Observer.h" parent="_0NIZoDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842546_811014_5815"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8EqWkzs8Ee2fOtbcVX4SKw" name="InternalDevice.h" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Dispenser.h INU InternalDevice.h" parent="_0NIZoDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842547_637804_5819"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8EqWlDs8Ee2fOtbcVX4SKw" name="Waage.h" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Dispenser.h INU Waage.h" parent="_0NIZoDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842548_776401_5823"/>
+      </objects>
+    </objects>
+    <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTComponent" xmi:id="_0NJAsDs8Ee2fOtbcVX4SKw" name="Drainer.h" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Drainer.h" parent="_nyr7oNt9EemchZrQk6kwgg" lastModified="1650440568145" pair="_32V8ADs8Ee2fOtbcVX4SKw">
+      <modelElement xsi:type="uml:Component" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936790586_889748_5067"/>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTClassObject" xmi:id="_8EqWlTs8Ee2fOtbcVX4SKw" name="Drainer" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Drainer.h C Drainer" parent="_0NJAsDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Class" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936841958_310769_5131"/>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8Eq9oDs8Ee2fOtbcVX4SKw" name="Drainer" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Drainer.h C Drainer M Drainer Arg float Arg int Arg Waage&quot;$*&quot;" parent="_8EqWlTs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842552_400350_5839"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8Eq9oTs8Ee2fOtbcVX4SKw" name="~Drainer" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Drainer.h C Drainer M ~Drainer" parent="_8EqWlTs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842562_406304_5857"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8Eq9ojs8Ee2fOtbcVX4SKw" name="update" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Drainer.h C Drainer M update" parent="_8EqWlTs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842570_341588_5869"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8Eq9ozs8Ee2fOtbcVX4SKw" name="doIt" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Drainer.h C Drainer M doIt Arg float" parent="_8EqWlTs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842583_671554_5887"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTAttributeObject" xmi:id="_8Eq9pDs8Ee2fOtbcVX4SKw" name="grammProZeit" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Drainer.h C Drainer A grammProZeit" parent="_8EqWlTs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Property" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842600_350405_5906"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTAttributeObject" xmi:id="_8Eq9pTs8Ee2fOtbcVX4SKw" name="myWaage" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Drainer.h C Drainer A myWaage" parent="_8EqWlTs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Property" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842601_568434_5909"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTAttributeObject" xmi:id="_8Eq9pjs8Ee2fOtbcVX4SKw" name="value" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Drainer.h C Drainer A value" parent="_8EqWlTs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Property" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842602_233953_5913"/>
+        </objects>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8ErksDs8Ee2fOtbcVX4SKw" name="iostream" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Drainer.h INS iostream" parent="_0NJAsDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842603_316229_5914"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8ErksTs8Ee2fOtbcVX4SKw" name="Observer.h" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Drainer.h INU Observer.h" parent="_0NJAsDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842604_982236_5918"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8Erksjs8Ee2fOtbcVX4SKw" name="InternalDevice.h" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Drainer.h INU InternalDevice.h" parent="_0NJAsDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842605_110986_5922"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8Erkszs8Ee2fOtbcVX4SKw" name="Waage.h" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Drainer.h INU Waage.h" parent="_0NJAsDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842606_46004_5926"/>
+      </objects>
+    </objects>
+    <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTComponent" xmi:id="_0NJnwDs8Ee2fOtbcVX4SKw" name="InternalDevice.h" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/InternalDevice.h" parent="_nyr7oNt9EemchZrQk6kwgg" lastModified="1632756458835" pair="_32WjEDs8Ee2fOtbcVX4SKw">
+      <modelElement xsi:type="uml:Component" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936790587_792675_5068"/>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTClassObject" xmi:id="_8ErktDs8Ee2fOtbcVX4SKw" name="InternalDevice" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/InternalDevice.h C InternalDevice" parent="_0NJnwDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Class" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936841960_291520_5133"/>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8ErktTs8Ee2fOtbcVX4SKw" name="doIt" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/InternalDevice.h C InternalDevice M doIt Arg float" parent="_8ErktDs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842610_633342_5930"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8Erktjs8Ee2fOtbcVX4SKw" name="putzen" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/InternalDevice.h C InternalDevice M putzen" parent="_8ErktDs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842624_492071_5949"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8Erktzs8Ee2fOtbcVX4SKw" name="setTimer" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/InternalDevice.h C InternalDevice M setTimer" parent="_8ErktDs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842638_601553_5967"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8ErkuDs8Ee2fOtbcVX4SKw" name="InternalDevice" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/InternalDevice.h C InternalDevice M InternalDevice" parent="_8ErktDs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842653_205755_5985"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTAttributeObject" xmi:id="_8ErkuTs8Ee2fOtbcVX4SKw" name="zeiteinheit" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/InternalDevice.h C InternalDevice A zeiteinheit" parent="_8ErktDs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Property" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842662_13664_5997"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTAttributeObject" xmi:id="_8Erkujs8Ee2fOtbcVX4SKw" name="doinIt" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/InternalDevice.h C InternalDevice A doinIt" parent="_8ErktDs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Property" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842663_857077_5998"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTAttributeObject" xmi:id="_8Erkuzs8Ee2fOtbcVX4SKw" name="myTimer" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/InternalDevice.h C InternalDevice A myTimer" parent="_8ErktDs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Property" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842665_80327_6001"/>
+        </objects>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8EsLwDs8Ee2fOtbcVX4SKw" name="Timer.h" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/InternalDevice.h INU Timer.h" parent="_0NJnwDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842666_432677_6005"/>
+      </objects>
+    </objects>
+    <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTComponent" xmi:id="_0NJnwTs8Ee2fOtbcVX4SKw" name="Masher.h" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Masher.h" parent="_nyr7oNt9EemchZrQk6kwgg" lastModified="1650440568146" pair="_32YYQDs8Ee2fOtbcVX4SKw">
+      <modelElement xsi:type="uml:Component" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936790588_862479_5069"/>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTClassObject" xmi:id="_8EsLwTs8Ee2fOtbcVX4SKw" name="Masher" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Masher.h C Masher" parent="_0NJnwTs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Class" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936841963_825353_5136"/>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8EsLwjs8Ee2fOtbcVX4SKw" name="Masher" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Masher.h C Masher M Masher" parent="_8EsLwTs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842671_275423_6015"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8EsLwzs8Ee2fOtbcVX4SKw" name="doIt" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Masher.h C Masher M doIt Arg float" parent="_8EsLwTs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842680_578816_6027"/>
+        </objects>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8EtZ4Ds8Ee2fOtbcVX4SKw" name="InternalDevice.h" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Masher.h INU InternalDevice.h" parent="_0NJnwTs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842696_446286_6046"/>
+      </objects>
+    </objects>
+    <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTComponent" xmi:id="_0NKO0Ds8Ee2fOtbcVX4SKw" name="MixableRecipeBook.h" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/MixableRecipeBook.h" parent="_nyr7oNt9EemchZrQk6kwgg" lastModified="1650440568146" pair="_32ZmYDs8Ee2fOtbcVX4SKw">
+      <modelElement xsi:type="uml:Component" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936790589_657457_5070"/>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTClassObject" xmi:id="_8EtZ4Ts8Ee2fOtbcVX4SKw" name="MixableRecipeBook" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/MixableRecipeBook.h C MixableRecipeBook" parent="_0NKO0Ds8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Class" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936841964_772005_5138"/>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8EtZ4js8Ee2fOtbcVX4SKw" name="MixableRecipeBook" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/MixableRecipeBook.h C MixableRecipeBook M MixableRecipeBook Arg AvailableIngredients&quot;$*&quot;" parent="_8EtZ4Ts8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842702_494252_6056"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8EtZ4zs8Ee2fOtbcVX4SKw" name="browse" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/MixableRecipeBook.h C MixableRecipeBook M browse" parent="_8EtZ4Ts8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842713_236760_6072"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTAttributeObject" xmi:id="_8EtZ5Ds8Ee2fOtbcVX4SKw" name="myZutatenVerwalter" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/MixableRecipeBook.h C MixableRecipeBook A myZutatenVerwalter" parent="_8EtZ4Ts8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Property" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842725_603919_6092"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTAttributeObject" xmi:id="_8EtZ5Ts8Ee2fOtbcVX4SKw" name="rezepte" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/MixableRecipeBook.h C MixableRecipeBook A rezepte" parent="_8EtZ4Ts8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Property" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842731_319526_6105"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8EtZ5js8Ee2fOtbcVX4SKw" name="setZutatenVerwalter" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/MixableRecipeBook.h C MixableRecipeBook M setZutatenVerwalter Arg AvailableIngredients&quot;$*&quot;" parent="_8EtZ4Ts8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842739_915725_6117"/>
+        </objects>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8EtZ5zs8Ee2fOtbcVX4SKw" name="Recipe.h" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/MixableRecipeBook.h INU Recipe.h" parent="_0NKO0Ds8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842753_679402_6139"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8EtZ6Ds8Ee2fOtbcVX4SKw" name="RecipeBook.h" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/MixableRecipeBook.h INU RecipeBook.h" parent="_0NKO0Ds8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842755_971783_6143"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8EtZ6Ts8Ee2fOtbcVX4SKw" name="AvailableIngredients.h" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/MixableRecipeBook.h INU AvailableIngredients.h" parent="_0NKO0Ds8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842756_705745_6147"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8EuA8Ds8Ee2fOtbcVX4SKw" name="iostream" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/MixableRecipeBook.h INS iostream" parent="_0NKO0Ds8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842757_427825_6151"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8EuA8Ts8Ee2fOtbcVX4SKw" name="fstream" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/MixableRecipeBook.h INS fstream" parent="_0NKO0Ds8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842760_712161_6155"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8EuA8js8Ee2fOtbcVX4SKw" name="string" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/MixableRecipeBook.h INS string" parent="_0NKO0Ds8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842761_717864_6159"/>
+      </objects>
+    </objects>
+    <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTComponent" xmi:id="_0NK14Ds8Ee2fOtbcVX4SKw" name="Mixer.h" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Mixer.h" parent="_nyr7oNt9EemchZrQk6kwgg" lastModified="1632756458836" pair="_32aNcDs8Ee2fOtbcVX4SKw">
+      <modelElement xsi:type="uml:Component" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936790590_966339_5071"/>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTClassObject" xmi:id="_8EuA8zs8Ee2fOtbcVX4SKw" name="Mixer" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Mixer.h C Mixer" parent="_0NK14Ds8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Class" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936841967_842099_5141"/>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8EuA9Ds8Ee2fOtbcVX4SKw" name="Mixer" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Mixer.h C Mixer M Mixer" parent="_8EuA8zs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842765_748071_6169"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8EuA9Ts8Ee2fOtbcVX4SKw" name="doIt" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Mixer.h C Mixer M doIt Arg float" parent="_8EuA8zs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842774_230475_6181"/>
+        </objects>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8EuA9js8Ee2fOtbcVX4SKw" name="iostream" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Mixer.h INS iostream" parent="_0NK14Ds8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842786_677499_6200"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8EuA9zs8Ee2fOtbcVX4SKw" name="InternalDevice.h" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Mixer.h INU InternalDevice.h" parent="_0NK14Ds8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842787_131567_6204"/>
+      </objects>
+    </objects>
+    <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTComponent" xmi:id="_0NLc8Ds8Ee2fOtbcVX4SKw" name="Observer.h" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Observer.h" parent="_nyr7oNt9EemchZrQk6kwgg" lastModified="1632756458836">
+      <modelElement xsi:type="uml:Component" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936790590_770427_5072"/>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTClassObject" xmi:id="_8EuA-Ds8Ee2fOtbcVX4SKw" name="Observer" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Observer.h C Observer" parent="_0NLc8Ds8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Class" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936841969_943924_5143"/>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8EuA-Ts8Ee2fOtbcVX4SKw" name="update" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Observer.h C Observer M update" parent="_8EuA-Ds8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842790_126180_6208"/>
+        </objects>
+      </objects>
+    </objects>
+    <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTComponent" xmi:id="_0NMEADs8Ee2fOtbcVX4SKw" name="Recipe.h" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Recipe.h" parent="_nyr7oNt9EemchZrQk6kwgg" lastModified="1632756458836" pair="_32a0gDs8Ee2fOtbcVX4SKw">
+      <modelElement xsi:type="uml:Component" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936790591_953611_5073"/>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTClassObject" xmi:id="_8EuA-js8Ee2fOtbcVX4SKw" name="Recipe" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Recipe.h C Recipe" parent="_0NMEADs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Class" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936841970_624446_5145"/>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTAttributeObject" xmi:id="_8EuoADs8Ee2fOtbcVX4SKw" name="m_RecipeStep" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Recipe.h C Recipe A m_RecipeStep" parent="_8EuA-js8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Property" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842804_893650_6235"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTAttributeObject" xmi:id="_8EuoATs8Ee2fOtbcVX4SKw" name="m_Name" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Recipe.h C Recipe A m_Name" parent="_8EuA-js8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Property" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842812_448299_6249"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8EuoAjs8Ee2fOtbcVX4SKw" name="Recipe" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Recipe.h C Recipe M Recipe Arg void" parent="_8EuA-js8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842812_338999_6250"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8EuoAzs8Ee2fOtbcVX4SKw" name="~Recipe" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Recipe.h C Recipe M ~Recipe" parent="_8EuA-js8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842822_997876_6263"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8EuoBDs8Ee2fOtbcVX4SKw" name="getNoOfRecipeSteps" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Recipe.h C Recipe M getNoOfRecipeSteps" parent="_8EuA-js8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842829_479326_6275"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8EuoBTs8Ee2fOtbcVX4SKw" name="getRecipeStep" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Recipe.h C Recipe M getRecipeStep Arg unsigned int" parent="_8EuA-js8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842839_151001_6293"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8EuoBjs8Ee2fOtbcVX4SKw" name="getName" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Recipe.h C Recipe M getName Arg void" parent="_8EuA-js8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842849_403032_6314"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8EuoBzs8Ee2fOtbcVX4SKw" name="setName" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Recipe.h C Recipe M setName Arg std.string&quot;const$&amp;&quot;" parent="_8EuA-js8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842857_7335_6333"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8EuoCDs8Ee2fOtbcVX4SKw" name="appendStep" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Recipe.h C Recipe M appendStep Arg std.string Arg float" parent="_8EuA-js8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842866_765275_6355"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8EuoCTs8Ee2fOtbcVX4SKw" name="browse" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Recipe.h C Recipe M browse" parent="_8EuA-js8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842874_672526_6375"/>
+        </objects>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8EvPEDs8Ee2fOtbcVX4SKw" name="RecipeStep.h" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Recipe.h INU RecipeStep.h" parent="_0NMEADs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842882_537016_6393"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8EvPETs8Ee2fOtbcVX4SKw" name="list" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Recipe.h INS list" parent="_0NMEADs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842883_871359_6397"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8EvPEjs8Ee2fOtbcVX4SKw" name="string" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Recipe.h INS string" parent="_0NMEADs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842885_310260_6401"/>
+      </objects>
+    </objects>
+    <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTComponent" xmi:id="_0NMrEDs8Ee2fOtbcVX4SKw" name="RecipeBook.h" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/RecipeBook.h" parent="_nyr7oNt9EemchZrQk6kwgg" lastModified="1650440568147" pair="_32cCoDs8Ee2fOtbcVX4SKw">
+      <modelElement xsi:type="uml:Component" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936790592_418357_5074"/>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTClassObject" xmi:id="_8EvPEzs8Ee2fOtbcVX4SKw" name="RecipeBook" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/RecipeBook.h C RecipeBook" parent="_0NMrEDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Class" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936841972_651208_5147"/>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTAttributeObject" xmi:id="_8EvPFDs8Ee2fOtbcVX4SKw" name="mRecipe" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/RecipeBook.h C RecipeBook A mRecipe" parent="_8EvPEzs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Property" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842889_59861_6414"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8EvPFTs8Ee2fOtbcVX4SKw" name="RecipeBook" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/RecipeBook.h C RecipeBook M RecipeBook Arg void" parent="_8EvPEzs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842894_141291_6427"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8EvPFjs8Ee2fOtbcVX4SKw" name="~RecipeBook" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/RecipeBook.h C RecipeBook M ~RecipeBook" parent="_8EvPEzs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842904_173889_6441"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8EvPFzs8Ee2fOtbcVX4SKw" name="getNumberOfRecipes" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/RecipeBook.h C RecipeBook M getNumberOfRecipes" parent="_8EvPEzs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842910_407282_6454"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8Ev2IDs8Ee2fOtbcVX4SKw" name="getRecipe" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/RecipeBook.h C RecipeBook M getRecipe Arg unsigned int" parent="_8EvPEzs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842920_159893_6473"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8Ev2ITs8Ee2fOtbcVX4SKw" name="deleteRecipe" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/RecipeBook.h C RecipeBook M deleteRecipe Arg unsigned int" parent="_8EvPEzs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842931_7844_6495"/>
+        </objects>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8EwdMDs8Ee2fOtbcVX4SKw" name="fstream" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/RecipeBook.h INS fstream" parent="_0NMrEDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842941_452016_6515"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8EwdMTs8Ee2fOtbcVX4SKw" name="sstream" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/RecipeBook.h INS sstream" parent="_0NMrEDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842942_606133_6520"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8EwdMjs8Ee2fOtbcVX4SKw" name="iostream" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/RecipeBook.h INS iostream" parent="_0NMrEDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842944_917901_6524"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8EwdMzs8Ee2fOtbcVX4SKw" name="list" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/RecipeBook.h INS list" parent="_0NMrEDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842946_347357_6528"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8EwdNDs8Ee2fOtbcVX4SKw" name="string" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/RecipeBook.h INS string" parent="_0NMrEDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842947_179176_6532"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8EwdNTs8Ee2fOtbcVX4SKw" name="Recipe.h" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/RecipeBook.h INU Recipe.h" parent="_0NMrEDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842948_13635_6536"/>
+      </objects>
+    </objects>
+    <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTComponent" xmi:id="_0NMrETs8Ee2fOtbcVX4SKw" name="RecipeStep.h" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/RecipeStep.h" parent="_nyr7oNt9EemchZrQk6kwgg" lastModified="1632756458837" pair="_32cCoTs8Ee2fOtbcVX4SKw">
+      <modelElement xsi:type="uml:Component" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936790593_410040_5075"/>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTClassObject" xmi:id="_8EwdNjs8Ee2fOtbcVX4SKw" name="RecipeStep" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/RecipeStep.h C RecipeStep" parent="_0NMrETs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Class" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936841974_958923_5150"/>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTAttributeObject" xmi:id="_8EwdNzs8Ee2fOtbcVX4SKw" name="rezeptZutat" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/RecipeStep.h C RecipeStep A rezeptZutat" parent="_8EwdNjs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Property" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842951_138301_6542"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTAttributeObject" xmi:id="_8EwdODs8Ee2fOtbcVX4SKw" name="rezeptMenge" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/RecipeStep.h C RecipeStep A rezeptMenge" parent="_8EwdNjs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Property" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842951_618764_6543"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8EwdOTs8Ee2fOtbcVX4SKw" name="RecipeStep" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/RecipeStep.h C RecipeStep M RecipeStep Arg void" parent="_8EwdNjs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842951_634650_6544"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8EwdOjs8Ee2fOtbcVX4SKw" name="~RecipeStep" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/RecipeStep.h C RecipeStep M ~RecipeStep" parent="_8EwdNjs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842959_890301_6557"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8EwdOzs8Ee2fOtbcVX4SKw" name="getZutat" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/RecipeStep.h C RecipeStep M getZutat Arg void" parent="_8EwdNjs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842966_131679_6569"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8EwdPDs8Ee2fOtbcVX4SKw" name="getMenge" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/RecipeStep.h C RecipeStep M getMenge Arg void" parent="_8EwdNjs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842975_545078_6588"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8EwdPTs8Ee2fOtbcVX4SKw" name="setZutat" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/RecipeStep.h C RecipeStep M setZutat Arg std.string" parent="_8EwdNjs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842988_287271_6607"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8EwdPjs8Ee2fOtbcVX4SKw" name="setMenge" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/RecipeStep.h C RecipeStep M setMenge Arg float" parent="_8EwdNjs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842997_529268_6626"/>
+        </objects>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8ExEQDs8Ee2fOtbcVX4SKw" name="list" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/RecipeStep.h INS list" parent="_0NMrETs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936843008_977713_6645"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8ExEQTs8Ee2fOtbcVX4SKw" name="string" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/RecipeStep.h INS string" parent="_0NMrETs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936843010_476174_6649"/>
+      </objects>
+    </objects>
+    <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTComponent" xmi:id="_0NNSIDs8Ee2fOtbcVX4SKw" name="Shaker.h" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Shaker.h" parent="_nyr7oNt9EemchZrQk6kwgg" lastModified="1650440568147" pair="_32cpsDs8Ee2fOtbcVX4SKw">
+      <modelElement xsi:type="uml:Component" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936790594_988099_5076"/>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTClassObject" xmi:id="_8ExEQjs8Ee2fOtbcVX4SKw" name="Shaker" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Shaker.h C Shaker" parent="_0NNSIDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Class" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936841975_818061_5152"/>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8ExEQzs8Ee2fOtbcVX4SKw" name="Shaker" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Shaker.h C Shaker M Shaker" parent="_8ExEQjs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936843013_871951_6659"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8ExERDs8Ee2fOtbcVX4SKw" name="doIt" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Shaker.h C Shaker M doIt Arg float" parent="_8ExEQjs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936843019_2424_6671"/>
+        </objects>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8ExrUDs8Ee2fOtbcVX4SKw" name="InternalDevice.h" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Shaker.h INU InternalDevice.h" parent="_0NNSIDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936843033_987104_6690"/>
+      </objects>
+    </objects>
+    <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTComponent" xmi:id="_0NN5MDs8Ee2fOtbcVX4SKw" name="Subject.h" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Subject.h" parent="_nyr7oNt9EemchZrQk6kwgg" lastModified="1632756458838" pair="_32dQwDs8Ee2fOtbcVX4SKw">
+      <modelElement xsi:type="uml:Component" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936790594_610375_5077"/>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTClassObject" xmi:id="_8ExrUTs8Ee2fOtbcVX4SKw" name="Subject" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Subject.h C Subject" parent="_0NN5MDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Class" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936841977_334414_5154"/>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8ExrUjs8Ee2fOtbcVX4SKw" name="attach" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Subject.h C Subject M attach Arg Observer&quot;$*&quot;" parent="_8ExrUTs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936843037_89857_6694"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8ExrUzs8Ee2fOtbcVX4SKw" name="detach" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Subject.h C Subject M detach Arg Observer&quot;$*&quot;" parent="_8ExrUTs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936843055_637453_6716"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8ExrVDs8Ee2fOtbcVX4SKw" name="notify" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Subject.h C Subject M notify" parent="_8ExrUTs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936843064_991227_6738"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTAttributeObject" xmi:id="_8ExrVTs8Ee2fOtbcVX4SKw" name="observers" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Subject.h C Subject A observers" parent="_8ExrUTs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Property" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936843075_934006_6765"/>
+        </objects>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8EySYDs8Ee2fOtbcVX4SKw" name="Observer.h" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Subject.h INU Observer.h" parent="_0NN5MDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936843078_175406_6777"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8EySYTs8Ee2fOtbcVX4SKw" name="vector" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Subject.h INS vector" parent="_0NN5MDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936843080_477053_6781"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8EySYjs8Ee2fOtbcVX4SKw" name="iostream" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Subject.h INS iostream" parent="_0NN5MDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936843080_731226_6785"/>
+      </objects>
+    </objects>
+    <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTComponent" xmi:id="_0NOgQDs8Ee2fOtbcVX4SKw" name="Timer.h" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Timer.h" parent="_nyr7oNt9EemchZrQk6kwgg" lastModified="1633423745018" pair="_32d30Ds8Ee2fOtbcVX4SKw">
+      <modelElement xsi:type="uml:Component" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936790595_182564_5078"/>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTClassObject" xmi:id="_8EySYzs8Ee2fOtbcVX4SKw" name="Timer" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Timer.h C Timer" parent="_0NOgQDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Class" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936841979_282433_5156"/>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8EySZDs8Ee2fOtbcVX4SKw" name="set_Turbo" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Timer.h C Timer M set_Turbo Arg int" parent="_8EySYzs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936843083_876975_6789"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8EySZTs8Ee2fOtbcVX4SKw" name="getInstance" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Timer.h C Timer M getInstance" parent="_8EySYzs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936843092_262545_6808"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8EySZjs8Ee2fOtbcVX4SKw" name="sleep_in_intervals" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Timer.h C Timer M sleep_in_intervals Arg long" parent="_8EySYzs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936843100_936055_6828"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8Ey5cDs8Ee2fOtbcVX4SKw" name="sleep" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Timer.h C Timer M sleep Arg long" parent="_8EySYzs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936843108_290570_6848"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTAttributeObject" xmi:id="_8Ey5cTs8Ee2fOtbcVX4SKw" name="instanceFlag" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Timer.h C Timer A instanceFlag" parent="_8EySYzs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Property" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936843119_953590_6867"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTAttributeObject" xmi:id="_8Ey5cjs8Ee2fOtbcVX4SKw" name="theTimer" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Timer.h C Timer A theTimer" parent="_8EySYzs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Property" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936843119_133255_6870"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTAttributeObject" xmi:id="_8Ey5czs8Ee2fOtbcVX4SKw" name="booster" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Timer.h C Timer A booster" parent="_8EySYzs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Property" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936843121_750993_6874"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8Ey5dDs8Ee2fOtbcVX4SKw" name="Timer" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Timer.h C Timer M Timer" parent="_8EySYzs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936843122_789485_6875"/>
+        </objects>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8EzggDs8Ee2fOtbcVX4SKw" name="chrono" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Timer.h INS chrono" parent="_0NOgQDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936843129_318132_6892"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8EzggTs8Ee2fOtbcVX4SKw" name="iostream" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Timer.h INS iostream" parent="_0NOgQDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936843129_575097_6896"/>
+      </objects>
+    </objects>
+    <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTComponent" xmi:id="_0NOgQTs8Ee2fOtbcVX4SKw" name="Waage.h" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Waage.h" parent="_nyr7oNt9EemchZrQk6kwgg" lastModified="1632756458838" pair="_32ee4Ds8Ee2fOtbcVX4SKw">
+      <modelElement xsi:type="uml:Component" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936790596_407096_5079"/>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTClassObject" xmi:id="_8E0HkDs8Ee2fOtbcVX4SKw" name="Waage" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Waage.h C Waage" parent="_0NOgQTs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Class" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936841982_546856_5158"/>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8E0HkTs8Ee2fOtbcVX4SKw" name="changeWeight" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Waage.h C Waage M changeWeight Arg int" parent="_8E0HkDs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936843133_269783_6906"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8E0Hkjs8Ee2fOtbcVX4SKw" name="tara" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Waage.h C Waage M tara" parent="_8E0HkDs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936843144_813241_6925"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8E0Hkzs8Ee2fOtbcVX4SKw" name="getWeight" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Waage.h C Waage M getWeight" parent="_8E0HkDs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936843153_679495_6943"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8E0HlDs8Ee2fOtbcVX4SKw" name="getDelta" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Waage.h C Waage M getDelta" parent="_8E0HkDs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936843161_154311_6961"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTAttributeObject" xmi:id="_8E0HlTs8Ee2fOtbcVX4SKw" name="weight" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Waage.h C Waage A weight" parent="_8E0HkDs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Property" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936843169_491246_6979"/>
+        </objects>
+        <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTAttributeObject" xmi:id="_8E0Hljs8Ee2fOtbcVX4SKw" name="deltaweight" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Waage.h C Waage A deltaweight" parent="_8E0HkDs8Ee2fOtbcVX4SKw">
+          <modelElement xsi:type="uml:Property" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936843169_764800_6980"/>
+        </objects>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8E0uoDs8Ee2fOtbcVX4SKw" name="Subject.h" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Waage.h INU Subject.h" parent="_0NOgQTs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936843169_7828_6981"/>
+      </objects>
+    </objects>
+    <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTComponent" xmi:id="_32RDgDs8Ee2fOtbcVX4SKw" name="AvailableIngredients.cpp" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/AvailableIngredients.cpp" parent="_nyr7oNt9EemchZrQk6kwgg" lastModified="1650440568143" pair="_0NGkcDs8Ee2fOtbcVX4SKw">
+      <modelElement xsi:type="uml:Component" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936815031_130326_5098"/>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8E0uoTs8Ee2fOtbcVX4SKw" name="AvailableIngredients" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/AvailableIngredients.cpp M AvailableIngredients.AvailableIngredients Arg void" parent="_32RDgDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936841992_819267_5160"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8E1VsDs8Ee2fOtbcVX4SKw" name="~AvailableIngredients" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/AvailableIngredients.cpp M AvailableIngredients.~AvailableIngredients" parent="_32RDgDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842046_529066_5173"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8E1VsTs8Ee2fOtbcVX4SKw" name="ZutatenDateiEinlesen" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/AvailableIngredients.cpp M AvailableIngredients.ZutatenDateiEinlesen Arg std.string" parent="_32RDgDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842192_222943_5290"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8E1Vsjs8Ee2fOtbcVX4SKw" name="DummyZutatenEinfuegen" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/AvailableIngredients.cpp M AvailableIngredients.DummyZutatenEinfuegen" parent="_32RDgDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842161_135240_5272"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8E1Vszs8Ee2fOtbcVX4SKw" name="browse" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/AvailableIngredients.cpp M AvailableIngredients.browse Arg void" parent="_32RDgDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842062_86778_5185"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8E1VtDs8Ee2fOtbcVX4SKw" name="getZutat" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/AvailableIngredients.cpp M AvailableIngredients.getZutat Arg int" parent="_32RDgDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842085_801774_5204"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8E1VtTs8Ee2fOtbcVX4SKw" name="getAnzahlVorhandeneZutaten" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/AvailableIngredients.cpp M AvailableIngredients.getAnzahlVorhandeneZutaten" parent="_32RDgDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842104_719645_5223"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8E1Vtjs8Ee2fOtbcVX4SKw" name="AvailableIngredients.h" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/AvailableIngredients.cpp INU AvailableIngredients.h" parent="_32RDgDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936843187_251220_7005"/>
+      </objects>
+    </objects>
+    <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTComponent" xmi:id="_32SRoDs8Ee2fOtbcVX4SKw" name="BarTender.cpp" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/BarTender.cpp" parent="_nyr7oNt9EemchZrQk6kwgg" lastModified="1650440568143" pair="_0NHLgDs8Ee2fOtbcVX4SKw">
+      <modelElement xsi:type="uml:Component" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936815033_729413_5099"/>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8E1Vtzs8Ee2fOtbcVX4SKw" name="BarTender" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/BarTender.cpp M BarTender.BarTender Arg DeviceVerwalter&quot;$*&quot;" parent="_32SRoDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842240_239616_5346"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8E1VuDs8Ee2fOtbcVX4SKw" name="cocktailZubereiten" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/BarTender.cpp M BarTender.cocktailZubereiten Arg Recipe&quot;$*&quot;" parent="_32SRoDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842257_2580_5362"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8E1VuTs8Ee2fOtbcVX4SKw" name="BarTender.h" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/BarTender.cpp INU BarTender.h" parent="_32SRoDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936843197_843241_7023"/>
+      </objects>
+    </objects>
+    <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTComponent" xmi:id="_32S4sDs8Ee2fOtbcVX4SKw" name="CocktailPro.cpp" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/CocktailPro.cpp" parent="_nyr7oNt9EemchZrQk6kwgg" lastModified="1650440568144" pair="_0NHykDs8Ee2fOtbcVX4SKw">
+      <modelElement xsi:type="uml:Component" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936815034_707051_5100"/>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8E1Vujs8Ee2fOtbcVX4SKw" name="start" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/CocktailPro.cpp M CocktailPro.start" parent="_32S4sDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842352_210590_5498"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8E18wDs8Ee2fOtbcVX4SKw" name="CocktailPro" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/CocktailPro.cpp M CocktailPro.CocktailPro Arg int Arg char&quot;$**&quot;" parent="_32S4sDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842342_774956_5480"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8E18wTs8Ee2fOtbcVX4SKw" name="demo" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/CocktailPro.cpp M CocktailPro.demo" parent="_32S4sDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842328_416515_5461"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8E18wjs8Ee2fOtbcVX4SKw" name="waehle" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/CocktailPro.cpp M CocktailPro.waehle" parent="_32S4sDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842315_712007_5442"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8E2j0Ds8Ee2fOtbcVX4SKw" name="CocktailPro.h" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/CocktailPro.cpp INU CocktailPro.h" parent="_32S4sDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936843205_106081_7042"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8E2j0Ts8Ee2fOtbcVX4SKw" name="string" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/CocktailPro.cpp INS string" parent="_32S4sDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936843207_199148_7046"/>
+      </objects>
+    </objects>
+    <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTComponent" xmi:id="_32TfwDs8Ee2fOtbcVX4SKw" name="DeviceVerwalter.cpp" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/DeviceVerwalter.cpp" parent="_nyr7oNt9EemchZrQk6kwgg" lastModified="1650440568144" pair="_0NHykTs8Ee2fOtbcVX4SKw">
+      <modelElement xsi:type="uml:Component" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936815036_522495_5101"/>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8E2j0js8Ee2fOtbcVX4SKw" name="DeviceVerwalter" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/DeviceVerwalter.cpp M DeviceVerwalter.DeviceVerwalter Arg AvailableIngredients&quot;$*&quot;" parent="_32TfwDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842374_54247_5533"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8E2j0zs8Ee2fOtbcVX4SKw" name="createDevices" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/DeviceVerwalter.cpp M DeviceVerwalter.createDevices" parent="_32TfwDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842453_190404_5652"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8E2j1Ds8Ee2fOtbcVX4SKw" name="setZutatenVerwalter" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/DeviceVerwalter.cpp M DeviceVerwalter.setZutatenVerwalter Arg AvailableIngredients&quot;$*&quot;" parent="_32TfwDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842422_863255_5600"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8E2j1Ts8Ee2fOtbcVX4SKw" name="rezeptSchrittZubereiten" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/DeviceVerwalter.cpp M DeviceVerwalter.rezeptSchrittZubereiten Arg std.string Arg float" parent="_32TfwDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842388_912873_5549"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8E2j1js8Ee2fOtbcVX4SKw" name="DeviceVerwalter.h" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/DeviceVerwalter.cpp INU DeviceVerwalter.h" parent="_32TfwDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936843217_891860_7070"/>
+      </objects>
+    </objects>
+    <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTComponent" xmi:id="_32Ut4Ds8Ee2fOtbcVX4SKw" name="Dispenser.cpp" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Dispenser.cpp" parent="_nyr7oNt9EemchZrQk6kwgg" lastModified="1650440568145" pair="_0NIZoDs8Ee2fOtbcVX4SKw">
+      <modelElement xsi:type="uml:Component" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936815037_722215_5102"/>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8E2j1zs8Ee2fOtbcVX4SKw" name="Dispenser" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Dispenser.cpp M Dispenser.Dispenser Arg float Arg int Arg std.string Arg Waage&quot;$*&quot;" parent="_32Ut4Ds8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842481_418057_5722"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8E2j2Ds8Ee2fOtbcVX4SKw" name="update" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Dispenser.cpp M Dispenser.update" parent="_32Ut4Ds8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842496_600402_5741"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8E2j2Ts8Ee2fOtbcVX4SKw" name="doIt" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Dispenser.cpp M Dispenser.doIt Arg float" parent="_32Ut4Ds8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842509_467023_5759"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8E2j2js8Ee2fOtbcVX4SKw" name="getStueckProZeit" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Dispenser.cpp M Dispenser.getStueckProZeit" parent="_32Ut4Ds8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842522_726131_5778"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8E2j2zs8Ee2fOtbcVX4SKw" name="Dispenser.h" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Dispenser.cpp INU Dispenser.h" parent="_32Ut4Ds8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936843230_838230_7092"/>
+      </objects>
+    </objects>
+    <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTComponent" xmi:id="_32V8ADs8Ee2fOtbcVX4SKw" name="Drainer.cpp" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Drainer.cpp" parent="_nyr7oNt9EemchZrQk6kwgg" lastModified="1650440568145" pair="_0NJAsDs8Ee2fOtbcVX4SKw">
+      <modelElement xsi:type="uml:Component" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936815039_426751_5103"/>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8E2j3Ds8Ee2fOtbcVX4SKw" name="Drainer" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Drainer.cpp M Drainer.Drainer Arg float Arg int Arg Waage&quot;$*&quot;" parent="_32V8ADs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842552_400350_5839"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8E2j3Ts8Ee2fOtbcVX4SKw" name="~Drainer" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Drainer.cpp M Drainer.~Drainer" parent="_32V8ADs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842562_406304_5857"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8E2j3js8Ee2fOtbcVX4SKw" name="update" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Drainer.cpp M Drainer.update" parent="_32V8ADs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842570_341588_5869"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8E2j3zs8Ee2fOtbcVX4SKw" name="doIt" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Drainer.cpp M Drainer.doIt Arg float" parent="_32V8ADs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842583_671554_5887"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8E2j4Ds8Ee2fOtbcVX4SKw" name="Drainer.h" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Drainer.cpp INU Drainer.h" parent="_32V8ADs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936843241_155861_7113"/>
+      </objects>
+    </objects>
+    <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTComponent" xmi:id="_32WjEDs8Ee2fOtbcVX4SKw" name="InternalDevice.cpp" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/InternalDevice.cpp" parent="_nyr7oNt9EemchZrQk6kwgg" lastModified="1632756458835" pair="_0NJnwDs8Ee2fOtbcVX4SKw">
+      <modelElement xsi:type="uml:Component" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936815041_859908_5104"/>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8E2j4Ts8Ee2fOtbcVX4SKw" name="setTimer" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/InternalDevice.cpp M InternalDevice.setTimer" parent="_32WjEDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842638_601553_5967"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8E2j4js8Ee2fOtbcVX4SKw" name="InternalDevice" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/InternalDevice.cpp M InternalDevice.InternalDevice" parent="_32WjEDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842653_205755_5985"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8E3K4Ds8Ee2fOtbcVX4SKw" name="putzen" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/InternalDevice.cpp M InternalDevice.putzen" parent="_32WjEDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842624_492071_5949"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8E3K4Ts8Ee2fOtbcVX4SKw" name="InternalDevice.h" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/InternalDevice.cpp INU InternalDevice.h" parent="_32WjEDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936843247_930104_7125"/>
+      </objects>
+    </objects>
+    <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTComponent" xmi:id="_32XxMDs8Ee2fOtbcVX4SKw" name="Main.cpp" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Main.cpp" parent="_nyr7oNt9EemchZrQk6kwgg" lastModified="1633423745016">
+      <modelElement xsi:type="uml:Component" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936815042_245106_5105"/>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8E3K4js8Ee2fOtbcVX4SKw" name="main" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Main.cpp M main Arg int Arg char&quot;$*&quot;" parent="_32XxMDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936843249_486317_7129"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8E3K4zs8Ee2fOtbcVX4SKw" name="CocktailPro.h" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Main.cpp INU CocktailPro.h" parent="_32XxMDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936843264_125714_7161"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8E3K5Ds8Ee2fOtbcVX4SKw" name="iostream" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Main.cpp INS iostream" parent="_32XxMDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936843266_356876_7165"/>
+      </objects>
+    </objects>
+    <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTComponent" xmi:id="_32YYQDs8Ee2fOtbcVX4SKw" name="Masher.cpp" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Masher.cpp" parent="_nyr7oNt9EemchZrQk6kwgg" lastModified="1650440568145" pair="_0NJnwTs8Ee2fOtbcVX4SKw">
+      <modelElement xsi:type="uml:Component" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936815044_856062_5106"/>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8E3K5Ts8Ee2fOtbcVX4SKw" name="Masher" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Masher.cpp M Masher.Masher" parent="_32YYQDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842671_275423_6015"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8E3K5js8Ee2fOtbcVX4SKw" name="doIt" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Masher.cpp M Masher.doIt Arg float" parent="_32YYQDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842680_578816_6027"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8E3K5zs8Ee2fOtbcVX4SKw" name="Masher.h" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Masher.cpp INU Masher.h" parent="_32YYQDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936843271_322251_7176"/>
+      </objects>
+    </objects>
+    <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTComponent" xmi:id="_32ZmYDs8Ee2fOtbcVX4SKw" name="MixableRecipeBook.cpp" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/MixableRecipeBook.cpp" parent="_nyr7oNt9EemchZrQk6kwgg" lastModified="1650440568146" pair="_0NKO0Ds8Ee2fOtbcVX4SKw">
+      <modelElement xsi:type="uml:Component" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936815045_43505_5107"/>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8E3K6Ds8Ee2fOtbcVX4SKw" name="browse" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/MixableRecipeBook.cpp M MixableRecipeBook.browse" parent="_32ZmYDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842713_236760_6072"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8E3K6Ts8Ee2fOtbcVX4SKw" name="MixableRecipeBook" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/MixableRecipeBook.cpp M MixableRecipeBook.MixableRecipeBook Arg AvailableIngredients&quot;$*&quot;" parent="_32ZmYDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842702_494252_6056"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8E3K6js8Ee2fOtbcVX4SKw" name="setZutatenVerwalter" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/MixableRecipeBook.cpp M MixableRecipeBook.setZutatenVerwalter Arg AvailableIngredients&quot;$*&quot;" parent="_32ZmYDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842739_915725_6117"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8E3K6zs8Ee2fOtbcVX4SKw" name="MixableRecipeBook.h" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/MixableRecipeBook.cpp INU MixableRecipeBook.h" parent="_32ZmYDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936843280_714585_7196"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8E3K7Ds8Ee2fOtbcVX4SKw" name="iostream" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/MixableRecipeBook.cpp INS iostream" parent="_32ZmYDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936843281_484714_7200"/>
+      </objects>
+    </objects>
+    <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTComponent" xmi:id="_32aNcDs8Ee2fOtbcVX4SKw" name="Mixer.cpp" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Mixer.cpp" parent="_nyr7oNt9EemchZrQk6kwgg" lastModified="1633423745017" pair="_0NK14Ds8Ee2fOtbcVX4SKw">
+      <modelElement xsi:type="uml:Component" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936815046_664236_5108"/>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8E3K7Ts8Ee2fOtbcVX4SKw" name="Mixer" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Mixer.cpp M Mixer.Mixer" parent="_32aNcDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842765_748071_6169"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8E3K7js8Ee2fOtbcVX4SKw" name="doIt" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Mixer.cpp M Mixer.doIt Arg float" parent="_32aNcDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842774_230475_6181"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8E3K7zs8Ee2fOtbcVX4SKw" name="Mixer.h" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Mixer.cpp INU Mixer.h" parent="_32aNcDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936843287_567131_7211"/>
+      </objects>
+    </objects>
+    <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTComponent" xmi:id="_32a0gDs8Ee2fOtbcVX4SKw" name="Recipe.cpp" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Recipe.cpp" parent="_nyr7oNt9EemchZrQk6kwgg" lastModified="1632756458836" pair="_0NMEADs8Ee2fOtbcVX4SKw">
+      <modelElement xsi:type="uml:Component" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936815048_944973_5109"/>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8E3x8Ds8Ee2fOtbcVX4SKw" name="Recipe" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Recipe.cpp M Recipe.Recipe Arg void" parent="_32a0gDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842812_338999_6250"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8E3x8Ts8Ee2fOtbcVX4SKw" name="~Recipe" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Recipe.cpp M Recipe.~Recipe" parent="_32a0gDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842822_997876_6263"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8E3x8js8Ee2fOtbcVX4SKw" name="getNoOfRecipeSteps" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Recipe.cpp M Recipe.getNoOfRecipeSteps" parent="_32a0gDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842829_479326_6275"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8E3x8zs8Ee2fOtbcVX4SKw" name="getRecipeStep" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Recipe.cpp M Recipe.getRecipeStep Arg unsigned int" parent="_32a0gDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842839_151001_6293"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8E3x9Ds8Ee2fOtbcVX4SKw" name="getName" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Recipe.cpp M Recipe.getName Arg void" parent="_32a0gDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842849_403032_6314"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8E3x9Ts8Ee2fOtbcVX4SKw" name="setName" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Recipe.cpp M Recipe.setName Arg std.string&quot;const$&amp;&quot;" parent="_32a0gDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842857_7335_6333"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8E3x9js8Ee2fOtbcVX4SKw" name="browse" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Recipe.cpp M Recipe.browse" parent="_32a0gDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842874_672526_6375"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8E3x9zs8Ee2fOtbcVX4SKw" name="appendStep" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Recipe.cpp M Recipe.appendStep Arg std.string Arg float" parent="_32a0gDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842866_765275_6355"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8E3x-Ds8Ee2fOtbcVX4SKw" name="algorithm" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Recipe.cpp INS algorithm" parent="_32a0gDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936843306_663044_7243"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8E3x-Ts8Ee2fOtbcVX4SKw" name="iostream" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Recipe.cpp INS iostream" parent="_32a0gDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936843307_52163_7247"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8E3x-js8Ee2fOtbcVX4SKw" name="Recipe.h" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Recipe.cpp INU Recipe.h" parent="_32a0gDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936843308_77276_7251"/>
+      </objects>
+    </objects>
+    <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTComponent" xmi:id="_32cCoDs8Ee2fOtbcVX4SKw" name="RecipeBook.cpp" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/RecipeBook.cpp" parent="_nyr7oNt9EemchZrQk6kwgg" lastModified="1632756458837" pair="_0NMrEDs8Ee2fOtbcVX4SKw">
+      <modelElement xsi:type="uml:Component" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936815049_319020_5110"/>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8E3x-zs8Ee2fOtbcVX4SKw" name="RecipeBook" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/RecipeBook.cpp M RecipeBook.RecipeBook Arg void" parent="_32cCoDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842894_141291_6427"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8E3x_Ds8Ee2fOtbcVX4SKw" name="~RecipeBook" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/RecipeBook.cpp M RecipeBook.~RecipeBook" parent="_32cCoDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842904_173889_6441"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8E4ZADs8Ee2fOtbcVX4SKw" name="getNumberOfRecipes" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/RecipeBook.cpp M RecipeBook.getNumberOfRecipes" parent="_32cCoDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842910_407282_6454"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8E4ZATs8Ee2fOtbcVX4SKw" name="getRecipe" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/RecipeBook.cpp M RecipeBook.getRecipe Arg unsigned int" parent="_32cCoDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842920_159893_6473"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8E4ZAjs8Ee2fOtbcVX4SKw" name="deleteRecipe" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/RecipeBook.cpp M RecipeBook.deleteRecipe Arg unsigned int" parent="_32cCoDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842931_7844_6495"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8E4ZAzs8Ee2fOtbcVX4SKw" name="algorithm" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/RecipeBook.cpp INS algorithm" parent="_32cCoDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936843318_9287_7270"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8E4ZBDs8Ee2fOtbcVX4SKw" name="RecipeBook.h" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/RecipeBook.cpp INU RecipeBook.h" parent="_32cCoDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936843319_368621_7274"/>
+      </objects>
+    </objects>
+    <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTComponent" xmi:id="_32cCoTs8Ee2fOtbcVX4SKw" name="RecipeStep.cpp" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/RecipeStep.cpp" parent="_nyr7oNt9EemchZrQk6kwgg" lastModified="1632756458837" pair="_0NMrETs8Ee2fOtbcVX4SKw">
+      <modelElement xsi:type="uml:Component" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936815050_890546_5111"/>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8E4ZBTs8Ee2fOtbcVX4SKw" name="RecipeStep" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/RecipeStep.cpp M RecipeStep.RecipeStep Arg void" parent="_32cCoTs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842951_634650_6544"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8E4ZBjs8Ee2fOtbcVX4SKw" name="~RecipeStep" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/RecipeStep.cpp M RecipeStep.~RecipeStep" parent="_32cCoTs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842959_890301_6557"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8E4ZBzs8Ee2fOtbcVX4SKw" name="getZutat" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/RecipeStep.cpp M RecipeStep.getZutat Arg void" parent="_32cCoTs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842966_131679_6569"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8E4ZCDs8Ee2fOtbcVX4SKw" name="getMenge" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/RecipeStep.cpp M RecipeStep.getMenge Arg void" parent="_32cCoTs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842975_545078_6588"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8E4ZCTs8Ee2fOtbcVX4SKw" name="setZutat" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/RecipeStep.cpp M RecipeStep.setZutat Arg std.string" parent="_32cCoTs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842988_287271_6607"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8E4ZCjs8Ee2fOtbcVX4SKw" name="setMenge" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/RecipeStep.cpp M RecipeStep.setMenge Arg float" parent="_32cCoTs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936842997_529268_6626"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8E4ZCzs8Ee2fOtbcVX4SKw" name="algorithm" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/RecipeStep.cpp INS algorithm" parent="_32cCoTs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936843330_318514_7298"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8E5AEDs8Ee2fOtbcVX4SKw" name="RecipeStep.h" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/RecipeStep.cpp INU RecipeStep.h" parent="_32cCoTs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936843331_985691_7302"/>
+      </objects>
+    </objects>
+    <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTComponent" xmi:id="_32cpsDs8Ee2fOtbcVX4SKw" name="Shaker.cpp" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Shaker.cpp" parent="_nyr7oNt9EemchZrQk6kwgg" lastModified="1650440568147" pair="_0NNSIDs8Ee2fOtbcVX4SKw">
+      <modelElement xsi:type="uml:Component" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936815051_101958_5112"/>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8E5AETs8Ee2fOtbcVX4SKw" name="Shaker" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Shaker.cpp M Shaker.Shaker" parent="_32cpsDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936843013_871951_6659"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8E5AEjs8Ee2fOtbcVX4SKw" name="doIt" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Shaker.cpp M Shaker.doIt Arg float" parent="_32cpsDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936843019_2424_6671"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8E5AEzs8Ee2fOtbcVX4SKw" name="Shaker.h" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Shaker.cpp INU Shaker.h" parent="_32cpsDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936843337_591294_7313"/>
+      </objects>
+    </objects>
+    <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTComponent" xmi:id="_32dQwDs8Ee2fOtbcVX4SKw" name="Subject.cpp" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Subject.cpp" parent="_nyr7oNt9EemchZrQk6kwgg" lastModified="1632756458838" pair="_0NN5MDs8Ee2fOtbcVX4SKw">
+      <modelElement xsi:type="uml:Component" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936815052_972914_5113"/>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8E5AFDs8Ee2fOtbcVX4SKw" name="attach" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Subject.cpp M Subject.attach Arg Observer&quot;$*&quot;" parent="_32dQwDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936843037_89857_6694"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8E5AFTs8Ee2fOtbcVX4SKw" name="detach" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Subject.cpp M Subject.detach Arg Observer&quot;$*&quot;" parent="_32dQwDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936843055_637453_6716"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8E5AFjs8Ee2fOtbcVX4SKw" name="notify" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Subject.cpp M Subject.notify" parent="_32dQwDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936843064_991227_6738"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8E5AFzs8Ee2fOtbcVX4SKw" name="Subject.h" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Subject.cpp INU Subject.h" parent="_32dQwDs8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936843345_194418_7331"/>
+      </objects>
+    </objects>
+    <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTComponent" xmi:id="_32d30Ds8Ee2fOtbcVX4SKw" name="Timer.cpp" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Timer.cpp" parent="_nyr7oNt9EemchZrQk6kwgg" lastModified="1650440568147" pair="_0NOgQDs8Ee2fOtbcVX4SKw">
+      <modelElement xsi:type="uml:Component" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936815053_81134_5114"/>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8E5AGDs8Ee2fOtbcVX4SKw" name="set_Turbo" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Timer.cpp M Timer.setTurbo Arg int" parent="_32d30Ds8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936843083_876975_6789"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8E5AGTs8Ee2fOtbcVX4SKw" name="getInstance" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Timer.cpp M Timer.getInstance" parent="_32d30Ds8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936843092_262545_6808"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8E5AGjs8Ee2fOtbcVX4SKw" name="sleep" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Timer.cpp M Timer.sleep Arg long" parent="_32d30Ds8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936843108_290570_6848"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8E5AGzs8Ee2fOtbcVX4SKw" name="sleep_in_intervals" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Timer.cpp M Timer.sleepInIntervals Arg long" parent="_32d30Ds8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936843100_936055_6828"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTAttributeObject" xmi:id="_8E5nIDs8Ee2fOtbcVX4SKw" name="instanceFlag" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Timer.cpp A Timer::instanceFlag" parent="_32d30Ds8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Property" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936843119_953590_6867"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTAttributeObject" xmi:id="_8E5nITs8Ee2fOtbcVX4SKw" name="theTimer" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Timer.cpp A Timer::theTimer" parent="_32d30Ds8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Property" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936843119_133255_6870"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8E5nIjs8Ee2fOtbcVX4SKw" name="Timer.h" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Timer.cpp INU Timer.h" parent="_32d30Ds8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936843363_213619_7363"/>
+      </objects>
+    </objects>
+    <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTComponent" xmi:id="_32ee4Ds8Ee2fOtbcVX4SKw" name="Waage.cpp" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Waage.cpp" parent="_nyr7oNt9EemchZrQk6kwgg" lastModified="1632756458838" pair="_0NOgQTs8Ee2fOtbcVX4SKw">
+      <modelElement xsi:type="uml:Component" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936815054_427200_5115"/>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8E5nIzs8Ee2fOtbcVX4SKw" name="changeWeight" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Waage.cpp M Waage.changeWeight Arg int" parent="_32ee4Ds8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936843133_269783_6906"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8E5nJDs8Ee2fOtbcVX4SKw" name="tara" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Waage.cpp M Waage.tara" parent="_32ee4Ds8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936843144_813241_6925"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8E6OMDs8Ee2fOtbcVX4SKw" name="getWeight" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Waage.cpp M Waage.getWeight" parent="_32ee4Ds8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936843153_679495_6943"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTMethodObject" xmi:id="_8E6OMTs8Ee2fOtbcVX4SKw" name="getDelta" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Waage.cpp M Waage.getDelta" parent="_32ee4Ds8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Operation" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936843161_154311_6961"/>
+      </objects>
+      <objects xsi:type="md.ce.cppAnsi.rt.objects:CppRTInclude" xmi:id="_8E6OMjs8Ee2fOtbcVX4SKw" name="Waage.h" image="D:/Hahn/Git_Ralf/SWE/SWE_Cocktailpro_Legacy/src/main/Waage.cpp INU Waage.h" parent="_32ee4Ds8Ee2fOtbcVX4SKw">
+        <modelElement xsi:type="uml:Usage" href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#_19_0_4_3ad0186_1663936843370_61414_7376"/>
+      </objects>
+    </objects>
+  </contents>
+</MDFoundation:MDExtension>

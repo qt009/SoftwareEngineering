@@ -1,0 +1,213 @@
+        -:    0:Source:/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/test/MixableRecipeBook_Test.cpp
+        -:    0:Graph:/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin/CMakeFiles/CocktailProTest.dir/src/test/MixableRecipeBook_Test.cpp.gcno
+        -:    0:Data:/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin/CMakeFiles/CocktailProTest.dir/src/test/MixableRecipeBook_Test.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#include <limits.h>
+        -:    2:#include <string>
+        -:    3:#include "gtest/gtest.h"
+        -:    4:
+        -:    5:#define protected public
+        -:    6:#define private public
+        -:    7:#include "MixableRecipeBook.h"
+        -:    8:#undef protected
+        -:    9:#undef private
+        -:   10:
+        -:   11:#include <sstream>
+        -:   12:
+        -:   13:class MixableRecipeBookTest: public ::testing::Test
+        -:   14:{
+        -:   15:protected:
+        -:   16:    AvailableIngredients *zv;
+        -:   17:    MixableRecipeBook * book;
+        -:   18:    std::basic_streambuf<char>* orig_cout;
+        -:   19:    std::stringstream test_cout;
+        -:   20:
+function _ZN21MixableRecipeBookTest5SetUpEv called 1 returned 100% blocks executed 65%
+        1:   21:    void SetUp() override
+        -:   22:    {
+        -:   23:        // Check whether cout works normal - otherwise you will get very strange errors
+        -:   24:        // if someone else made a mistake when redirecting cout
+        1:   25:        std::cout << "Start of " << "MixableRecipeBookTest" << std::endl << std::flush;
+        1:   25-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+        -:   26:
+        -:   27:        // redirect cout to my test_cout stream for testing
+        -:   28:        // and store orig cout for restoring after test (!!!do not forget to restore!!!)
+        -:   29:
+        1:   30:        orig_cout = std::cout.rdbuf(test_cout.rdbuf());
+call    0 returned 1
+call    1 returned 1
+        -:   31:
+        1:   32:        zv = new AvailableIngredients();
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   32-block  0
+call    4 never executed
+        1:   33:        book = new MixableRecipeBook(zv);
+        1:   33-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   33-block  1
+call    4 never executed
+        1:   34:        test_cout.str("");
+        1:   34-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   34-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   34-block  2
+call    7 returned 1
+call    8 returned 1
+    $$$$$:   34-block  3
+call    9 never executed
+    $$$$$:   34-block  4
+    $$$$$:   34-block  5
+call   10 never executed
+        1:   35:    }
+        -:   36:
+function _ZN21MixableRecipeBookTest8TearDownEv called 1 returned 100% blocks executed 100%
+        1:   37:    virtual void TearDown()
+        -:   38:    {
+        -:   39:        // Code here will be called immediately after each test
+        -:   40:        // (right before the destructor).
+        1:   41:        std::cout.rdbuf(orig_cout); // redirect cout back to standard cout
+        1:   41-block  0
+call    0 returned 1
+        1:   42:        delete zv;
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        1:   42-block  0
+call    2 returned 1
+        1:   43:        delete book;
+        1:   43-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        1:   43-block  1
+call    2 returned 1
+        -:   44:
+        -:   45:        // Check whether cout works normal again - otherwise the next one using cout
+        -:   46:        // will get very strange behavior
+        1:   47:        std::cout << "End of " << "MixableRecipeBookTest" << std::endl << std::flush;
+        1:   47-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+        1:   48:    }
+        -:   49:};
+        -:   50:
+        4:   51:TEST_F(MixableRecipeBookTest, browseTest){
+        1:   52:    test_cout.str("");
+        1:   53:    book->browse();
+        1:   54:    std::string output = test_cout.str();
+        -:   55:
+       1*:   56:    EXPECT_EQ(!std::string::npos, output.find("Es gibt 6 Cocktails") == std::string::npos);
+        -:   57:
+        1:   58:}
+------------------
+_ZN37MixableRecipeBookTest_browseTest_TestC1Ev:
+function _ZN37MixableRecipeBookTest_browseTest_TestC1Ev called 1 returned 100% blocks executed 100%
+        1:   51:TEST_F(MixableRecipeBookTest, browseTest){
+        1:   51-block  0
+call    0 returned 1
+------------------
+_ZN37MixableRecipeBookTest_browseTest_TestD0Ev:
+function _ZN37MixableRecipeBookTest_browseTest_TestD0Ev called 1 returned 100% blocks executed 100%
+        1:   51:TEST_F(MixableRecipeBookTest, browseTest){
+        1:   51-block  0
+call    0 returned 1
+call    1 returned 1
+------------------
+_ZN37MixableRecipeBookTest_browseTest_TestD1Ev:
+function _ZN37MixableRecipeBookTest_browseTest_TestD1Ev called 1 returned 100% blocks executed 100%
+        1:   51:TEST_F(MixableRecipeBookTest, browseTest){
+        1:   51-block  0
+call    0 returned 1
+------------------
+_ZN37MixableRecipeBookTest_browseTest_Test8TestBodyEv:
+function _ZN37MixableRecipeBookTest_browseTest_Test8TestBodyEv called 1 returned 100% blocks executed 35%
+        1:   51:TEST_F(MixableRecipeBookTest, browseTest){
+        1:   52:    test_cout.str("");
+        1:   52-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   52-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   52-block  2
+call    7 returned 1
+call    8 returned 1
+    $$$$$:   52-block  3
+call    9 never executed
+    $$$$$:   52-block  4
+    $$$$$:   52-block  5
+call   10 never executed
+    $$$$$:   52-block  6
+        1:   53:    book->browse();
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   54:    std::string output = test_cout.str();
+        1:   54-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   55:
+       1*:   56:    EXPECT_EQ(!std::string::npos, output.find("Es gibt 6 Cocktails") == std::string::npos);
+        1:   56-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   56-block  1
+call    4 returned 1
+branch  5 taken 0 (fallthrough)
+branch  6 taken 1
+    %%%%%:   56-block  2
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+    %%%%%:   56-block  3
+call   10 never executed
+call   11 never executed
+branch 12 never executed
+branch 13 never executed
+    %%%%%:   56-block  4
+call   14 never executed
+branch 15 never executed
+branch 16 never executed
+    %%%%%:   56-block  5
+call   17 never executed
+call   18 never executed
+        1:   56-block  6
+call   19 returned 1
+    $$$$$:   56-block  7
+    $$$$$:   56-block  8
+    $$$$$:   56-block  9
+call   20 never executed
+    $$$$$:   56-block 10
+    $$$$$:   56-block 11
+call   21 never executed
+    $$$$$:   56-block 12
+    $$$$$:   56-block 13
+call   22 never executed
+        -:   57:
+        1:   58:}
+call    0 returned 1
+    $$$$$:   58-block  0
+call    1 never executed
+------------------

@@ -1,0 +1,778 @@
+        -:    0:Source:/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/test/DeviceVerwalter_Test.cpp
+        -:    0:Graph:/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin/CMakeFiles/CocktailProTest.dir/src/test/DeviceVerwalter_Test.cpp.gcno
+        -:    0:Data:/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin/CMakeFiles/CocktailProTest.dir/src/test/DeviceVerwalter_Test.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#include "gtest/gtest.h"
+        -:    2:
+        -:    3:#define protected public
+        -:    4:#define private public
+        -:    5:#include "DeviceVerwalter.h"
+        -:    6:#undef protected
+        -:    7:#undef private
+        -:    8:
+        -:    9:class DeviceVerwalterTest: public::testing::Test{
+        -:   10:protected:
+        -:   11:    DeviceVerwalter* deviceVerwalter;
+        -:   12:    AvailableIngredients* availableIngredients;
+        -:   13:
+function _ZN19DeviceVerwalterTest5SetUpEv called 3 returned 100% blocks executed 73%
+        3:   14:    void SetUp() {
+        3:   15:        std::cout<<"Start of DeviceVerwalterTest"<<std::endl;
+        3:   15-block  0
+call    0 returned 3
+call    1 returned 3
+        3:   16:        availableIngredients=new AvailableIngredients();
+call    0 returned 3
+call    1 returned 3
+branch  2 taken 3 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   16-block  0
+call    4 never executed
+        3:   17:        deviceVerwalter=new DeviceVerwalter(availableIngredients);
+        3:   17-block  0
+call    0 returned 3
+call    1 returned 3
+branch  2 taken 3 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   17-block  1
+call    4 never executed
+        3:   18:    }
+        3:   18-block  0
+        -:   19:
+function _ZN19DeviceVerwalterTest8TearDownEv called 3 returned 100% blocks executed 100%
+        3:   20:    void TearDown() {
+        3:   21:        delete deviceVerwalter;
+        3:   21-block  0
+branch  0 taken 3 (fallthrough)
+branch  1 taken 0
+        3:   21-block  1
+call    2 returned 3
+        3:   22:        deviceVerwalter= nullptr;
+        3:   23:        std::cout<<"End of DeviceVerwalterTest"<<std::endl;
+        3:   23-block  0
+call    0 returned 3
+call    1 returned 3
+        3:   24:    }
+        -:   25:};
+        -:   26:
+        4:   27:TEST_F(DeviceVerwalterTest, setZutatenVerwalter){
+        1:   28:    AvailableIngredients* test_AI=(new AvailableIngredients());
+        1:   29:    deviceVerwalter->setZutatenVerwalter(test_AI);
+        -:   30:
+       1*:   31:    EXPECT_EQ(test_AI, deviceVerwalter->myZutatenVerwalter);
+        1:   32:}
+------------------
+_ZN44DeviceVerwalterTest_setZutatenVerwalter_TestC1Ev:
+function _ZN44DeviceVerwalterTest_setZutatenVerwalter_TestC1Ev called 1 returned 100% blocks executed 100%
+        1:   27:TEST_F(DeviceVerwalterTest, setZutatenVerwalter){
+        1:   27-block  0
+call    0 returned 1
+------------------
+_ZN44DeviceVerwalterTest_setZutatenVerwalter_TestD0Ev:
+function _ZN44DeviceVerwalterTest_setZutatenVerwalter_TestD0Ev called 1 returned 100% blocks executed 100%
+        1:   27:TEST_F(DeviceVerwalterTest, setZutatenVerwalter){
+        1:   27-block  0
+call    0 returned 1
+call    1 returned 1
+------------------
+_ZN44DeviceVerwalterTest_setZutatenVerwalter_TestD1Ev:
+function _ZN44DeviceVerwalterTest_setZutatenVerwalter_TestD1Ev called 1 returned 100% blocks executed 100%
+        1:   27:TEST_F(DeviceVerwalterTest, setZutatenVerwalter){
+        1:   27-block  0
+call    0 returned 1
+------------------
+_ZN44DeviceVerwalterTest_setZutatenVerwalter_Test8TestBodyEv:
+function _ZN44DeviceVerwalterTest_setZutatenVerwalter_Test8TestBodyEv called 1 returned 100% blocks executed 33%
+        1:   27:TEST_F(DeviceVerwalterTest, setZutatenVerwalter){
+        1:   28:    AvailableIngredients* test_AI=(new AvailableIngredients());
+        1:   28-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   28-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+    $$$$$:   28-block  2
+call    6 never executed
+        1:   29:    deviceVerwalter->setZutatenVerwalter(test_AI);
+        1:   29-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   30:
+       1*:   31:    EXPECT_EQ(test_AI, deviceVerwalter->myZutatenVerwalter);
+        1:   31-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   31-block  1
+call    3 returned 1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:   31-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    %%%%%:   31-block  3
+call    9 never executed
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+    %%%%%:   31-block  4
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+    %%%%%:   31-block  5
+call   16 never executed
+call   17 never executed
+        1:   31-block  6
+call   18 returned 1
+    $$$$$:   31-block  7
+call   19 never executed
+    $$$$$:   31-block  8
+    $$$$$:   31-block  9
+call   20 never executed
+    $$$$$:   31-block 10
+    $$$$$:   31-block 11
+call   21 never executed
+        1:   32:}
+------------------
+        -:   33:
+        4:   34:TEST_F(DeviceVerwalterTest, rezeptSchrittVorbereiten ){
+        1:   35:    deviceVerwalter->createDevices();
+        1:   36:    float menge = 30;
+        -:   37:
+       18:   38:    for(const auto& it: *deviceVerwalter->myDevices){
+       17:   39:        std::string zutat= it.first;
+       17:   40:        std::cout<<"ZUTAT: "<<zutat<<std::endl;
+       17:   41:        if(zutat == "Limettenstuecke"){
+        1:   42:            auto theDispenser = reinterpret_cast<Dispenser*>(deviceVerwalter->myDevices->at(zutat));
+        1:   43:            theDispenser->zeiteinheit = 1;
+        1:   44:            int stckProZeit = theDispenser->getStueckProZeit();
+        1:   45:            std::cout<<"STCK/ZEIT = "<<stckProZeit<<std::endl;
+        1:   46:            deviceVerwalter->myDevices->at(zutat)->doIt(menge * stckProZeit);
+       1*:   47:            EXPECT_EQ(menge * stckProZeit, theDispenser->myWaage->getDelta());
+        -:   48:        }
+        -:   49:        else{
+       16:   50:            deviceVerwalter->myDevices->at(zutat)->zeiteinheit = 1;
+      16*:   51:            if(typeid(*(deviceVerwalter->myDevices->at(zutat))) == typeid(Dispenser)){
+       12:   52:                deviceVerwalter->myDevices->at(zutat)->doIt(menge);
+       12:   53:                if(zutat == "Eis") {
+        1:   54:                    if (static_cast<int>(menge) % static_cast<int>(deviceVerwalter->theWaage->getDelta()) == 0) {
+    #####:   55:                        EXPECT_EQ(menge, deviceVerwalter->theWaage->getDelta());
+       1*:   56:                    } else EXPECT_NE(menge, deviceVerwalter->theWaage->getDelta());
+        -:   57:                }
+        -:   58:                else {
+      11*:   59:                    EXPECT_EQ(menge, deviceVerwalter->theWaage->getDelta());
+        -:   60:                }
+        -:   61:            }
+       4*:   62:            else if (typeid(*(deviceVerwalter->myDevices->at(zutat))) == typeid(Drainer)){
+        1:   63:                deviceVerwalter->myDevices->at(zutat)->doIt(menge);
+       1*:   64:                EXPECT_GE(menge, deviceVerwalter->theWaage->getWeight());
+        -:   65:            }
+        -:   66:
+        -:   67:        }
+        -:   68:
+       17:   69:    }
+        1:   70:}
+------------------
+_ZN49DeviceVerwalterTest_rezeptSchrittVorbereiten_TestC1Ev:
+function _ZN49DeviceVerwalterTest_rezeptSchrittVorbereiten_TestC1Ev called 1 returned 100% blocks executed 100%
+        1:   34:TEST_F(DeviceVerwalterTest, rezeptSchrittVorbereiten ){
+        1:   34-block  0
+call    0 returned 1
+------------------
+_ZN49DeviceVerwalterTest_rezeptSchrittVorbereiten_TestD0Ev:
+function _ZN49DeviceVerwalterTest_rezeptSchrittVorbereiten_TestD0Ev called 1 returned 100% blocks executed 100%
+        1:   34:TEST_F(DeviceVerwalterTest, rezeptSchrittVorbereiten ){
+        1:   34-block  0
+call    0 returned 1
+call    1 returned 1
+------------------
+_ZN49DeviceVerwalterTest_rezeptSchrittVorbereiten_TestD1Ev:
+function _ZN49DeviceVerwalterTest_rezeptSchrittVorbereiten_TestD1Ev called 1 returned 100% blocks executed 100%
+        1:   34:TEST_F(DeviceVerwalterTest, rezeptSchrittVorbereiten ){
+        1:   34-block  0
+call    0 returned 1
+------------------
+_ZN49DeviceVerwalterTest_rezeptSchrittVorbereiten_Test8TestBodyEv:
+function _ZN49DeviceVerwalterTest_rezeptSchrittVorbereiten_Test8TestBodyEv called 1 returned 100% blocks executed 39%
+        1:   34:TEST_F(DeviceVerwalterTest, rezeptSchrittVorbereiten ){
+        1:   35:    deviceVerwalter->createDevices();
+        1:   35-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   36:    float menge = 30;
+        -:   37:
+       18:   38:    for(const auto& it: *deviceVerwalter->myDevices){
+        1:   38-block  0
+call    0 returned 1
+call    1 returned 1
+       17:   38-block  1
+call    2 returned 17
+call    3 returned 17
+       18:   38-block  2
+call    4 returned 18
+branch  5 taken 17
+branch  6 taken 1 (fallthrough)
+       17:   39:        std::string zutat= it.first;
+call    0 returned 17
+branch  1 taken 17 (fallthrough)
+branch  2 taken 0 (throw)
+       17:   40:        std::cout<<"ZUTAT: "<<zutat<<std::endl;
+       17:   40-block  0
+call    0 returned 17
+branch  1 taken 17 (fallthrough)
+branch  2 taken 0 (throw)
+       17:   40-block  1
+call    3 returned 17
+branch  4 taken 17 (fallthrough)
+branch  5 taken 0 (throw)
+       17:   40-block  2
+call    6 returned 17
+branch  7 taken 17 (fallthrough)
+branch  8 taken 0 (throw)
+       17:   41:        if(zutat == "Limettenstuecke"){
+       17:   41-block  0
+call    0 returned 17
+branch  1 taken 1 (fallthrough)
+branch  2 taken 16
+        1:   42:            auto theDispenser = reinterpret_cast<Dispenser*>(deviceVerwalter->myDevices->at(zutat));
+        1:   42-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   43:            theDispenser->zeiteinheit = 1;
+        1:   44:            int stckProZeit = theDispenser->getStueckProZeit();
+        1:   44-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   45:            std::cout<<"STCK/ZEIT = "<<stckProZeit<<std::endl;
+        1:   45-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   45-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   45-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   46:            deviceVerwalter->myDevices->at(zutat)->doIt(menge * stckProZeit);
+        1:   46-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   46-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+       1*:   47:            EXPECT_EQ(menge * stckProZeit, theDispenser->myWaage->getDelta());
+        1:   47-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   47-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   47-block  2
+call    6 returned 1
+branch  7 taken 0 (fallthrough)
+branch  8 taken 1
+    %%%%%:   47-block  3
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:   47-block  4
+call   12 never executed
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+    %%%%%:   47-block  5
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+    %%%%%:   47-block  6
+call   19 never executed
+call   20 never executed
+        1:   47-block  7
+call   21 returned 1
+    $$$$$:   47-block  8
+    $$$$$:   47-block  9
+    $$$$$:   47-block 10
+call   22 never executed
+    $$$$$:   47-block 11
+    $$$$$:   47-block 12
+call   23 never executed
+    $$$$$:   47-block 13
+    $$$$$:   47-block 14
+call   24 never executed
+        -:   48:        }
+        -:   49:        else{
+       16:   50:            deviceVerwalter->myDevices->at(zutat)->zeiteinheit = 1;
+       16:   50-block  0
+call    0 returned 16
+branch  1 taken 16 (fallthrough)
+branch  2 taken 0 (throw)
+      16*:   51:            if(typeid(*(deviceVerwalter->myDevices->at(zutat))) == typeid(Dispenser)){
+       16:   51-block  0
+call    0 returned 16
+branch  1 taken 16 (fallthrough)
+branch  2 taken 0 (throw)
+       16:   51-block  1
+branch  3 taken 16 (fallthrough)
+branch  4 taken 0
+       16:   51-block  2
+    %%%%%:   51-block  3
+call    5 never executed
+       16:   51-block  4
+call    6 returned 16
+branch  7 taken 12 (fallthrough)
+branch  8 taken 4
+       12:   52:                deviceVerwalter->myDevices->at(zutat)->doIt(menge);
+       12:   52-block  0
+call    0 returned 12
+branch  1 taken 12 (fallthrough)
+branch  2 taken 0 (throw)
+       12:   52-block  1
+call    3 returned 12
+branch  4 taken 12 (fallthrough)
+branch  5 taken 0 (throw)
+       12:   53:                if(zutat == "Eis") {
+       12:   53-block  0
+call    0 returned 12
+branch  1 taken 1 (fallthrough)
+branch  2 taken 11
+        1:   54:                    if (static_cast<int>(menge) % static_cast<int>(deviceVerwalter->theWaage->getDelta()) == 0) {
+        1:   54-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   54-block  1
+branch  3 taken 0 (fallthrough)
+branch  4 taken 1
+    #####:   55:                        EXPECT_EQ(menge, deviceVerwalter->theWaage->getDelta());
+    %%%%%:   55-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   55-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:   55-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    %%%%%:   55-block  3
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:   55-block  4
+call   12 never executed
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+    %%%%%:   55-block  5
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+    %%%%%:   55-block  6
+call   19 never executed
+call   20 never executed
+    %%%%%:   55-block  7
+call   21 never executed
+    $$$$$:   55-block  8
+    $$$$$:   55-block  9
+call   22 never executed
+    $$$$$:   55-block 10
+    $$$$$:   55-block 11
+call   23 never executed
+    $$$$$:   55-block 12
+    $$$$$:   55-block 13
+call   24 never executed
+       1*:   56:                    } else EXPECT_NE(menge, deviceVerwalter->theWaage->getDelta());
+        1:   56-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   56-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   56-block  2
+call    6 returned 1
+branch  7 taken 0 (fallthrough)
+branch  8 taken 1
+    %%%%%:   56-block  3
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:   56-block  4
+call   12 never executed
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+    %%%%%:   56-block  5
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+    %%%%%:   56-block  6
+call   19 never executed
+call   20 never executed
+        1:   56-block  7
+call   21 returned 1
+    $$$$$:   56-block  8
+    $$$$$:   56-block  9
+call   22 never executed
+    $$$$$:   56-block 10
+    $$$$$:   56-block 11
+call   23 never executed
+    $$$$$:   56-block 12
+    $$$$$:   56-block 13
+call   24 never executed
+        -:   57:                }
+        -:   58:                else {
+      11*:   59:                    EXPECT_EQ(menge, deviceVerwalter->theWaage->getDelta());
+       11:   59-block  0
+call    0 returned 11
+branch  1 taken 11 (fallthrough)
+branch  2 taken 0 (throw)
+       11:   59-block  1
+call    3 returned 11
+branch  4 taken 11 (fallthrough)
+branch  5 taken 0 (throw)
+       11:   59-block  2
+call    6 returned 11
+branch  7 taken 0 (fallthrough)
+branch  8 taken 11
+    %%%%%:   59-block  3
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:   59-block  4
+call   12 never executed
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+    %%%%%:   59-block  5
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+    %%%%%:   59-block  6
+call   19 never executed
+call   20 never executed
+       11:   59-block  7
+call   21 returned 11
+    $$$$$:   59-block  8
+    $$$$$:   59-block  9
+call   22 never executed
+    $$$$$:   59-block 10
+    $$$$$:   59-block 11
+call   23 never executed
+    $$$$$:   59-block 12
+    $$$$$:   59-block 13
+call   24 never executed
+        -:   60:                }
+        -:   61:            }
+       4*:   62:            else if (typeid(*(deviceVerwalter->myDevices->at(zutat))) == typeid(Drainer)){
+        4:   62-block  0
+call    0 returned 4
+branch  1 taken 4 (fallthrough)
+branch  2 taken 0 (throw)
+        4:   62-block  1
+branch  3 taken 4 (fallthrough)
+branch  4 taken 0
+        4:   62-block  2
+    %%%%%:   62-block  3
+call    5 never executed
+        4:   62-block  4
+call    6 returned 4
+branch  7 taken 1 (fallthrough)
+branch  8 taken 3
+        1:   63:                deviceVerwalter->myDevices->at(zutat)->doIt(menge);
+        1:   63-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   63-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+       1*:   64:                EXPECT_GE(menge, deviceVerwalter->theWaage->getWeight());
+        1:   64-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   64-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   64-block  2
+call    6 returned 1
+branch  7 taken 0 (fallthrough)
+branch  8 taken 1
+    %%%%%:   64-block  3
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:   64-block  4
+call   12 never executed
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+    %%%%%:   64-block  5
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+    %%%%%:   64-block  6
+call   19 never executed
+call   20 never executed
+        1:   64-block  7
+call   21 returned 1
+    $$$$$:   64-block  8
+    $$$$$:   64-block  9
+call   22 never executed
+    $$$$$:   64-block 10
+    $$$$$:   64-block 11
+call   23 never executed
+    $$$$$:   64-block 12
+    $$$$$:   64-block 13
+call   24 never executed
+        -:   65:            }
+        -:   66:
+        -:   67:        }
+        -:   68:
+       17:   69:    }
+       17:   69-block  0
+call    0 returned 17
+    $$$$$:   69-block  1
+call    1 never executed
+        1:   70:}
+        1:   70-block  0
+------------------
+        -:   71:
+        -:   72:
+        4:   73:TEST_F(DeviceVerwalterTest, createDevices){
+        1:   74:    deviceVerwalter->createDevices();
+        -:   75:
+       2*:   76:    EXPECT_EQ(deviceVerwalter->myEntleerer, deviceVerwalter->myDevices->at("Entleeren"));
+       2*:   77:    EXPECT_EQ(deviceVerwalter->mySchuettler, deviceVerwalter->myDevices->at("Schuetteln"));
+       2*:   78:    EXPECT_EQ(deviceVerwalter->myStampfer, deviceVerwalter->myDevices->at("Stampfen"));
+       2*:   79:    EXPECT_EQ(deviceVerwalter->myMixer, deviceVerwalter->myDevices->at("Mischen"));
+        1:   80:}
+------------------
+_ZN38DeviceVerwalterTest_createDevices_TestC1Ev:
+function _ZN38DeviceVerwalterTest_createDevices_TestC1Ev called 1 returned 100% blocks executed 100%
+        1:   73:TEST_F(DeviceVerwalterTest, createDevices){
+        1:   73-block  0
+call    0 returned 1
+------------------
+_ZN38DeviceVerwalterTest_createDevices_TestD0Ev:
+function _ZN38DeviceVerwalterTest_createDevices_TestD0Ev called 1 returned 100% blocks executed 100%
+        1:   73:TEST_F(DeviceVerwalterTest, createDevices){
+        1:   73-block  0
+call    0 returned 1
+call    1 returned 1
+------------------
+_ZN38DeviceVerwalterTest_createDevices_TestD1Ev:
+function _ZN38DeviceVerwalterTest_createDevices_TestD1Ev called 1 returned 100% blocks executed 100%
+        1:   73:TEST_F(DeviceVerwalterTest, createDevices){
+        1:   73-block  0
+call    0 returned 1
+------------------
+_ZN38DeviceVerwalterTest_createDevices_Test8TestBodyEv:
+function _ZN38DeviceVerwalterTest_createDevices_Test8TestBodyEv called 1 returned 100% blocks executed 31%
+        1:   73:TEST_F(DeviceVerwalterTest, createDevices){
+        1:   74:    deviceVerwalter->createDevices();
+        1:   74-block  0
+call    0 returned 1
+        -:   75:
+       2*:   76:    EXPECT_EQ(deviceVerwalter->myEntleerer, deviceVerwalter->myDevices->at("Entleeren"));
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   76-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   76-block  1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+call   10 returned 1
+call   11 returned 1
+branch 12 taken 0 (fallthrough)
+branch 13 taken 1
+    %%%%%:   76-block  2
+call   14 never executed
+branch 15 never executed
+branch 16 never executed
+    %%%%%:   76-block  3
+call   17 never executed
+call   18 never executed
+branch 19 never executed
+branch 20 never executed
+    %%%%%:   76-block  4
+call   21 never executed
+branch 22 never executed
+branch 23 never executed
+    %%%%%:   76-block  5
+call   24 never executed
+call   25 never executed
+        1:   76-block  6
+call   26 returned 1
+    $$$$$:   76-block  7
+    $$$$$:   76-block  8
+    $$$$$:   76-block  9
+call   27 never executed
+    $$$$$:   76-block 10
+    $$$$$:   76-block 11
+call   28 never executed
+    $$$$$:   76-block 12
+    $$$$$:   76-block 13
+call   29 never executed
+       2*:   77:    EXPECT_EQ(deviceVerwalter->mySchuettler, deviceVerwalter->myDevices->at("Schuetteln"));
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   77-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   77-block  1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+call   10 returned 1
+call   11 returned 1
+branch 12 taken 0 (fallthrough)
+branch 13 taken 1
+    %%%%%:   77-block  2
+call   14 never executed
+branch 15 never executed
+branch 16 never executed
+    %%%%%:   77-block  3
+call   17 never executed
+call   18 never executed
+branch 19 never executed
+branch 20 never executed
+    %%%%%:   77-block  4
+call   21 never executed
+branch 22 never executed
+branch 23 never executed
+    %%%%%:   77-block  5
+call   24 never executed
+call   25 never executed
+        1:   77-block  6
+call   26 returned 1
+    $$$$$:   77-block  7
+    $$$$$:   77-block  8
+    $$$$$:   77-block  9
+call   27 never executed
+    $$$$$:   77-block 10
+    $$$$$:   77-block 11
+call   28 never executed
+    $$$$$:   77-block 12
+    $$$$$:   77-block 13
+call   29 never executed
+       2*:   78:    EXPECT_EQ(deviceVerwalter->myStampfer, deviceVerwalter->myDevices->at("Stampfen"));
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   78-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   78-block  1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+call   10 returned 1
+call   11 returned 1
+branch 12 taken 0 (fallthrough)
+branch 13 taken 1
+    %%%%%:   78-block  2
+call   14 never executed
+branch 15 never executed
+branch 16 never executed
+    %%%%%:   78-block  3
+call   17 never executed
+call   18 never executed
+branch 19 never executed
+branch 20 never executed
+    %%%%%:   78-block  4
+call   21 never executed
+branch 22 never executed
+branch 23 never executed
+    %%%%%:   78-block  5
+call   24 never executed
+call   25 never executed
+        1:   78-block  6
+call   26 returned 1
+    $$$$$:   78-block  7
+    $$$$$:   78-block  8
+    $$$$$:   78-block  9
+call   27 never executed
+    $$$$$:   78-block 10
+    $$$$$:   78-block 11
+call   28 never executed
+    $$$$$:   78-block 12
+    $$$$$:   78-block 13
+call   29 never executed
+       2*:   79:    EXPECT_EQ(deviceVerwalter->myMixer, deviceVerwalter->myDevices->at("Mischen"));
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   79-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   79-block  1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+call   10 returned 1
+call   11 returned 1
+branch 12 taken 0 (fallthrough)
+branch 13 taken 1
+    %%%%%:   79-block  2
+call   14 never executed
+branch 15 never executed
+branch 16 never executed
+    %%%%%:   79-block  3
+call   17 never executed
+call   18 never executed
+branch 19 never executed
+branch 20 never executed
+    %%%%%:   79-block  4
+call   21 never executed
+branch 22 never executed
+branch 23 never executed
+    %%%%%:   79-block  5
+call   24 never executed
+call   25 never executed
+        1:   79-block  6
+call   26 returned 1
+    $$$$$:   79-block  7
+    $$$$$:   79-block  8
+    $$$$$:   79-block  9
+call   27 never executed
+    $$$$$:   79-block 10
+    $$$$$:   79-block 11
+call   28 never executed
+    $$$$$:   79-block 12
+    $$$$$:   79-block 13
+call   29 never executed
+        1:   80:}
+------------------

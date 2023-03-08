@@ -1,0 +1,390 @@
+        -:    0:Source:/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/test/Dispenser_Test.cpp
+        -:    0:Graph:/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin/CMakeFiles/CocktailProTest.dir/src/test/Dispenser_Test.cpp.gcno
+        -:    0:Data:/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin/CMakeFiles/CocktailProTest.dir/src/test/Dispenser_Test.cpp.gcda
+        -:    0:Runs:1
+        -:    1:
+        -:    2:#include <string>
+        -:    3:#include "gtest/gtest.h"
+        -:    4:
+        -:    5:#define protected public
+        -:    6:#define private public
+        -:    7:#include "Dispenser.h"
+        -:    8:#undef protected
+        -:    9:#undef private
+        -:   10:
+        -:   11:class DispenserTest: public::testing::Test{
+        -:   12:protected:
+        -:   13:    Waage* myWaage = new Waage();
+        -:   14:    Dispenser* myDispenser = nullptr;
+        -:   15:    int ze = 1;
+        -:   16:    float grammProZeit = 10;
+        -:   17:    std::string zutat = "Eis";
+        -:   18:
+function _ZN13DispenserTest5SetUpEv called 3 returned 100% blocks executed 86%
+        3:   19:    void SetUp(){
+        3:   20:        std::cout << "Start of DispenserTest" << std::endl;
+        3:   20-block  0
+call    0 returned 3
+call    1 returned 3
+        -:   21:
+        -:   22:        //Dummy Dispenser
+        3:   23:        myDispenser = new Dispenser(grammProZeit, ze, zutat, myWaage);
+call    0 returned 3
+call    1 returned 3
+branch  2 taken 3 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   23-block  0
+call    4 never executed
+        3:   24:    }
+        3:   24-block  0
+        -:   25:
+function _ZN13DispenserTest8TearDownEv called 3 returned 100% blocks executed 100%
+        3:   26:    void TearDown(){
+        3:   27:        delete myDispenser;
+        3:   27-block  0
+branch  0 taken 3 (fallthrough)
+branch  1 taken 0
+        3:   27-block  1
+call    2 returned 3
+call    3 returned 3
+        3:   28:        myDispenser = nullptr;
+        -:   29:
+        3:   30:        delete myWaage;
+        3:   30-block  0
+branch  0 taken 3 (fallthrough)
+branch  1 taken 0
+        3:   30-block  1
+call    2 returned 3
+call    3 returned 3
+        3:   31:        myWaage = nullptr;
+        -:   32:
+        3:   33:        std::cout << "End of DispenserTest" << std::endl;
+        3:   33-block  0
+call    0 returned 3
+call    1 returned 3
+        3:   34:    }
+        -:   35:};
+        4:   36:TEST_F(DispenserTest, update){
+        1:   37:    myDispenser->doinIt = false;
+        1:   38:    myDispenser->update();
+       1*:   39:    EXPECT_EQ(0, myDispenser->doinIt);
+        -:   40:
+        1:   41:}
+------------------
+_ZN25DispenserTest_update_TestC1Ev:
+function _ZN25DispenserTest_update_TestC1Ev called 1 returned 100% blocks executed 100%
+        1:   36:TEST_F(DispenserTest, update){
+        1:   36-block  0
+call    0 returned 1
+------------------
+_ZN25DispenserTest_update_TestD0Ev:
+function _ZN25DispenserTest_update_TestD0Ev called 1 returned 100% blocks executed 100%
+        1:   36:TEST_F(DispenserTest, update){
+        1:   36-block  0
+call    0 returned 1
+call    1 returned 1
+------------------
+_ZN25DispenserTest_update_TestD1Ev:
+function _ZN25DispenserTest_update_TestD1Ev called 1 returned 100% blocks executed 100%
+        1:   36:TEST_F(DispenserTest, update){
+        1:   36-block  0
+call    0 returned 1
+------------------
+_ZN25DispenserTest_update_Test8TestBodyEv:
+function _ZN25DispenserTest_update_Test8TestBodyEv called 1 returned 100% blocks executed 29%
+        1:   36:TEST_F(DispenserTest, update){
+        1:   37:    myDispenser->doinIt = false;
+        1:   38:    myDispenser->update();
+        1:   38-block  0
+call    0 returned 1
+       1*:   39:    EXPECT_EQ(0, myDispenser->doinIt);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   39-block  0
+call    3 returned 1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:   39-block  1
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    %%%%%:   39-block  2
+call    9 never executed
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+    %%%%%:   39-block  3
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+    %%%%%:   39-block  4
+call   16 never executed
+call   17 never executed
+        1:   39-block  5
+call   18 returned 1
+    $$$$$:   39-block  6
+    $$$$$:   39-block  7
+call   19 never executed
+    $$$$$:   39-block  8
+    $$$$$:   39-block  9
+call   20 never executed
+    $$$$$:   39-block 10
+    $$$$$:   39-block 11
+call   21 never executed
+        -:   40:
+        1:   41:}
+------------------
+        -:   42:
+        4:   43:TEST_F(DispenserTest,doIt){
+        1:   44:    float menge = 47;
+        -:   45:
+        1:   46:    myDispenser->doIt(menge);
+        1:   47:    if(zutat == "Eis") {
+        1:   48:        if (static_cast<int>(menge) % static_cast<int>(myWaage->getDelta()) == 0) {
+    #####:   49:            EXPECT_EQ(menge, myWaage->getDelta());
+       1*:   50:        } else EXPECT_NE(menge, myWaage->getDelta());
+        -:   51:    }
+        -:   52:    else {
+    #####:   53:        EXPECT_EQ(menge, myWaage->getDelta());
+        -:   54:    }
+        1:   55:}
+------------------
+_ZN23DispenserTest_doIt_TestC1Ev:
+function _ZN23DispenserTest_doIt_TestC1Ev called 1 returned 100% blocks executed 100%
+        1:   43:TEST_F(DispenserTest,doIt){
+        1:   43-block  0
+call    0 returned 1
+------------------
+_ZN23DispenserTest_doIt_TestD0Ev:
+function _ZN23DispenserTest_doIt_TestD0Ev called 1 returned 100% blocks executed 100%
+        1:   43:TEST_F(DispenserTest,doIt){
+        1:   43-block  0
+call    0 returned 1
+call    1 returned 1
+------------------
+_ZN23DispenserTest_doIt_TestD1Ev:
+function _ZN23DispenserTest_doIt_TestD1Ev called 1 returned 100% blocks executed 100%
+        1:   43:TEST_F(DispenserTest,doIt){
+        1:   43-block  0
+call    0 returned 1
+------------------
+_ZN23DispenserTest_doIt_Test8TestBodyEv:
+function _ZN23DispenserTest_doIt_Test8TestBodyEv called 1 returned 100% blocks executed 16%
+        1:   43:TEST_F(DispenserTest,doIt){
+        1:   44:    float menge = 47;
+        -:   45:
+        1:   46:    myDispenser->doIt(menge);
+        1:   46-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   47:    if(zutat == "Eis") {
+        1:   47-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0
+        1:   48:        if (static_cast<int>(menge) % static_cast<int>(myWaage->getDelta()) == 0) {
+        1:   48-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   48-block  1
+branch  3 taken 0 (fallthrough)
+branch  4 taken 1
+    #####:   49:            EXPECT_EQ(menge, myWaage->getDelta());
+    %%%%%:   49-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   49-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:   49-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    %%%%%:   49-block  3
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:   49-block  4
+call   12 never executed
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+    %%%%%:   49-block  5
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+    %%%%%:   49-block  6
+call   19 never executed
+call   20 never executed
+    %%%%%:   49-block  7
+call   21 never executed
+    $$$$$:   49-block  8
+    $$$$$:   49-block  9
+call   22 never executed
+    $$$$$:   49-block 10
+    $$$$$:   49-block 11
+call   23 never executed
+    $$$$$:   49-block 12
+    $$$$$:   49-block 13
+call   24 never executed
+       1*:   50:        } else EXPECT_NE(menge, myWaage->getDelta());
+        1:   50-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   50-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   50-block  2
+call    6 returned 1
+branch  7 taken 0 (fallthrough)
+branch  8 taken 1
+    %%%%%:   50-block  3
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:   50-block  4
+call   12 never executed
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+    %%%%%:   50-block  5
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+    %%%%%:   50-block  6
+call   19 never executed
+call   20 never executed
+        1:   50-block  7
+call   21 returned 1
+    $$$$$:   50-block  8
+    $$$$$:   50-block  9
+call   22 never executed
+    $$$$$:   50-block 10
+    $$$$$:   50-block 11
+call   23 never executed
+    $$$$$:   50-block 12
+    $$$$$:   50-block 13
+call   24 never executed
+        -:   51:    }
+        -:   52:    else {
+    #####:   53:        EXPECT_EQ(menge, myWaage->getDelta());
+    %%%%%:   53-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   53-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:   53-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    %%%%%:   53-block  3
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:   53-block  4
+call   12 never executed
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+    %%%%%:   53-block  5
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+    %%%%%:   53-block  6
+call   19 never executed
+call   20 never executed
+    %%%%%:   53-block  7
+call   21 never executed
+    $$$$$:   53-block  8
+    $$$$$:   53-block  9
+call   22 never executed
+    $$$$$:   53-block 10
+    $$$$$:   53-block 11
+call   23 never executed
+    $$$$$:   53-block 12
+    $$$$$:   53-block 13
+call   24 never executed
+        -:   54:    }
+        1:   55:}
+        1:   55-block  0
+------------------
+        -:   56:
+        4:   57:TEST_F(DispenserTest, getStueckProZeit){
+       1*:   58:    EXPECT_EQ(grammProZeit, myDispenser->getStueckProZeit());
+        1:   59:}
+------------------
+_ZN35DispenserTest_getStueckProZeit_TestC1Ev:
+function _ZN35DispenserTest_getStueckProZeit_TestC1Ev called 1 returned 100% blocks executed 100%
+        1:   57:TEST_F(DispenserTest, getStueckProZeit){
+        1:   57-block  0
+call    0 returned 1
+------------------
+_ZN35DispenserTest_getStueckProZeit_TestD0Ev:
+function _ZN35DispenserTest_getStueckProZeit_TestD0Ev called 1 returned 100% blocks executed 100%
+        1:   57:TEST_F(DispenserTest, getStueckProZeit){
+        1:   57-block  0
+call    0 returned 1
+call    1 returned 1
+------------------
+_ZN35DispenserTest_getStueckProZeit_TestD1Ev:
+function _ZN35DispenserTest_getStueckProZeit_TestD1Ev called 1 returned 100% blocks executed 100%
+        1:   57:TEST_F(DispenserTest, getStueckProZeit){
+        1:   57-block  0
+call    0 returned 1
+------------------
+_ZN35DispenserTest_getStueckProZeit_Test8TestBodyEv:
+function _ZN35DispenserTest_getStueckProZeit_Test8TestBodyEv called 1 returned 100% blocks executed 29%
+        1:   57:TEST_F(DispenserTest, getStueckProZeit){
+       1*:   58:    EXPECT_EQ(grammProZeit, myDispenser->getStueckProZeit());
+        1:   58-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   58-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   58-block  2
+call    6 returned 1
+branch  7 taken 0 (fallthrough)
+branch  8 taken 1
+    %%%%%:   58-block  3
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:   58-block  4
+call   12 never executed
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+    %%%%%:   58-block  5
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+    %%%%%:   58-block  6
+call   19 never executed
+call   20 never executed
+        1:   58-block  7
+call   21 returned 1
+    $$$$$:   58-block  8
+    $$$$$:   58-block  9
+call   22 never executed
+    $$$$$:   58-block 10
+    $$$$$:   58-block 11
+call   23 never executed
+    $$$$$:   58-block 12
+    $$$$$:   58-block 13
+call   24 never executed
+        1:   59:}
+------------------
+        -:   60:

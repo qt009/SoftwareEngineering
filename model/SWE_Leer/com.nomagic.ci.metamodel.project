@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project:Project xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:project="http://www.nomagic.com/ns/cameo/client/project/1.0" xmi:id="_cedx4Ya5EeCh_oP0-uKNtA" description="" id="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747">
+  <ownedSections xmi:id="_cews0Ya5EeCh_oP0-uKNtA" name="model" featuredBy="_cews0Ia5EeCh_oP0-uKNtA"/>
+  <ownedSections xmi:id="_cjYHEYa5EeCh_oP0-uKNtA" name="commonprojectoptions" shared="true" featuredBy="_cjYHEIa5EeCh_oP0-uKNtA"/>
+  <ownedSections xmi:id="_cjYHE4a5EeCh_oP0-uKNtA" name="personalprojectoptions" shared="true" belongsTo="_cjYHFYa5EeCh_oP0-uKNtA" featuredBy="_cjYHEIa5EeCh_oP0-uKNtA"/>
+  <ownedSections xmi:id="_eJmeAoa5EeCh_oP0-uKNtA" name="commoncodeengineering" featuredBy="_eJmeAYa5EeCh_oP0-uKNtA"/>
+  <ownedSections xmi:id="_nymcENt9EemchZrQk6kwgg" name="personalcodeengineering" belongsTo="_cjYHFYa5EeCh_oP0-uKNtA" featuredBy="_eJmeAYa5EeCh_oP0-uKNtA"/>
+  <userParts xmi:id="_cjYHFYa5EeCh_oP0-uKNtA" user="_cjYHFIa5EeCh_oP0-uKNtA" sections="_cjYHE4a5EeCh_oP0-uKNtA _nymcENt9EemchZrQk6kwgg"/>
+  <projectUsages xmi:id="_cmgTkIa5EeCh_oP0-uKNtA" usedProjectURI="file:/C:/Program%20Files/MagicDraw/profiles/UML_Standard_Profile.mdzip" readonly="true" preferredProjectRepositoryType="" loadedAutomatically="true" withPrivateDependencies="true">
+    <usedProject href="PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.ci.metamodel.project#_VWTUgU_TEeCNOP_jel_PNg"/>
+    <mountPoints xmi:id="_d20r8Ia5EeCh_oP0-uKNtA" sharePointID="magicdraw_uml_standard_profile_v_0001" containmentFeatureID="61" featureName="UML Model" containmentIndex="-1" containmentFeatureName="packagedElement">
+      <mountedPoint href="PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#magicdraw_uml_standard_profile_v_0001"/>
+      <mountedOn href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#eee_1045467100313_135436_1"/>
+      <options xmi:id="_r1FlASW4EeyI8vXAGyFBDQ" key="preferredPath" value="::"/>
+    </mountPoints>
+    <properties xmi:id="_d20r8oa5EeCh_oP0-uKNtA" key="loadIndex" value="true"/>
+    <properties xmi:id="_d20r84a5EeCh_oP0-uKNtA" key="usedVersion" value="19.0 SP3"/>
+    <properties xmi:id="_eZQDkIa5EeCh_oP0-uKNtA" key="LOCAL_PROJECT_ID" value="PROJECT-877558e9224f114d50dea1f39a1c119"/>
+  </projectUsages>
+  <projectUsages xmi:id="_d46WoIa5EeCh_oP0-uKNtA" usedProjectURI="file:/C:/Program%20Files/MagicDraw/profiles/C++_ANSI_Profile.mdzip" readonly="true" preferredProjectRepositoryType="" loadedAutomatically="true" withPrivateDependencies="true">
+    <usedProject href="PROJECT-58814ab339137157c8adba26ca27a87?resource=com.nomagic.ci.metamodel.project#_MAg08VoHEeCWceQ30pj02A"/>
+    <mountPoints xmi:id="_eI23IIa5EeCh_oP0-uKNtA" sharePointID="_10_5_3fc019d_1151050132343_812649_257" containmentFeatureID="61" featureName="UML Model" containmentIndex="-1" containmentFeatureName="packagedElement">
+      <mountedPoint href="PROJECT-58814ab339137157c8adba26ca27a87?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel#_10_5_3fc019d_1151050132343_812649_257"/>
+      <mountedOn href="PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#eee_1045467100313_135436_1"/>
+      <options xmi:id="_r1FlACW4EeyI8vXAGyFBDQ" key="preferredPath" value="::"/>
+    </mountPoints>
+    <properties xmi:id="_eI23Ioa5EeCh_oP0-uKNtA" key="loadIndex" value="true"/>
+    <properties xmi:id="_eI23I4a5EeCh_oP0-uKNtA" key="usedVersion" value="19.0"/>
+    <properties xmi:id="_eZQDkYa5EeCh_oP0-uKNtA" key="LOCAL_PROJECT_ID" value="PROJECT-58814ab339137157c8adba26ca27a87"/>
+  </projectUsages>
+  <features xmi:id="_cews0Ia5EeCh_oP0-uKNtA" name="UML Model" namespace="com.nomagic.magicdraw.uml_model" version="17.0" sections="_cews0Ya5EeCh_oP0-uKNtA" internalVersion="1"/>
+  <features xmi:id="_cjYHEIa5EeCh_oP0-uKNtA" name="Project Options" namespace="com.nomagic.magicdraw.core.project.options" version="1.0" sections="_cjYHEYa5EeCh_oP0-uKNtA _cjYHE4a5EeCh_oP0-uKNtA" internalVersion="1"/>
+  <features xmi:id="_eJmeAIa5EeCh_oP0-uKNtA" name="Language Properties" namespace="com.nomagic.magicdraw.ce.languageproperties" version="1.0" internalVersion="1"/>
+  <features xmi:id="_eJmeAYa5EeCh_oP0-uKNtA" name="Code Engineering" namespace="com.nomagic.magicdraw.ce" version="1.0" sections="_eJmeAoa5EeCh_oP0-uKNtA _nymcENt9EemchZrQk6kwgg" internalVersion="1"/>
+  <features xmi:id="_Ett6cPvuEeWYFOZRq_ED2A" name="DMN Code Engineering" namespace="com.nomagic.magicdraw.ce.dmn" version="1.0" internalVersion="1"/>
+  <properties xmi:id="_ckHt8Ia5EeCh_oP0-uKNtA" key="standardProfile" value="false"/>
+  <properties xmi:id="_ckHt8Ya5EeCh_oP0-uKNtA" key="internalVersion" value="-1"/>
+  <properties xmi:id="_eZZNgIa5EeCh_oP0-uKNtA" key="exporterDescription" value="ac ed 0 5 73 72 0 2e 63 6f 6d 2e 6e 6f 6d 61 67 69 63 2e 70 65 72 73 69 73 74 65 6e 63 65 2e 58 6d 69 45 78 70 6f 72 74 65 72 44 65 73 63 72 69 70 74 69 6f 6e f5 3e fd c8 e7 3c 3b d7 2 0 5 4c 0 5 6d 4e 61 6d 65 74 0 12 4c 6a 61 76 61 2f 6c 61 6e 67 2f 53 74 72 69 6e 67 3b 4c 0 12 6d 52 65 71 75 69 72 65 64 50 6c 75 67 69 6e 4d 61 70 74 0 f 4c 6a 61 76 61 2f 75 74 69 6c 2f 4d 61 70 3b 4c 0 12 6d 52 65 71 75 69 72 65 64 52 65 73 6f 75 72 63 65 73 74 0 10 4c 6a 61 76 61 2f 75 74 69 6c 2f 4c 69 73 74 3b 4c 0 10 6d 55 4d 4c 4e 61 6d 65 73 70 61 63 65 55 52 49 71 0 7e 0 1 4c 0 8 6d 56 65 72 73 69 6f 6e 71 0 7e 0 1 78 70 74 0 d 4d 61 67 69 63 44 72 61 77 20 55 4d 4c 73 72 0 11 6a 61 76 61 2e 75 74 69 6c 2e 48 61 73 68 4d 61 70 5 7 da c1 c3 16 60 d1 3 0 2 46 0 a 6c 6f 61 64 46 61 63 74 6f 72 49 0 9 74 68 72 65 73 68 6f 6c 64 78 70 3f 40 0 0 0 0 0 0 77 8 0 0 0 10 0 0 0 0 78 73 72 0 13 6a 61 76 61 2e 75 74 69 6c 2e 41 72 72 61 79 4c 69 73 74 78 81 d2 1d 99 c7 61 9d 3 0 1 49 0 4 73 69 7a 65 78 70 0 0 0 0 77 4 0 0 0 0 78 70 74 0 7 31 39 2e 30 20 76 39 "/>
+  <properties xmi:id="_eZsvgIa5EeCh_oP0-uKNtA" key="MODULES_DIRS" value="&lt;install.root>\profiles&lt;>&lt;install.root>\modelLibraries"/>
+  <properties xmi:id="_HXAyMMQeEeCCnL1Mh7NN5g" key="fileVersion" value="40"/>
+  <properties xmi:id="_HXJ8IMQeEeCCnL1Mh7NN5g" key="MODEL_ROOT_HREF" value="local:/PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model#eee_1045467100313_135436_1"/>
+  <properties xmi:id="_aqMqAAiaEeKlPOcE--zWQQ" key="CI_VERSION" value="V1702_SP1"/>
+  <properties xmi:id="_OVJ54NnXEeSt1dUa3K1eOA" key="fileFormatVersion" value="18.1 beta.esi"/>
+  <properties xmi:id="_fyHsYG6KEeWoxPthTK0iTA" key="saveID" value="84c2c37a-86d2-44a1-bde4-8b6348023fd8"/>
+  <projectUsers xmi:id="_cjYHFIa5EeCh_oP0-uKNtA" userId="default"/>
+</project:Project>

@@ -1,0 +1,25 @@
+        -:    0:Source:/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/main/Shaker.cpp
+        -:    0:Graph:/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin/CMakeFiles/CocktailProSource.dir/src/main/Shaker.cpp.gcno
+        -:    0:Data:/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin/CMakeFiles/CocktailProSource.dir/src/main/Shaker.cpp.gcda
+        -:    0:Runs:1
+        -:    1://@(#) Shaker.cpp
+        -:    2:
+        -:    3:
+        -:    4:#include "Shaker.h"
+        -:    5:
+        -:    6:int num=1000;
+function _ZN6ShakerC2Ev called 24 returned 100% blocks executed 100%
+       24:    7:Shaker::Shaker() : InternalDevice() {
+       24:    7-block  0
+call    0 returned 24
+       24:    8:}
+        -:    9:
+function _ZN6Shaker4doItEf called 2 returned 100% blocks executed 100%
+        2:   10:void Shaker::doIt(float time) {
+        2:   11:    myTimer->sleepInIntervals(time * num);
+        2:   11-block  0
+call    0 returned 2
+        2:   12:    std::cout << std::endl;
+call    0 returned 2
+        2:   13:    needsCleaning = true;
+        2:   14:}

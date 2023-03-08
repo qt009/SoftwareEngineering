@@ -1,0 +1,57 @@
+        -:    0:Source:/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/main/RecipeStep.cpp
+        -:    0:Graph:/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin/CMakeFiles/CocktailProSource.dir/src/main/RecipeStep.cpp.gcno
+        -:    0:Data:/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin/CMakeFiles/CocktailProSource.dir/src/main/RecipeStep.cpp.gcda
+        -:    0:Runs:1
+        -:    1:
+        -:    2:#include <algorithm>
+        -:    3:
+        -:    4:#include "RecipeStep.h"
+        -:    5:
+function _ZN10RecipeStepC2Ev called 1031 returned 100% blocks executed 71%
+     1031:    6:RecipeStep::RecipeStep() : rezeptZutat(""), rezeptMenge(0) {
+     1031:    6-block  0
+call    0 returned 1031
+call    1 returned 1031
+branch  2 taken 1031 (fallthrough)
+branch  3 taken 0 (throw)
+     1031:    6-block  1
+call    4 returned 1031
+    $$$$$:    6-block  2
+call    5 never executed
+        -:    7://  this->rezeptZutat = "";
+        -:    8:    //this->rezeptMenge = 0;
+     1031:    9:}
+        -:   10:
+function _ZN10RecipeStepD2Ev called 4 returned 100% blocks executed 100%
+        4:   11:RecipeStep::~RecipeStep() {
+        4:   12:    this->rezeptZutat = "";
+        4:   12-block  0
+call    0 returned 4
+        4:   13:    this->rezeptMenge = 0;
+        4:   14:}
+call    0 returned 4
+        -:   15:
+function _ZNK10RecipeStep8getZutatEv called 4419 returned 100% blocks executed 100%
+     4419:   16:std::string RecipeStep::getZutat() const {
+     4419:   17:    return rezeptZutat;
+     4419:   17-block  0
+call    0 returned 4419
+        -:   18:}
+        -:   19:
+function _ZNK10RecipeStep8getMengeEv called 167 returned 100% blocks executed 100%
+      167:   20:float RecipeStep::getMenge() const {
+      167:   21:    return rezeptMenge;
+      167:   21-block  0
+        -:   22:}
+        -:   23:
+function _ZN10RecipeStep8setZutatERSs called 1033 returned 100% blocks executed 100%
+     1033:   24:void RecipeStep::setZutat(std::string& mZutat) {
+     1033:   25:    this->rezeptZutat = mZutat;
+     1033:   25-block  0
+call    0 returned 1033
+     1033:   26:}
+        -:   27:
+function _ZN10RecipeStep8setMengeEf called 1033 returned 100% blocks executed 100%
+     1033:   28:void RecipeStep::setMenge(float neuMenge) {
+     1033:   29:    this->rezeptMenge = neuMenge;
+     1033:   30:}

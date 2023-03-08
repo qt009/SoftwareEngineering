@@ -1,0 +1,10 @@
+* Bartender.cpp:
+    - in Line 16: _ deleted assigned value to int i
+                  _ in for() loop: delete 'int'
+
+* Dispenser.cpp:
+    - change the parameter 'inhalt' of Dispenser constructor to 'content'
+
+*Drainer.cpp
+    - in function void doIt(float value):
+        changed parameter 'value' to 'm_value'

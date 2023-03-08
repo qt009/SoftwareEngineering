@@ -1,0 +1,49 @@
+        -:    0:Source:/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/main/Waage.cpp
+        -:    0:Graph:/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin/CMakeFiles/CocktailProSource.dir/src/main/Waage.cpp.gcno
+        -:    0:Data:/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin/CMakeFiles/CocktailProSource.dir/src/main/Waage.cpp.gcda
+        -:    0:Runs:1
+        -:    1://@(#) Waage.cpp
+        -:    2:
+        -:    3:
+        -:    4:#include "Waage.h"
+        -:    5:
+function _ZN5Waage12changeWeightEi called 1320 returned 100% blocks executed 100%
+     1320:    6:void Waage::changeWeight(int v) {
+     1320:    7:    weight += v;
+     1320:    8:    if (weight < 0)
+     1320:    8-block  0
+branch  0 taken 8 (fallthrough)
+branch  1 taken 1312
+        8:    9:        weight = 0;
+        8:    9-block  0
+     1320:   10:    deltaWeight += v;
+     1320:   11:    notify();
+     1320:   11-block  0
+call    0 returned 1320
+     1320:   12:}
+        -:   13:
+function _ZN5Waage4taraEv called 127 returned 100% blocks executed 100%
+      127:   14:int Waage::tara() {
+      127:   15:    return deltaWeight = 0;
+      127:   15-block  0
+        -:   16:}
+        -:   17:
+function _ZNK5Waage9getWeightEv called 221 returned 100% blocks executed 100%
+      221:   18:int Waage::getWeight() const {
+      221:   19:    return weight;
+      221:   19-block  0
+        -:   20:}
+        -:   21:
+function _ZNK5Waage8getDeltaEv called 1274 returned 100% blocks executed 100%
+     1274:   22:int Waage::getDelta() const {
+     1274:   23:    return deltaWeight;
+     1274:   23-block  0
+        -:   24:}
+        -:   25:
+function _ZN5WaageC2Ev called 34 returned 100% blocks executed 100%
+       34:   26:Waage::Waage() {
+       34:   26-block  0
+call    0 returned 34
+       34:   27:    weight=0;
+       34:   28:    deltaWeight=0;
+       34:   29:}

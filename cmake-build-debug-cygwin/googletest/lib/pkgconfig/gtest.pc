@@ -1,0 +1,9 @@
+libdir=/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin/googletest/lib
+includedir=/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin/googletest/include
+
+Name: gtest
+Description: GoogleTest (without main() function)
+Version: 1.11.0
+URL: https://github.com/google/googletest
+Libs: -L${libdir} -lgtest 
+Cflags: -I${includedir} -DGTEST_HAS_PTHREAD=1

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="ASCII"?>
+<snapshot:SnapshotInfoContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:snapshot="http://www.nomagic.com/ns/cameo/client/snapshot/1.0" xmi:id="_FMgA8JnOEeG5IL63JP9cFw">
+  <snaphotDescriptors xmi:id="_GUeVoJnOEeG5IL63JP9cFw" originalResourceURI="local:/PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel">
+    <sharePointObjects>magicdraw_uml_standard_profile_v_0001</sharePointObjects>
+  </snaphotDescriptors>
+  <snaphotDescriptors xmi:id="_GU7BkJnOEeG5IL63JP9cFw" originalResourceURI="local:/PROJECT-58814ab339137157c8adba26ca27a87?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel">
+    <sharePointObjects>_10_5_3fc019d_1151050132343_812649_257</sharePointObjects>
+  </snaphotDescriptors>
+  <snaphotDescriptors xmi:id="_GVXtgJnOEeG5IL63JP9cFw" originalResourceURI="local:/PROJECT-5e6c0138eb812d3e7fa9b70a34ce4a?resource=com.nomagic.magicdraw.uml_umodel.model"/>
+  <snaphotDescriptors xmi:id="_Uwj9cIxxEeaS9IXqyBp7mQ" originalResourceURI="local:/PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model">
+    <roots>_18_4_14300d5_1475832901780_315621_5811</roots>
+    <roots>_19_0_4_3ad0186_1663936790545_443006_5059</roots>
+    <roots>_19_0_4_3ad0186_1663936841942_512529_5116</roots>
+    <roots>_19_0_4_3ad0186_1663936841950_211132_5119</roots>
+    <roots>_19_0_4_3ad0186_1663936841952_224945_5122</roots>
+    <roots>_19_0_4_3ad0186_1663936841955_909289_5126</roots>
+    <roots>_19_0_4_3ad0186_1663936841957_854806_5129</roots>
+    <roots>_19_0_4_3ad0186_1663936841958_310769_5131</roots>
+    <roots>_19_0_4_3ad0186_1663936841960_291520_5133</roots>
+    <roots>_19_0_4_3ad0186_1663936841963_825353_5136</roots>
+    <roots>_19_0_4_3ad0186_1663936841964_772005_5138</roots>
+    <roots>_19_0_4_3ad0186_1663936841967_842099_5141</roots>
+    <roots>_19_0_4_3ad0186_1663936841969_943924_5143</roots>
+    <roots>_19_0_4_3ad0186_1663936841970_624446_5145</roots>
+    <roots>_19_0_4_3ad0186_1663936841972_651208_5147</roots>
+    <roots>_19_0_4_3ad0186_1663936841974_958923_5150</roots>
+    <roots>_19_0_4_3ad0186_1663936841975_818061_5152</roots>
+    <roots>_19_0_4_3ad0186_1663936841977_334414_5154</roots>
+    <roots>_19_0_4_3ad0186_1663936841979_282433_5156</roots>
+    <roots>_19_0_4_3ad0186_1663936841982_546856_5158</roots>
+    <roots>_19_0_4_3ad0186_1663936842130_138164_5245</roots>
+    <roots>_19_0_4_3ad0186_1663936842216_829538_5310</roots>
+    <roots>_19_0_4_3ad0186_1663936842218_575275_5312</roots>
+    <roots>_19_0_4_3ad0186_1663936842281_446318_5384</roots>
+    <roots>_19_0_4_3ad0186_1663936842290_514541_5402</roots>
+    <roots>_19_0_4_3ad0186_1663936842294_861947_5409</roots>
+    <roots>_19_0_4_3ad0186_1663936842297_811886_5416</roots>
+    <roots>_19_0_4_3ad0186_1663936842301_759994_5423</roots>
+    <roots>_19_0_4_3ad0186_1663936842406_634030_5569</roots>
+    <roots>_19_0_4_3ad0186_1663936842413_286322_5584</roots>
+    <roots>_19_0_4_3ad0186_1663936842439_307049_5622</roots>
+    <roots>_19_0_4_3ad0186_1663936842442_515396_5628</roots>
+    <roots>_19_0_4_3ad0186_1663936842445_287838_5634</roots>
+    <roots>_19_0_4_3ad0186_1663936842448_292319_5640</roots>
+    <roots>_19_0_4_3ad0186_1663936842451_340103_5646</roots>
+    <roots>_19_0_4_3ad0186_1663936842538_459179_5797</roots>
+    <roots>_19_0_4_3ad0186_1663936842543_139863_5804</roots>
+    <roots>_19_0_4_3ad0186_1663936842601_278595_5907</roots>
+    <roots>_19_0_4_3ad0186_1663936842664_474669_5999</roots>
+    <roots>_19_0_4_3ad0186_1663936842725_16548_6090</roots>
+    <roots>_19_0_4_3ad0186_1663936842730_217730_6103</roots>
+    <roots>_19_0_4_3ad0186_1663936842804_533318_6233</roots>
+    <roots>_19_0_4_3ad0186_1663936842811_224564_6247</roots>
+    <roots>_19_0_4_3ad0186_1663936842888_715603_6412</roots>
+    <roots>_19_0_4_3ad0186_1663936842949_147472_6540</roots>
+    <roots>_19_0_4_3ad0186_1663936843074_745329_6763</roots>
+    <roots>_19_0_4_3ad0186_1663936843119_452220_6868</roots>
+  </snaphotDescriptors>
+</snapshot:SnapshotInfoContainer>

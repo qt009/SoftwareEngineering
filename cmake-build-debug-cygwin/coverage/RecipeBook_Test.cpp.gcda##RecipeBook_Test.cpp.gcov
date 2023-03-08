@@ -1,0 +1,690 @@
+        -:    0:Source:/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/test/RecipeBook_Test.cpp
+        -:    0:Graph:/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin/CMakeFiles/CocktailProTest.dir/src/test/RecipeBook_Test.cpp.gcno
+        -:    0:Data:/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin/CMakeFiles/CocktailProTest.dir/src/test/RecipeBook_Test.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#include <limits.h>
+        -:    2:#include "gtest/gtest.h"
+        -:    3:
+        -:    4:// Using this ugly tweak you make all private elements public!
+        -:    5:// But be careful! Some methods are private for good reasons!
+        -:    6:// So please use this trick only if you really need it!
+        -:    7:#define protected public
+        -:    8:#define private public
+        -:    9:#include "RecipeBook.h"
+        -:   10:#undef protected
+        -:   11:#undef private
+        -:   12:
+        -:   13:class RecipeBookTest : public ::testing::Test {
+        -:   14: protected:
+        -:   15:  RecipeBook* r;
+        -:   16:
+function _ZN14RecipeBookTest5SetUpEv called 4 returned 100% blocks executed 51%
+        4:   17:  virtual void SetUp() {
+        4:   18:        r = new RecipeBook();
+        4:   18-block  0
+call    0 returned 4
+branch  1 taken 4 (fallthrough)
+branch  2 taken 0 (throw)
+        4:   18-block  1
+call    3 returned 4
+branch  4 taken 4 (fallthrough)
+branch  5 taken 0 (throw)
+    $$$$$:   18-block  2
+call    6 never executed
+        -:   19:        // you never know what the constructor is really doing
+        -:   20:        // so make the list empty and fill it yourself!
+        -:   21:        
+        4:   22:        r->mRecipe.clear();
+        4:   22-block  0
+call    0 returned 4
+        -:   23:        Recipe* r1;
+        -:   24:
+        4:   25:        r1 = new Recipe;
+call    0 returned 4
+branch  1 taken 4 (fallthrough)
+branch  2 taken 0 (throw)
+        4:   25-block  0
+call    3 returned 4
+branch  4 taken 4 (fallthrough)
+branch  5 taken 0 (throw)
+    $$$$$:   25-block  1
+call    6 never executed
+        4:   26:        r1->setName("Caipirinha");
+        4:   26-block  0
+call    0 returned 4
+call    1 returned 4
+branch  2 taken 4 (fallthrough)
+branch  3 taken 0 (throw)
+        4:   26-block  1
+call    4 returned 4
+branch  5 taken 4 (fallthrough)
+branch  6 taken 0 (throw)
+        4:   26-block  2
+call    7 returned 4
+call    8 returned 4
+    $$$$$:   26-block  3
+call    9 never executed
+    $$$$$:   26-block  4
+    $$$$$:   26-block  5
+call   10 never executed
+    $$$$$:   26-block  6
+        4:   27:        r1->appendStep("Limettenstuecke", 8);
+call    0 returned 4
+call    1 returned 4
+branch  2 taken 4 (fallthrough)
+branch  3 taken 0 (throw)
+        4:   27-block  0
+call    4 returned 4
+branch  5 taken 4 (fallthrough)
+branch  6 taken 0 (throw)
+        4:   27-block  1
+call    7 returned 4
+call    8 returned 4
+    $$$$$:   27-block  2
+call    9 never executed
+    $$$$$:   27-block  3
+    $$$$$:   27-block  4
+call   10 never executed
+    $$$$$:   27-block  5
+        4:   28:        r->mRecipe.push_back(r1);
+call    0 returned 4
+branch  1 taken 4 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   29:
+        4:   30:        r1 = new Recipe;
+        4:   30-block  0
+call    0 returned 4
+branch  1 taken 4 (fallthrough)
+branch  2 taken 0 (throw)
+        4:   30-block  1
+call    3 returned 4
+branch  4 taken 4 (fallthrough)
+branch  5 taken 0 (throw)
+    $$$$$:   30-block  2
+call    6 never executed
+        4:   31:        r1->setName("Margarita");
+        4:   31-block  0
+call    0 returned 4
+call    1 returned 4
+branch  2 taken 4 (fallthrough)
+branch  3 taken 0 (throw)
+        4:   31-block  1
+call    4 returned 4
+branch  5 taken 4 (fallthrough)
+branch  6 taken 0 (throw)
+        4:   31-block  2
+call    7 returned 4
+call    8 returned 4
+    $$$$$:   31-block  3
+call    9 never executed
+    $$$$$:   31-block  4
+    $$$$$:   31-block  5
+call   10 never executed
+    $$$$$:   31-block  6
+        4:   32:        r1->appendStep("Zitronensaft", 2);
+call    0 returned 4
+call    1 returned 4
+branch  2 taken 4 (fallthrough)
+branch  3 taken 0 (throw)
+        4:   32-block  0
+call    4 returned 4
+branch  5 taken 4 (fallthrough)
+branch  6 taken 0 (throw)
+        4:   32-block  1
+call    7 returned 4
+call    8 returned 4
+    $$$$$:   32-block  2
+call    9 never executed
+    $$$$$:   32-block  3
+    $$$$$:   32-block  4
+call   10 never executed
+    $$$$$:   32-block  5
+        4:   33:        r->mRecipe.push_back(r1);
+call    0 returned 4
+branch  1 taken 4 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   34:          
+        4:   35:  }
+        4:   35-block  0
+        -:   36:
+function _ZN14RecipeBookTest8TearDownEv called 4 returned 100% blocks executed 100%
+        4:   37:  virtual void TearDown() {
+        -:   38:    // Code here will be called immediately after each test
+        -:   39:    // (right before the destructor).
+        4:   40:    delete r;
+        4:   40-block  0
+branch  0 taken 4 (fallthrough)
+branch  1 taken 0
+        4:   40-block  1
+call    2 returned 4
+        4:   41:  }
+        -:   42:};
+        -:   43:
+        4:   44:TEST_F(RecipeBookTest,getNumberOfRecipesReturnsValueOfAttribute){
+        1:   45:    int noOfRecipes=r->mRecipe.size();
+       1*:   46:    EXPECT_EQ(noOfRecipes,r->getNumberOfRecipes());
+        1:   47:}
+------------------
+_ZN61RecipeBookTest_getNumberOfRecipesReturnsValueOfAttribute_TestC1Ev:
+function _ZN61RecipeBookTest_getNumberOfRecipesReturnsValueOfAttribute_TestC1Ev called 1 returned 100% blocks executed 100%
+        1:   44:TEST_F(RecipeBookTest,getNumberOfRecipesReturnsValueOfAttribute){
+        1:   44-block  0
+call    0 returned 1
+------------------
+_ZN61RecipeBookTest_getNumberOfRecipesReturnsValueOfAttribute_TestD0Ev:
+function _ZN61RecipeBookTest_getNumberOfRecipesReturnsValueOfAttribute_TestD0Ev called 1 returned 100% blocks executed 100%
+        1:   44:TEST_F(RecipeBookTest,getNumberOfRecipesReturnsValueOfAttribute){
+        1:   44-block  0
+call    0 returned 1
+call    1 returned 1
+------------------
+_ZN61RecipeBookTest_getNumberOfRecipesReturnsValueOfAttribute_TestD1Ev:
+function _ZN61RecipeBookTest_getNumberOfRecipesReturnsValueOfAttribute_TestD1Ev called 1 returned 100% blocks executed 100%
+        1:   44:TEST_F(RecipeBookTest,getNumberOfRecipesReturnsValueOfAttribute){
+        1:   44-block  0
+call    0 returned 1
+------------------
+_ZN61RecipeBookTest_getNumberOfRecipesReturnsValueOfAttribute_Test8TestBodyEv:
+function _ZN61RecipeBookTest_getNumberOfRecipesReturnsValueOfAttribute_Test8TestBodyEv called 1 returned 100% blocks executed 31%
+        1:   44:TEST_F(RecipeBookTest,getNumberOfRecipesReturnsValueOfAttribute){
+        1:   45:    int noOfRecipes=r->mRecipe.size();
+        1:   45-block  0
+call    0 returned 1
+       1*:   46:    EXPECT_EQ(noOfRecipes,r->getNumberOfRecipes());
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   46-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   46-block  1
+call    6 returned 1
+branch  7 taken 0 (fallthrough)
+branch  8 taken 1
+    %%%%%:   46-block  2
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:   46-block  3
+call   12 never executed
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+    %%%%%:   46-block  4
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+    %%%%%:   46-block  5
+call   19 never executed
+call   20 never executed
+        1:   46-block  6
+call   21 returned 1
+    $$$$$:   46-block  7
+    $$$$$:   46-block  8
+call   22 never executed
+    $$$$$:   46-block  9
+    $$$$$:   46-block 10
+call   23 never executed
+    $$$$$:   46-block 11
+    $$$$$:   46-block 12
+call   24 never executed
+        1:   47:}
+------------------
+        -:   48:
+        4:   49:TEST_F(RecipeBookTest,getRecipeReturnsCorrectRecipe){
+        -:   50:    Recipe* rez;
+        1:   51:    rez = r->getRecipe(0);
+       2*:   52:    EXPECT_EQ(rez->getName(),"Caipirinha");
+        -:   53:
+        1:   54:    rez = r->getRecipe(1);
+       2*:   55:    EXPECT_EQ(rez->getName(),"Margarita");
+        1:   56:}
+------------------
+_ZN49RecipeBookTest_getRecipeReturnsCorrectRecipe_TestC1Ev:
+function _ZN49RecipeBookTest_getRecipeReturnsCorrectRecipe_TestC1Ev called 1 returned 100% blocks executed 100%
+        1:   49:TEST_F(RecipeBookTest,getRecipeReturnsCorrectRecipe){
+        1:   49-block  0
+call    0 returned 1
+------------------
+_ZN49RecipeBookTest_getRecipeReturnsCorrectRecipe_TestD0Ev:
+function _ZN49RecipeBookTest_getRecipeReturnsCorrectRecipe_TestD0Ev called 1 returned 100% blocks executed 100%
+        1:   49:TEST_F(RecipeBookTest,getRecipeReturnsCorrectRecipe){
+        1:   49-block  0
+call    0 returned 1
+call    1 returned 1
+------------------
+_ZN49RecipeBookTest_getRecipeReturnsCorrectRecipe_TestD1Ev:
+function _ZN49RecipeBookTest_getRecipeReturnsCorrectRecipe_TestD1Ev called 1 returned 100% blocks executed 100%
+        1:   49:TEST_F(RecipeBookTest,getRecipeReturnsCorrectRecipe){
+        1:   49-block  0
+call    0 returned 1
+------------------
+_ZN49RecipeBookTest_getRecipeReturnsCorrectRecipe_Test8TestBodyEv:
+function _ZN49RecipeBookTest_getRecipeReturnsCorrectRecipe_Test8TestBodyEv called 1 returned 100% blocks executed 30%
+        1:   49:TEST_F(RecipeBookTest,getRecipeReturnsCorrectRecipe){
+        -:   50:    Recipe* rez;
+        1:   51:    rez = r->getRecipe(0);
+        1:   51-block  0
+call    0 returned 1
+       2*:   52:    EXPECT_EQ(rez->getName(),"Caipirinha");
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   52-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+call    6 returned 1
+branch  7 taken 0 (fallthrough)
+branch  8 taken 1
+    %%%%%:   52-block  1
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:   52-block  2
+call   12 never executed
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+    %%%%%:   52-block  3
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+    %%%%%:   52-block  4
+call   19 never executed
+call   20 never executed
+        1:   52-block  5
+call   21 returned 1
+    $$$$$:   52-block  6
+    $$$$$:   52-block  7
+call   22 never executed
+    $$$$$:   52-block  8
+    $$$$$:   52-block  9
+call   23 never executed
+    $$$$$:   52-block 10
+    $$$$$:   52-block 11
+call   24 never executed
+        -:   53:
+        1:   54:    rez = r->getRecipe(1);
+call    0 returned 1
+       2*:   55:    EXPECT_EQ(rez->getName(),"Margarita");
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   55-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+call    6 returned 1
+branch  7 taken 0 (fallthrough)
+branch  8 taken 1
+    %%%%%:   55-block  1
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:   55-block  2
+call   12 never executed
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+    %%%%%:   55-block  3
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+    %%%%%:   55-block  4
+call   19 never executed
+call   20 never executed
+        1:   55-block  5
+call   21 returned 1
+    $$$$$:   55-block  6
+    $$$$$:   55-block  7
+call   22 never executed
+    $$$$$:   55-block  8
+    $$$$$:   55-block  9
+call   23 never executed
+    $$$$$:   55-block 10
+    $$$$$:   55-block 11
+call   24 never executed
+        1:   56:}
+------------------
+        -:   57:
+        4:   58:TEST_F(RecipeBookTest,deleteRecipeRemovesCorrectRecipe){
+       1*:   59:    EXPECT_FALSE(r->deleteRecipe(-1));
+       1*:   60:    EXPECT_FALSE(r->deleteRecipe(42));
+       1*:   61:    EXPECT_FALSE(r->deleteRecipe(2)); 
+        -:   62:    
+       1*:   63:    EXPECT_TRUE(r->deleteRecipe(0));
+        -:   64:    // Since recipe #0 is deleted now Margarita is #0
+        -:   65:    Recipe* rez;
+        1:   66:    rez = r->getRecipe(0);
+       2*:   67:    EXPECT_EQ(rez->getName(),"Margarita");    
+        1:   68:}
+------------------
+_ZN52RecipeBookTest_deleteRecipeRemovesCorrectRecipe_TestC1Ev:
+function _ZN52RecipeBookTest_deleteRecipeRemovesCorrectRecipe_TestC1Ev called 1 returned 100% blocks executed 100%
+        1:   58:TEST_F(RecipeBookTest,deleteRecipeRemovesCorrectRecipe){
+        1:   58-block  0
+call    0 returned 1
+------------------
+_ZN52RecipeBookTest_deleteRecipeRemovesCorrectRecipe_TestD0Ev:
+function _ZN52RecipeBookTest_deleteRecipeRemovesCorrectRecipe_TestD0Ev called 1 returned 100% blocks executed 100%
+        1:   58:TEST_F(RecipeBookTest,deleteRecipeRemovesCorrectRecipe){
+        1:   58-block  0
+call    0 returned 1
+call    1 returned 1
+------------------
+_ZN52RecipeBookTest_deleteRecipeRemovesCorrectRecipe_TestD1Ev:
+function _ZN52RecipeBookTest_deleteRecipeRemovesCorrectRecipe_TestD1Ev called 1 returned 100% blocks executed 100%
+        1:   58:TEST_F(RecipeBookTest,deleteRecipeRemovesCorrectRecipe){
+        1:   58-block  0
+call    0 returned 1
+------------------
+_ZN52RecipeBookTest_deleteRecipeRemovesCorrectRecipe_Test8TestBodyEv:
+function _ZN52RecipeBookTest_deleteRecipeRemovesCorrectRecipe_Test8TestBodyEv called 1 returned 100% blocks executed 22%
+        1:   58:TEST_F(RecipeBookTest,deleteRecipeRemovesCorrectRecipe){
+       1*:   59:    EXPECT_FALSE(r->deleteRecipe(-1));
+        1:   59-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   59-block  1
+call    3 returned 1
+call    4 returned 1
+branch  5 taken 0 (fallthrough)
+branch  6 taken 1
+    %%%%%:   59-block  2
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+    %%%%%:   59-block  3
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+    %%%%%:   59-block  4
+call   13 never executed
+call   14 never executed
+branch 15 never executed
+branch 16 never executed
+    %%%%%:   59-block  5
+call   17 never executed
+branch 18 never executed
+branch 19 never executed
+    %%%%%:   59-block  6
+call   20 never executed
+call   21 never executed
+call   22 never executed
+        1:   59-block  7
+call   23 returned 1
+    $$$$$:   59-block  8
+call   24 never executed
+    $$$$$:   59-block  9
+    $$$$$:   59-block 10
+call   25 never executed
+    $$$$$:   59-block 11
+    $$$$$:   59-block 12
+call   26 never executed
+    $$$$$:   59-block 13
+    $$$$$:   59-block 14
+call   27 never executed
+       1*:   60:    EXPECT_FALSE(r->deleteRecipe(42));
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   60-block  0
+call    3 returned 1
+call    4 returned 1
+branch  5 taken 0 (fallthrough)
+branch  6 taken 1
+    %%%%%:   60-block  1
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+    %%%%%:   60-block  2
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+    %%%%%:   60-block  3
+call   13 never executed
+call   14 never executed
+branch 15 never executed
+branch 16 never executed
+    %%%%%:   60-block  4
+call   17 never executed
+branch 18 never executed
+branch 19 never executed
+    %%%%%:   60-block  5
+call   20 never executed
+call   21 never executed
+call   22 never executed
+        1:   60-block  6
+call   23 returned 1
+    $$$$$:   60-block  7
+call   24 never executed
+    $$$$$:   60-block  8
+    $$$$$:   60-block  9
+call   25 never executed
+    $$$$$:   60-block 10
+    $$$$$:   60-block 11
+call   26 never executed
+    $$$$$:   60-block 12
+    $$$$$:   60-block 13
+call   27 never executed
+       1*:   61:    EXPECT_FALSE(r->deleteRecipe(2)); 
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   61-block  0
+call    3 returned 1
+call    4 returned 1
+branch  5 taken 0 (fallthrough)
+branch  6 taken 1
+    %%%%%:   61-block  1
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+    %%%%%:   61-block  2
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+    %%%%%:   61-block  3
+call   13 never executed
+call   14 never executed
+branch 15 never executed
+branch 16 never executed
+    %%%%%:   61-block  4
+call   17 never executed
+branch 18 never executed
+branch 19 never executed
+    %%%%%:   61-block  5
+call   20 never executed
+call   21 never executed
+call   22 never executed
+        1:   61-block  6
+call   23 returned 1
+    $$$$$:   61-block  7
+call   24 never executed
+    $$$$$:   61-block  8
+    $$$$$:   61-block  9
+call   25 never executed
+    $$$$$:   61-block 10
+    $$$$$:   61-block 11
+call   26 never executed
+    $$$$$:   61-block 12
+    $$$$$:   61-block 13
+call   27 never executed
+        -:   62:    
+       1*:   63:    EXPECT_TRUE(r->deleteRecipe(0));
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   63-block  0
+call    3 returned 1
+call    4 returned 1
+branch  5 taken 0 (fallthrough)
+branch  6 taken 1
+    %%%%%:   63-block  1
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+    %%%%%:   63-block  2
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+    %%%%%:   63-block  3
+call   13 never executed
+call   14 never executed
+branch 15 never executed
+branch 16 never executed
+    %%%%%:   63-block  4
+call   17 never executed
+branch 18 never executed
+branch 19 never executed
+    %%%%%:   63-block  5
+call   20 never executed
+call   21 never executed
+call   22 never executed
+        1:   63-block  6
+call   23 returned 1
+    $$$$$:   63-block  7
+call   24 never executed
+    $$$$$:   63-block  8
+    $$$$$:   63-block  9
+call   25 never executed
+    $$$$$:   63-block 10
+    $$$$$:   63-block 11
+call   26 never executed
+    $$$$$:   63-block 12
+    $$$$$:   63-block 13
+call   27 never executed
+        -:   64:    // Since recipe #0 is deleted now Margarita is #0
+        -:   65:    Recipe* rez;
+        1:   66:    rez = r->getRecipe(0);
+call    0 returned 1
+       2*:   67:    EXPECT_EQ(rez->getName(),"Margarita");    
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   67-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+call    6 returned 1
+branch  7 taken 0 (fallthrough)
+branch  8 taken 1
+    %%%%%:   67-block  1
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:   67-block  2
+call   12 never executed
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+    %%%%%:   67-block  3
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+    %%%%%:   67-block  4
+call   19 never executed
+call   20 never executed
+        1:   67-block  5
+call   21 returned 1
+    $$$$$:   67-block  6
+    $$$$$:   67-block  7
+call   22 never executed
+    $$$$$:   67-block  8
+    $$$$$:   67-block  9
+call   23 never executed
+    $$$$$:   67-block 10
+    $$$$$:   67-block 11
+call   24 never executed
+        1:   68:}
+------------------
+        -:   69:
+        4:   70:TEST_F(RecipeBookTest, readfileTest)
+        -:   71:{
+        1:   72:    std::ifstream wrongFile;
+        -:   73:
+       1*:   74:    EXPECT_TRUE(r->readFile(wrongFile));
+        1:   75:}
+------------------
+_ZN32RecipeBookTest_readfileTest_TestC1Ev:
+function _ZN32RecipeBookTest_readfileTest_TestC1Ev called 1 returned 100% blocks executed 100%
+        1:   70:TEST_F(RecipeBookTest, readfileTest)
+        1:   70-block  0
+call    0 returned 1
+------------------
+_ZN32RecipeBookTest_readfileTest_TestD0Ev:
+function _ZN32RecipeBookTest_readfileTest_TestD0Ev called 1 returned 100% blocks executed 100%
+        1:   70:TEST_F(RecipeBookTest, readfileTest)
+        1:   70-block  0
+call    0 returned 1
+call    1 returned 1
+------------------
+_ZN32RecipeBookTest_readfileTest_TestD1Ev:
+function _ZN32RecipeBookTest_readfileTest_TestD1Ev called 1 returned 100% blocks executed 100%
+        1:   70:TEST_F(RecipeBookTest, readfileTest)
+        1:   70-block  0
+call    0 returned 1
+------------------
+_ZN32RecipeBookTest_readfileTest_Test8TestBodyEv:
+function _ZN32RecipeBookTest_readfileTest_Test8TestBodyEv called 1 returned 100% blocks executed 28%
+        1:   70:TEST_F(RecipeBookTest, readfileTest)
+        -:   71:{
+        1:   72:    std::ifstream wrongFile;
+        1:   72-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   73:
+       1*:   74:    EXPECT_TRUE(r->readFile(wrongFile));
+        1:   74-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   74-block  1
+call    3 returned 1
+call    4 returned 1
+branch  5 taken 0 (fallthrough)
+branch  6 taken 1
+    %%%%%:   74-block  2
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+    %%%%%:   74-block  3
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+    %%%%%:   74-block  4
+call   13 never executed
+call   14 never executed
+branch 15 never executed
+branch 16 never executed
+    %%%%%:   74-block  5
+call   17 never executed
+branch 18 never executed
+branch 19 never executed
+    %%%%%:   74-block  6
+call   20 never executed
+call   21 never executed
+call   22 never executed
+        1:   74-block  7
+call   23 returned 1
+    $$$$$:   74-block  8
+call   24 never executed
+    $$$$$:   74-block  9
+    $$$$$:   74-block 10
+call   25 never executed
+    $$$$$:   74-block 11
+    $$$$$:   74-block 12
+call   26 never executed
+    $$$$$:   74-block 13
+    $$$$$:   74-block 14
+call   27 never executed
+        1:   75:}
+call    0 returned 1
+    $$$$$:   75-block  0
+call    1 never executed
+------------------
+        -:   76:

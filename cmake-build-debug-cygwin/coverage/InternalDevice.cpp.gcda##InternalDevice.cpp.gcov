@@ -1,0 +1,32 @@
+        -:    0:Source:/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/main/InternalDevice.cpp
+        -:    0:Graph:/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin/CMakeFiles/CocktailProSource.dir/src/main/InternalDevice.cpp.gcno
+        -:    0:Data:/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin/CMakeFiles/CocktailProSource.dir/src/main/InternalDevice.cpp.gcda
+        -:    0:Runs:1
+        -:    1://@(#) InternalDevice.cpp
+        -:    2:
+        -:    3:
+        -:    4:#include "InternalDevice.h"
+        -:    5:
+function _ZN14InternalDevice8setTimerEv called 488 returned 100% blocks executed 100%
+      488:    6:void InternalDevice::setTimer() {
+      488:    7:}
+        -:    8:
+function _ZN14InternalDeviceC2Ev called 488 returned 100% blocks executed 100%
+      488:    9:InternalDevice::InternalDevice() {
+      488:   10:    myTimer = Timer::getInstance();
+      488:   10-block  0
+call    0 returned 488
+      488:   11:    this->doinIt = 0;       //false
+      488:   12:    zeiteinheit = 0;
+      488:   13:    setTimer();
+call    0 returned 488
+      488:   14:    needsCleaning = false;
+      488:   15:}
+        -:   16:
+function _ZN14InternalDevice6putzenEv called 162 returned 100% blocks executed 100%
+      162:   17:void InternalDevice::putzen() {
+        -:   18://    std::cout << "Ich putze mich..." << std::endl;
+        -:   19://    myTimer->sleep(500);
+        -:   20://    std::cout << "Ich bin fertig mit putzen!" << std::endl;
+      162:   21:    needsCleaning = false;
+      162:   22:}

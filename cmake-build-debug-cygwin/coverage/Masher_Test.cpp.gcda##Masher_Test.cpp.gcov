@@ -1,0 +1,130 @@
+        -:    0:Source:/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/test/Masher_Test.cpp
+        -:    0:Graph:/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin/CMakeFiles/CocktailProTest.dir/src/test/Masher_Test.cpp.gcno
+        -:    0:Data:/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin/CMakeFiles/CocktailProTest.dir/src/test/Masher_Test.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by trung on 12/1/22.
+        -:    3://
+        -:    4:#include "gtest/gtest.h"
+        -:    5:
+        -:    6:#define protected public
+        -:    7:#define private public
+        -:    8:#include "Masher.h"
+        -:    9:#undef protected
+        -:   10:#undef private
+        -:   11:
+        -:   12:#include <sstream>
+        -:   13:class MasherTest: public ::testing::Test {
+        -:   14:protected:
+        -:   15:    Timer * myTimer;
+        -:   16:    Masher * masher;
+        -:   17:    std::basic_streambuf<char>* orig_cout;
+        -:   18:    std::stringstream test_cout;
+function _ZN10MasherTest5SetUpEv called 1 returned 100% blocks executed 90%
+        1:   19:    void SetUp() override {
+        1:   20:        std::cout << "Start of " << "MasherTest" << std::endl << std::flush;
+        1:   20-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+        1:   21:        myTimer = Timer::getInstance();
+call    0 returned 1
+        -:   22:
+        1:   23:        masher = new Masher();
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   23-block  0
+call    4 never executed
+        -:   24:
+        1:   25:    }
+        1:   25-block  0
+        -:   26:
+        -:   27:
+function _ZN10MasherTest8TearDownEv called 1 returned 100% blocks executed 100%
+        1:   28:    virtual void TearDown()
+        -:   29:    {
+        1:   30:        delete masher;
+        1:   30-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        1:   30-block  1
+call    2 returned 1
+        1:   31:        std::cout << "End of " << "MasherTest" << std::endl << std::flush;
+        1:   31-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+        1:   32:    }
+        -:   33:};
+        -:   34:
+        4:   35:TEST_F(MasherTest, doItTest){
+        1:   36:    masher->doIt(1);
+       1*:   37:    EXPECT_EQ(true, masher->needsCleaning);
+        1:   38:}
+------------------
+_ZN24MasherTest_doItTest_TestC1Ev:
+function _ZN24MasherTest_doItTest_TestC1Ev called 1 returned 100% blocks executed 100%
+        1:   35:TEST_F(MasherTest, doItTest){
+        1:   35-block  0
+call    0 returned 1
+------------------
+_ZN24MasherTest_doItTest_TestD0Ev:
+function _ZN24MasherTest_doItTest_TestD0Ev called 1 returned 100% blocks executed 100%
+        1:   35:TEST_F(MasherTest, doItTest){
+        1:   35-block  0
+call    0 returned 1
+call    1 returned 1
+------------------
+_ZN24MasherTest_doItTest_TestD1Ev:
+function _ZN24MasherTest_doItTest_TestD1Ev called 1 returned 100% blocks executed 100%
+        1:   35:TEST_F(MasherTest, doItTest){
+        1:   35-block  0
+call    0 returned 1
+------------------
+_ZN24MasherTest_doItTest_Test8TestBodyEv:
+function _ZN24MasherTest_doItTest_Test8TestBodyEv called 1 returned 100% blocks executed 29%
+        1:   35:TEST_F(MasherTest, doItTest){
+        1:   36:    masher->doIt(1);
+        1:   36-block  0
+call    0 returned 1
+       1*:   37:    EXPECT_EQ(true, masher->needsCleaning);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   37-block  0
+call    3 returned 1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:   37-block  1
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    %%%%%:   37-block  2
+call    9 never executed
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+    %%%%%:   37-block  3
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+    %%%%%:   37-block  4
+call   16 never executed
+call   17 never executed
+        1:   37-block  5
+call   18 returned 1
+    $$$$$:   37-block  6
+    $$$$$:   37-block  7
+call   19 never executed
+    $$$$$:   37-block  8
+    $$$$$:   37-block  9
+call   20 never executed
+    $$$$$:   37-block 10
+    $$$$$:   37-block 11
+call   21 never executed
+        1:   38:}
+------------------

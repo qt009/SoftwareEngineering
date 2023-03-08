@@ -1,0 +1,107 @@
+        -:    0:Source:/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/main/Timer.cpp
+        -:    0:Graph:/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin/CMakeFiles/CocktailProSource.dir/src/main/Timer.cpp.gcno
+        -:    0:Data:/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin/CMakeFiles/CocktailProSource.dir/src/main/Timer.cpp.gcda
+        -:    0:Runs:1
+        -:    1://@(#) Timer.cpp
+        -:    2:
+        -:    3:
+        -:    4:#include "Timer.h"
+        -:    5:
+        -:    6:const int maxValue = 1000;
+function _ZN5Timer8setTurboEi called 28 returned 100% blocks executed 100%
+       28:    7:void Timer::setTurbo(int turbo) {
+       28:    8:    this->booster = turbo;
+       28:    9:}
+        -:   10:
+function _ZN5Timer11getInstanceEv called 518 returned 100% blocks executed 100%
+      518:   11:Timer * Timer::getInstance() {
+      518:   12:    if (!instanceFlag) {
+      518:   12-block  0
+branch  0 taken 2 (fallthrough)
+branch  1 taken 516
+        2:   13:        theTimer = new Timer();
+        2:   13-block  0
+call    0 returned 2
+call    1 returned 2
+        2:   14:        instanceFlag = true;
+        2:   15:        return theTimer;
+        -:   16:    } else {
+      516:   17:        return theTimer;
+      516:   17-block  0
+        -:   18:    }
+        -:   19:}
+        -:   20:
+function _ZNK5Timer5sleepEl called 2090 returned 100% blocks executed 93%
+     2090:   21:void Timer::sleep(long delayInMs) const {
+        -:   22:    // if netbeans does not recognize system_clock you have to set the project properties to C++11:
+        -:   23:    // Project-Properties->Code Assistance -> C++ (and C). Set it to C++!
+     2090:   24:    long nowMillis = time_point_cast<milliseconds>(system_clock::now()).time_since_epoch().count();
+     2090:   24-block  0
+call    0 returned 2090
+call    1 returned 2090
+branch  2 taken 2090 (fallthrough)
+branch  3 taken 0 (throw)
+     2090:   24-block  1
+call    4 returned 2090
+call    5 returned 2090
+    $$$$$:   24-block  2
+call    6 never executed
+     2090:   25:    long limit = nowMillis + (delayInMs / booster);
+        -:   26:    
+  3934809:   27:    while (limit > nowMillis) {
+  3934809:   27-block  0
+branch  0 taken 3932719
+branch  1 taken 2090 (fallthrough)
+        -:   28:
+  3932719:   29:        nowMillis = time_point_cast<milliseconds>(system_clock::now()).time_since_epoch().count();
+  3932719:   29-block  0
+call    0 returned 3932719
+call    1 returned 3932719
+branch  2 taken 3932719 (fallthrough)
+branch  3 taken 0 (throw)
+  3932719:   29-block  1
+call    4 returned 3932719
+call    5 returned 3932719
+        -:   30:    }
+     2090:   31:}
+     2090:   31-block  0
+        -:   32:
+function _ZNK5Timer16sleepInIntervalsEl called 1369 returned 100% blocks executed 100%
+     1369:   33:void Timer::sleepInIntervals(long milliSeconds) const {
+        -:   34:    // to improve compatibility between Linux and Windows this implementation
+        -:   35:    // is using busy wait (and avoids threads)! On purpose...
+     1369:   36:    long delay=0;
+        -:   37:    
+     3459:   38:    while (milliSeconds > 0) {
+     1369:   38-block  0
+     3459:   38-block  1
+branch  0 taken 2090
+branch  1 taken 1369 (fallthrough)
+     2090:   39:        if (milliSeconds >= maxValue){
+     2090:   39-block  0
+branch  0 taken 1241 (fallthrough)
+branch  1 taken 849
+     1241:   40:            std::cout << "*" << std::flush;
+     1241:   40-block  0
+call    0 returned 1241
+call    1 returned 1241
+     1241:   41:            delay = maxValue;
+     1241:   42:            milliSeconds = milliSeconds - delay;
+        -:   43:        } else {
+      849:   44:            std::cout << "." << std::flush;
+      849:   44-block  0
+call    0 returned 849
+call    1 returned 849
+      849:   45:            delay = milliSeconds;
+      849:   46:            milliSeconds = 0;
+        -:   47:        }
+     2090:   48:        sleep(delay);
+     2090:   48-block  0
+call    0 returned 2090
+        -:   49:    }   
+     1369:   50:}
+        -:   51:
+        -:   52:
+        -:   53:bool Timer::instanceFlag = false;
+        -:   54:
+        -:   55:Timer * Timer::theTimer = nullptr;

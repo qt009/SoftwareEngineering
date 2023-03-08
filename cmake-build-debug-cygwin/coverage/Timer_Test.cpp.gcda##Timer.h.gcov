@@ -1,0 +1,73 @@
+        -:    0:Source:/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/main/Timer.h
+        -:    0:Graph:/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin/CMakeFiles/CocktailProTest.dir/src/test/Timer_Test.cpp.gcno
+        -:    0:Data:/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin/CMakeFiles/CocktailProTest.dir/src/test/Timer_Test.cpp.gcda
+        -:    0:Runs:1
+        -:    1://@(#) Timer.h
+        -:    2:
+        -:    3:#ifndef TIMER_H_H
+        -:    4:#define TIMER_H_H
+        -:    5:
+        -:    6:#include <chrono>
+        -:    7:using namespace std::chrono;
+        -:    8:#include <iostream>
+        -:    9:
+        -:   10:
+        -:   11:/**
+        -:   12: * @class Timer
+        -:   13: *
+        -:   14: * @brief Timer manages time on interval device
+        -:   15: *
+        -:   16: */
+        -:   17:class Timer {
+        -:   18: public:
+        -:   19:
+        -:   20:    /** @brief boosts booster to turbo
+        -:   21:    */
+        -:   22:    void setTurbo(int turbo);
+        -:   23:
+        -:   24:    /** @brief returns the current instance information
+        -:   25:    */
+        -:   26:    static Timer * getInstance();
+        -:   27:
+        -:   28:    /**
+        -:   29:     * 	~Timer( )
+        -:   30:     *     {
+        -:   31:     *         instanceFlag = false;
+        -:   32:     *     };
+        -:   33:     */
+        -:   34:
+        -:   35:    /** @brief to improve compatibility between Linux and Windows this implementation
+        -:   36:    */
+        -:   37:    void sleepInIntervals(long milliSeconds) const;
+        -:   38:
+        -:   39:    /** @brief if netbeans does not recognize system_clock you have to set the project properties to C++11
+        -:   40:    */
+        -:   41:     void sleep(long delayInMs) const;
+        -:   42:
+        -:   43:
+        -:   44: private:
+        -:   45:    /**
+        -:   46:   * This value shows the actual instance
+        -:   47:   */
+        -:   48:    static bool instanceFlag;
+        -:   49:
+        -:   50:    /**
+        -:   51:    * This value shows the time
+        -:   52:    */
+        -:   53:    static Timer * theTimer;
+        -:   54:
+        -:   55:    /**
+        -:   56:   *  booster
+        -:   57:   */
+        -:   58:    int booster;
+        -:   59:
+        -:   60:    /**
+        -:   61:   *  @brief Timer constructor assings 1 to the booster
+        -:   62:   */
+function _ZN5TimerC1Ev called 4 returned 100% blocks executed 100%
+        4:   63:    Timer() : booster(1) {
+        4:   64:    };
+        -:   65:
+        -:   66:};
+        -:   67:
+        -:   68:#endif

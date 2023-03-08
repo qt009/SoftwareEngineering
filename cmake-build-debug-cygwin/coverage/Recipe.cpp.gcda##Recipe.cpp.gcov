@@ -1,0 +1,153 @@
+        -:    0:Source:/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/main/Recipe.cpp
+        -:    0:Graph:/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin/CMakeFiles/CocktailProSource.dir/src/main/Recipe.cpp.gcno
+        -:    0:Data:/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin/CMakeFiles/CocktailProSource.dir/src/main/Recipe.cpp.gcda
+        -:    0:Runs:1
+        -:    1:
+        -:    2:#include <algorithm>
+        -:    3:#include <iostream>
+        -:    4:
+        -:    5:#include "Recipe.h"
+        -:    6:
+function _ZN6RecipeC2Ev called 199 returned 100% blocks executed 67%
+      199:    7:Recipe::Recipe(void) {
+      199:    7-block  0
+call    0 returned 199
+call    1 returned 199
+      199:    8:    mRecipeStep.clear();
+call    0 returned 199
+      199:    9:    mName = "";
+call    0 returned 199
+branch  1 taken 199 (fallthrough)
+branch  2 taken 0 (throw)
+      199:   10:}
+      199:   10-block  0
+    $$$$$:   10-block  1
+call    0 never executed
+    $$$$$:   10-block  2
+call    1 never executed
+        -:   11:
+function _ZN6RecipeD2Ev called 7 returned 100% blocks executed 100%
+        7:   12:Recipe::~Recipe() {
+        7:   13:}
+        7:   13-block  0
+call    0 returned 7
+call    1 returned 7
+        -:   14:
+function _ZN6Recipe18getNoOfRecipeStepsEv called 4758 returned 100% blocks executed 100%
+     4758:   15:int Recipe::getNoOfRecipeSteps() {
+     4758:   16:    return (mRecipeStep.size());
+     4758:   16-block  0
+call    0 returned 4758
+        -:   17:}
+        -:   18:
+function _ZN6Recipe13getRecipeStepEj called 4141 returned 100% blocks executed 90%
+     4141:   19:RecipeStep * Recipe::getRecipeStep(unsigned int i) {
+    4141*:   20:    if (i > mRecipeStep.size()) return NULL;
+     4141:   20-block  0
+call    0 returned 4141
+branch  1 taken 0 (fallthrough)
+branch  2 taken 4141
+    %%%%%:   20-block  1
+        -:   21:    else {
+     4141:   22:        std::list<RecipeStep*>::iterator p; // Iterator
+     4141:   22-block  0
+call    0 returned 4141
+     4141:   23:        advance(p = mRecipeStep.begin(), i); // p zeigt jetzt auf das i-te Element
+call    0 returned 4141
+call    1 returned 4141
+branch  2 taken 4141 (fallthrough)
+branch  3 taken 0 (throw)
+     4141:   24:        return (*p); // Adresse vom Wert von p - also den Pointer auf den der Iterator zeigt
+     4141:   24-block  0
+call    0 returned 4141
+        -:   25:    }
+        -:   26:}
+        -:   27:
+function _ZNK6Recipe7getNameEv called 54 returned 100% blocks executed 100%
+       54:   28:std::string Recipe::getName(void) const {
+       54:   29:    return mName;
+       54:   29-block  0
+call    0 returned 54
+        -:   30:}
+        -:   31:
+function _ZN6Recipe7setNameERKSs called 194 returned 100% blocks executed 100%
+      194:   32:void Recipe::setName(const std::string& Name) {
+      194:   33:    this->mName = Name;
+      194:   33-block  0
+call    0 returned 194
+      194:   34:}
+        -:   35:
+function _ZN6Recipe6browseEv called 176 returned 100% blocks executed 88%
+      176:   36:void Recipe::browse() {
+      176:   37:    std::cout << mName << ": ";
+      176:   37-block  0
+call    0 returned 176
+call    1 returned 176
+     1144:   38:    for (int i = 0; i< this->getNoOfRecipeSteps(); i++) {
+     1144:   38-block  0
+call    0 returned 1144
+branch  1 taken 968
+branch  2 taken 176 (fallthrough)
+      968:   39:        if (i > 0) std::cout << ", ";
+      968:   39-block  0
+branch  0 taken 792 (fallthrough)
+branch  1 taken 176
+      792:   39-block  1
+call    2 returned 792
+      968:   40:        std::cout << getRecipeStep(i)->getZutat();
+      968:   40-block  0
+call    0 returned 968
+call    1 returned 968
+call    2 returned 968
+branch  3 taken 968 (fallthrough)
+branch  4 taken 0 (throw)
+      968:   40-block  1
+call    5 returned 968
+    $$$$$:   40-block  2
+call    6 never executed
+        -:   41:    }
+      176:   42:}
+      176:   42-block  0
+        -:   43:
+function _ZN6Recipe10appendStepESsf called 1027 returned 100% blocks executed 78%
+     1027:   44:void Recipe::appendStep(std::string z, float m) {
+        -:   45:    RecipeStep* t;
+     1027:   46:    t = new RecipeStep;
+     1027:   46-block  0
+call    0 returned 1027
+branch  1 taken 1027 (fallthrough)
+branch  2 taken 0 (throw)
+     1027:   46-block  1
+call    3 returned 1027
+branch  4 taken 1027 (fallthrough)
+branch  5 taken 0 (throw)
+    $$$$$:   46-block  2
+call    6 never executed
+     1027:   47:    t->setZutat(z);
+     1027:   47-block  0
+call    0 returned 1027
+branch  1 taken 1027 (fallthrough)
+branch  2 taken 0 (throw)
+     1027:   48:    t->setMenge(m);
+     1027:   48-block  0
+call    0 returned 1027
+branch  1 taken 1027 (fallthrough)
+branch  2 taken 0 (throw)
+     1027:   49:    mRecipeStep.push_back(t);
+     1027:   49-block  0
+call    0 returned 1027
+branch  1 taken 1027 (fallthrough)
+branch  2 taken 0 (throw)
+     1027:   50:}
+     1027:   50-block  0
+        -:   51:
+function _ZNK6Recipe11getRecipeNoEv called 231 returned 100% blocks executed 100%
+      231:   52:int Recipe::getRecipeNo() const {
+      231:   53:    return RecipeNo;
+      231:   53-block  0
+        -:   54:}
+        -:   55:
+function _ZN6Recipe11setRecipeNoEi called 184 returned 100% blocks executed 100%
+      184:   56:void Recipe::setRecipeNo(int recipeNo) {
+      184:   57:    RecipeNo = recipeNo;
+      184:   58:}

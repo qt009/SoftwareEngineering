@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ASCII"?>
+<snapshot:PrivateDependenciesContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:snapshot="http://www.nomagic.com/ns/cameo/client/snapshot/1.0" xmi:id="_apeRQAiaEeKlPOcE--zWQQ">
+  <referencedResources xmi:id="_r3k4UCW4EeyI8vXAGyFBDQ" originalResourceURI="local:/PROJECT-5979fd8d-49bb-48a4-970f-a242a2dbb747?resource=com.nomagic.magicdraw.uml_umodel.model">
+    <referencedObjects>eee_1045467100313_135436_1</referencedObjects>
+  </referencedResources>
+  <referencedResources xmi:id="_r3k4USW4EeyI8vXAGyFBDQ" originalResourceURI="local:/PROJECT-877558e9224f114d50dea1f39a1c119?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel">
+    <referencedObjects>magicdraw_1046861421226_932627_12</referencedObjects>
+    <referencedObjects>_10_0_622020d_1127207234373_259585_1</referencedObjects>
+    <referencedObjects>eee_1045467100323_377050_61</referencedObjects>
+    <referencedObjects>_9_0_2_91a0295_1110467285765_674988_0</referencedObjects>
+    <referencedObjects>eee_1045467100323_917313_65</referencedObjects>
+    <referencedObjects>magicdraw_1046861421236_39100_29</referencedObjects>
+    <referencedObjects>eee_1045467100323_497844_64</referencedObjects>
+    <referencedObjects>_9_0_2_91a0295_1110467301109_570626_1</referencedObjects>
+    <referencedObjects>eee_1045467100323_784316_63</referencedObjects>
+    <referencedObjects>eee_1045467100323_249638_60</referencedObjects>
+    <referencedObjects>eee_1045467100323_385364_62</referencedObjects>
+    <referencedObjects>eee_1045467100323_848034_66</referencedObjects>
+  </referencedResources>
+  <referencedResources xmi:id="_r3k4UiW4EeyI8vXAGyFBDQ" originalResourceURI="local:/PROJECT-58814ab339137157c8adba26ca27a87?resource=com.nomagic.magicdraw.uml_umodel.shared_umodel">
+    <referencedObjects>_10_5_3fc019d_1151473840406_850952_1164</referencedObjects>
+    <referencedObjects>_10_5_3fc019d_1151996807218_239869_408</referencedObjects>
+    <referencedObjects>_10_5_3fc019d_1151996833468_92504_462</referencedObjects>
+    <referencedObjects>_10_5_3fc019d_1151996796078_405639_390</referencedObjects>
+    <referencedObjects>_10_5_3fc019d_1151477279468_809650_1209</referencedObjects>
+    <referencedObjects>_10_5_3fc019d_1151996788531_193005_372</referencedObjects>
+    <referencedObjects>_10_5_3fc019d_1151996808546_69432_426</referencedObjects>
+    <referencedObjects>_10_5_3fc019d_1151050166734_307339_261</referencedObjects>
+    <referencedObjects>_10_5_3fc019d_1151996878296_963763_578</referencedObjects>
+    <referencedObjects>_10_5_3fc019d_1151996862875_714738_526</referencedObjects>
+    <referencedObjects>_10_5_3fc019d_1151996827031_422713_444</referencedObjects>
+  </referencedResources>
+</snapshot:PrivateDependenciesContainer>

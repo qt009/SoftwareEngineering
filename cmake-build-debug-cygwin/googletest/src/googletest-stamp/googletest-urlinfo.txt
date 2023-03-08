@@ -1,0 +1,12 @@
+# This is a generated file and its contents are an internal implementation detail.
+# The download step will be re-executed if anything in this file changes.
+# No other meaning or use of this file is supported.
+
+method=url
+command=/cygdrive/c/Users/PC/AppData/Local/JetBrains/CLion2022.2/cygwin_cmake/bin/cmake.exe;-P;/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin/googletest/src/googletest-stamp/download-googletest.cmake;COMMAND;/cygdrive/c/Users/PC/AppData/Local/JetBrains/CLion2022.2/cygwin_cmake/bin/cmake.exe;-P;/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin/googletest/src/googletest-stamp/verify-googletest.cmake;COMMAND;/cygdrive/c/Users/PC/AppData/Local/JetBrains/CLion2022.2/cygwin_cmake/bin/cmake.exe;-P;/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin/googletest/src/googletest-stamp/extract-googletest.cmake
+source_dir=/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin/googletest/src/googletest
+work_dir=/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin/googletest/src
+url(s)=https://github.com/google/googletest/archive/release-1.11.0.tar.gz
+hash=
+no_extract=
+

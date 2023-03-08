@@ -1,0 +1,24 @@
+        -:    0:Source:/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/main/Masher.cpp
+        -:    0:Graph:/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin/CMakeFiles/CocktailProSource.dir/src/main/Masher.cpp.gcno
+        -:    0:Data:/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin/CMakeFiles/CocktailProSource.dir/src/main/Masher.cpp.gcda
+        -:    0:Runs:1
+        -:    1://@(#) Masher.cpp
+        -:    2:
+        -:    3:
+        -:    4:#include "Masher.h"
+        -:    5:
+function _ZN6MasherC2Ev called 25 returned 100% blocks executed 100%
+       25:    6:Masher::Masher() : InternalDevice() {
+       25:    6-block  0
+call    0 returned 25
+       25:    7:}
+        -:    8:
+function _ZN6Masher4doItEf called 22 returned 100% blocks executed 100%
+       22:    9:void Masher::doIt(float time) {
+       22:   10:    myTimer->sleepInIntervals(time * 1000);
+       22:   10-block  0
+call    0 returned 22
+       22:   11:    std::cout << std::endl;
+call    0 returned 22
+       22:   12:    needsCleaning = true;
+       22:   13:}

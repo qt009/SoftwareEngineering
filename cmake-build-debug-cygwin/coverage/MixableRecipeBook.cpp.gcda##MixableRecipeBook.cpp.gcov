@@ -1,0 +1,205 @@
+        -:    0:Source:/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/src/main/MixableRecipeBook.cpp
+        -:    0:Graph:/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin/CMakeFiles/CocktailProSource.dir/src/main/MixableRecipeBook.cpp.gcno
+        -:    0:Data:/cygdrive/c/Users/PC/OneDrive - stud.h-da.de/PRAKTIKUM/Software Engineering/CocktailPro/cmake-build-debug-cygwin/CMakeFiles/CocktailProSource.dir/src/main/MixableRecipeBook.cpp.gcda
+        -:    0:Runs:1
+        -:    1://@(#) MixableRecipeBook.cpp
+        -:    2:
+        -:    3:
+        -:    4:#include "MixableRecipeBook.h"
+        -:    5:#include <iostream>
+        -:    6://
+        -:    7:
+function _ZN17MixableRecipeBook6browseEv called 24 returned 100% blocks executed 100%
+       24:    8:void MixableRecipeBook::browse() {
+       24:    9:    std::cout << "*********************************************" << std::endl;
+       24:    9-block  0
+call    0 returned 24
+call    1 returned 24
+       24:   10:    std::cout << "Es gibt " << this->getNumberOfRecipes() << " Cocktails" << std::endl;
+call    0 returned 24
+call    1 returned 24
+call    2 returned 24
+call    3 returned 24
+call    4 returned 24
+        -:   11:
+      200:   12:    for (int i = 0; i<this->getNumberOfRecipes(); i++) {
+      200:   12-block  0
+call    0 returned 200
+branch  1 taken 176
+branch  2 taken 24 (fallthrough)
+      176:   13:        Recipe* r = this->getRecipe(i);
+      176:   13-block  0
+call    0 returned 176
+      176:   14:        std::cout << r->getRecipeNo() << ". ";
+call    0 returned 176
+call    1 returned 176
+call    2 returned 176
+      176:   15:        r->browse();
+call    0 returned 176
+      176:   16:        std::cout << std::endl;
+call    0 returned 176
+        -:   17:    }
+       24:   18:    std::cout << "*********************************************" << std::endl;
+       24:   18-block  0
+call    0 returned 24
+call    1 returned 24
+        -:   19:
+       24:   20:}
+        -:   21:
+function _ZN17MixableRecipeBookC2EP20AvailableIngredients called 16 returned 100% blocks executed 78%
+       16:   22:MixableRecipeBook::MixableRecipeBook(AvailableIngredients * zv) {
+       16:   22-block  0
+call    0 returned 16
+call    1 returned 16
+        -:   23:
+        -:   24:    // Debug *********
+       16:   25:    std::cout << "********** Rezepte vor dem Filtern **********" << std::endl;
+call    0 returned 16
+branch  1 taken 16 (fallthrough)
+branch  2 taken 0 (throw)
+       16:   25-block  0
+call    3 returned 16
+branch  4 taken 16 (fallthrough)
+branch  5 taken 0 (throw)
+       16:   26:    browse();
+       16:   26-block  0
+call    0 returned 16
+branch  1 taken 16 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   27:    // ******************
+        -:   28:
+       16:   29:    setZutatenVerwalter(zv);
+       16:   29-block  0
+call    0 returned 16
+        -:   30://function to update all Recipe in a book
+        -:   31://function to search all recipe steps in a recipe
+        -:   32://function to delete recipe if ingredient is not found then decrement recipe index by 1
+      144:   33:  for (int i = 0; i < getNumberOfRecipes(); i++) {
+      128:   33-block  0
+      144:   33-block  1
+call    0 returned 144
+branch  1 taken 144 (fallthrough)
+branch  2 taken 0 (throw)
+      144:   33-block  2
+branch  3 taken 128
+branch  4 taken 16 (fallthrough)
+        -:   34:    //bool x;
+      128:   35:    Recipe *recipe = getRecipe(i);
+      128:   35-block  0
+call    0 returned 128
+branch  1 taken 128 (fallthrough)
+branch  2 taken 0 (throw)
+      128:   36:    searchRecipe(recipe, i);
+      128:   36-block  0
+call    0 returned 128
+branch  1 taken 128 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   37:    //x = true;
+        -:   38:    /*for (int j = 0; j < recipe->getNoOfRecipeSteps(); j++) {
+        -:   39:      std::string gesuchteZutat;
+        -:   40:      gesuchteZutat = recipe->getRecipeStep(j)->getZutat();
+        -:   41:      //bool zOk = false;
+        -:   42:
+        -:   43:      for (int k = 0; k < myZutatenVerwalter->getAnzahlVorhandeneZutaten(); k++) {
+        -:   44:        if (myZutatenVerwalter->getZutat(k) == gesuchteZutat) {
+        -:   45:          //zOk = true;
+        -:   46:          return;
+        -:   47:          //break;
+        -:   48:        }
+        -:   49:        deleteRecipe(i);
+        -:   50:        --i;
+        -:   51:      }
+        -:   52:
+        -:   53:
+        -:   54:
+        -:   55:      if (!zOk) {
+        -:   56:        x = false;
+        -:   57:      }
+        -:   58:    }*/
+        -:   59:    /*if (!x) {
+        -:   60:      if(deleteRecipe(i)) {
+        -:   61:          --i;
+        -:   62:          continue;
+        -:   63:      };
+        -:   64:    }*/
+        -:   65:  }
+       16:   66:}
+       16:   66-block  0
+    $$$$$:   66-block  1
+call    0 never executed
+    $$$$$:   66-block  2
+call    1 never executed
+        -:   67:
+function _ZN17MixableRecipeBook19setZutatenVerwalterEP20AvailableIngredients called 16 returned 100% blocks executed 100%
+       16:   68:void MixableRecipeBook::setZutatenVerwalter(AvailableIngredients * zv) {
+       16:   69:    myZutatenVerwalter = zv;
+       16:   70:}
+        -:   71:
+function _ZN17MixableRecipeBook24searchIngredientInRecipeEP20AvailableIngredientsRSs called 608 returned 100% blocks executed 100%
+      608:   72:bool MixableRecipeBook::searchIngredientInRecipe(AvailableIngredients *pZutatenVerwalter, std::string& gesuchteZutat) {
+     5120:   73:    for(int i{}; i < pZutatenVerwalter->getAnzahlVorhandeneZutaten(); i++) {
+      608:   73-block  0
+     4512:   73-block  1
+     5120:   73-block  2
+call    0 returned 5120
+branch  1 taken 5088
+branch  2 taken 32 (fallthrough)
+     5088:   74:        if(pZutatenVerwalter->getZutat(i) == gesuchteZutat) {
+     5088:   74-block  0
+call    0 returned 5088
+call    1 returned 5088
+call    2 returned 5088
+branch  3 taken 576 (fallthrough)
+branch  4 taken 4512
+      576:   75:            return true;
+      576:   75-block  0
+        -:   76:        }
+        -:   77:    }
+       32:   78:    return false;
+       32:   78-block  0
+        -:   79:}
+function _ZN17MixableRecipeBook12searchRecipeEP6RecipeRi called 128 returned 100% blocks executed 89%
+      128:   80:void MixableRecipeBook::searchRecipe(Recipe *r, int& index) {
+      704:   81:    for(int i{}; i < r->getNoOfRecipeSteps(); i ++) {
+      128:   81-block  0
+      576:   81-block  1
+      704:   81-block  2
+call    0 returned 704
+branch  1 taken 608
+branch  2 taken 96 (fallthrough)
+      608:   82:        std::string gesuchteZutat = r->getRecipeStep(i)->getZutat();
+      608:   82-block  0
+call    0 returned 608
+branch  1 taken 608 (fallthrough)
+branch  2 taken 0 (throw)
+      608:   82-block  1
+call    3 returned 608
+branch  4 taken 608 (fallthrough)
+branch  5 taken 0 (throw)
+      608:   83:        if(!searchIngredientInRecipe(myZutatenVerwalter, gesuchteZutat)) {
+      608:   83-block  0
+call    0 returned 608
+branch  1 taken 608 (fallthrough)
+branch  2 taken 0 (throw)
+      608:   83-block  1
+branch  3 taken 32 (fallthrough)
+branch  4 taken 576
+       32:   84:          deleteRecipe(index);
+       32:   84-block  0
+call    0 returned 32
+branch  1 taken 32 (fallthrough)
+branch  2 taken 0 (throw)
+       32:   85:          index--;
+       32:   86:          break;
+       32:   86-block  0
+        -:   87:      }
+      608:   88:    }
+      576:   88-block  0
+      608:   88-block  1
+call    0 returned 608
+branch  1 taken 576 (fallthrough)
+branch  2 taken 32
+    $$$$$:   88-block  2
+call    3 never executed
+      128:   89:}
+      128:   89-block  0
